@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "build_id": "20261016-213741-992",
+  "main_raw_sha256_unchanged": "aac4cde1fed90857ea81a1575e326049be71a528f27a6a744435b94c42dfdda7",
+  "summary_paper_inputs_sha256_unchanged": true,
+  "bibtex_warnings": 0,
+  "unresolved_question_mark_references": 0,
+  "completed_tasks": [
+    "VI-004",
+    "VI-006",
+    "EN-001",
+    "EN-002",
+    "EN-003",
+    "EN-004",
+    "PDF-001",
+    "PDF-003"
+  ],
+  "blocked_tasks": {
+    "VI-007": "destination contents await publishing and verification",
+    "DEL-007": "destination contents await publishing and verification",
+    "PDF-002": "destination contents await publishing and verification"
+  },
+  "pdf_sha256": {
+    "sudoku-vi.pdf": "d1f221a983b812cbde5e9394afa831b6ea266a7e3ee7354451841edc725420fc",
+    "sudoku-en.pdf": "131f3126d415ae47eced047e83600e59538ab7e26d7b29a428032fea49956d9f"
+  },
+  "metadata_closure": "PASS; EN-004 reclosed",
+  "destination_repository": "https://github.com/Ngynkybyrd/2627I_INT3011E",
+  "visual_delta_baseline": "20261016-203236-600"
+}

@@ -1,0 +1,34 @@
+{
+  "job_id": "synthetic-N04-p70-s3__sat__seqcounter__r3",
+  "instance_id": "synthetic-N04-p70-s3",
+  "solution": [
+    [
+      4,
+      3,
+      1,
+      2
+    ],
+    [
+      2,
+      1,
+      3,
+      4
+    ],
+    [
+      3,
+      2,
+      4,
+      1
+    ],
+    [
+      1,
+      4,
+      2,
+      3
+    ]
+  ],
+  "validation": {
+    "valid": true,
+    "message": null
+  }
+}

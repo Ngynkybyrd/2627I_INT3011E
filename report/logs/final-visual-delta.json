@@ -1,0 +1,22 @@
+{
+  "full_visual_review_build": "20261016-200714-166",
+  "final_build": "20261016-200959-661",
+  "languages": {
+    "vi": {
+      "pages": 10,
+      "changed_pages": [
+        8
+      ],
+      "unchanged_pages_pixel_identical": true,
+      "changed_pages_visually_checked": true
+    },
+    "en": {
+      "pages": 10,
+      "changed_pages": [
+        8
+      ],
+      "unchanged_pages_pixel_identical": true,
+      "changed_pages_visually_checked": true
+    }
+  }
+}

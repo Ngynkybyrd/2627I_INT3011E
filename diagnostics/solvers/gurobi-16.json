@@ -1,0 +1,18 @@
+{
+  "engine": "gurobi",
+  "N": 16,
+  "clues": 1,
+  "variables": 4096,
+  "exo_groups": 1024,
+  "linear_constraints": 1025,
+  "runtime_version": [
+    13,
+    0,
+    3
+  ],
+  "threads": 1,
+  "status": "LICENSE_LIMIT",
+  "error_type": "GurobiError",
+  "error": "Model too large for size-limited license; visit https://gurobi.com/unrestricted for more information",
+  "diagnostic_seconds": 0.04814249999981257
+}

@@ -1,0 +1,408 @@
+{
+  "python": "3.13.5",
+  "python_sat": "1.9.dev16",
+  "invalid_input_checks": 33,
+  "mapping_groups": [
+    {
+      "n": 2,
+      "N": 4,
+      "primary_ids_checked": 64,
+      "groups_checked": 64
+    },
+    {
+      "n": 3,
+      "N": 9,
+      "primary_ids_checked": 729,
+      "groups_checked": 324
+    },
+    {
+      "n": 4,
+      "N": 16,
+      "primary_ids_checked": 4096,
+      "groups_checked": 1024
+    },
+    {
+      "n": 5,
+      "N": 25,
+      "primary_ids_checked": 15625,
+      "groups_checked": 2500
+    }
+  ],
+  "amo_counts": [
+    {
+      "encoding": "pairwise",
+      "length": 0,
+      "auxiliary_variables": 0,
+      "amo_clauses": 0
+    },
+    {
+      "encoding": "pairwise",
+      "length": 1,
+      "auxiliary_variables": 0,
+      "amo_clauses": 0
+    },
+    {
+      "encoding": "pairwise",
+      "length": 2,
+      "auxiliary_variables": 0,
+      "amo_clauses": 1
+    },
+    {
+      "encoding": "pairwise",
+      "length": 3,
+      "auxiliary_variables": 0,
+      "amo_clauses": 3
+    },
+    {
+      "encoding": "pairwise",
+      "length": 4,
+      "auxiliary_variables": 0,
+      "amo_clauses": 6
+    },
+    {
+      "encoding": "pairwise",
+      "length": 5,
+      "auxiliary_variables": 0,
+      "amo_clauses": 10
+    },
+    {
+      "encoding": "pairwise",
+      "length": 9,
+      "auxiliary_variables": 0,
+      "amo_clauses": 36
+    },
+    {
+      "encoding": "pairwise",
+      "length": 16,
+      "auxiliary_variables": 0,
+      "amo_clauses": 120
+    },
+    {
+      "encoding": "pairwise",
+      "length": 25,
+      "auxiliary_variables": 0,
+      "amo_clauses": 300
+    },
+    {
+      "encoding": "seqcounter",
+      "length": 0,
+      "auxiliary_variables": 0,
+      "amo_clauses": 0
+    },
+    {
+      "encoding": "seqcounter",
+      "length": 1,
+      "auxiliary_variables": 0,
+      "amo_clauses": 0
+    },
+    {
+      "encoding": "seqcounter",
+      "length": 2,
+      "auxiliary_variables": 0,
+      "amo_clauses": 1
+    },
+    {
+      "encoding": "seqcounter",
+      "length": 3,
+      "auxiliary_variables": 2,
+      "amo_clauses": 5
+    },
+    {
+      "encoding": "seqcounter",
+      "length": 4,
+      "auxiliary_variables": 3,
+      "amo_clauses": 8
+    },
+    {
+      "encoding": "seqcounter",
+      "length": 5,
+      "auxiliary_variables": 4,
+      "amo_clauses": 11
+    },
+    {
+      "encoding": "seqcounter",
+      "length": 9,
+      "auxiliary_variables": 8,
+      "amo_clauses": 23
+    },
+    {
+      "encoding": "seqcounter",
+      "length": 16,
+      "auxiliary_variables": 15,
+      "amo_clauses": 44
+    },
+    {
+      "encoding": "seqcounter",
+      "length": 25,
+      "auxiliary_variables": 24,
+      "amo_clauses": 71
+    },
+    {
+      "encoding": "bitwise",
+      "length": 0,
+      "auxiliary_variables": 0,
+      "amo_clauses": 0
+    },
+    {
+      "encoding": "bitwise",
+      "length": 1,
+      "auxiliary_variables": 0,
+      "amo_clauses": 0
+    },
+    {
+      "encoding": "bitwise",
+      "length": 2,
+      "auxiliary_variables": 0,
+      "amo_clauses": 1
+    },
+    {
+      "encoding": "bitwise",
+      "length": 3,
+      "auxiliary_variables": 2,
+      "amo_clauses": 6
+    },
+    {
+      "encoding": "bitwise",
+      "length": 4,
+      "auxiliary_variables": 2,
+      "amo_clauses": 8
+    },
+    {
+      "encoding": "bitwise",
+      "length": 5,
+      "auxiliary_variables": 3,
+      "amo_clauses": 15
+    },
+    {
+      "encoding": "bitwise",
+      "length": 9,
+      "auxiliary_variables": 4,
+      "amo_clauses": 36
+    },
+    {
+      "encoding": "bitwise",
+      "length": 16,
+      "auxiliary_variables": 4,
+      "amo_clauses": 64
+    },
+    {
+      "encoding": "bitwise",
+      "length": 25,
+      "auxiliary_variables": 5,
+      "amo_clauses": 125
+    }
+  ],
+  "amo_exo_assignment_checks": 360,
+  "cnf_counts": [
+    {
+      "n": 2,
+      "N": 4,
+      "encoding": "pairwise",
+      "primary_variables": 64,
+      "auxiliary_variables": 0,
+      "total_variables": 64,
+      "clauses": 450,
+      "exo_groups": 64,
+      "clues": 2
+    },
+    {
+      "n": 2,
+      "N": 4,
+      "encoding": "seqcounter",
+      "primary_variables": 64,
+      "auxiliary_variables": 192,
+      "total_variables": 256,
+      "clauses": 578,
+      "exo_groups": 64,
+      "clues": 2
+    },
+    {
+      "n": 2,
+      "N": 4,
+      "encoding": "bitwise",
+      "primary_variables": 64,
+      "auxiliary_variables": 128,
+      "total_variables": 192,
+      "clauses": 578,
+      "exo_groups": 64,
+      "clues": 2
+    },
+    {
+      "n": 3,
+      "N": 9,
+      "encoding": "pairwise",
+      "primary_variables": 729,
+      "auxiliary_variables": 0,
+      "total_variables": 729,
+      "clauses": 11990,
+      "exo_groups": 324,
+      "clues": 2
+    },
+    {
+      "n": 3,
+      "N": 9,
+      "encoding": "seqcounter",
+      "primary_variables": 729,
+      "auxiliary_variables": 2592,
+      "total_variables": 3321,
+      "clauses": 7778,
+      "exo_groups": 324,
+      "clues": 2
+    },
+    {
+      "n": 3,
+      "N": 9,
+      "encoding": "bitwise",
+      "primary_variables": 729,
+      "auxiliary_variables": 1296,
+      "total_variables": 2025,
+      "clauses": 11990,
+      "exo_groups": 324,
+      "clues": 2
+    },
+    {
+      "n": 4,
+      "N": 16,
+      "encoding": "pairwise",
+      "primary_variables": 4096,
+      "auxiliary_variables": 0,
+      "total_variables": 4096,
+      "clauses": 123906,
+      "exo_groups": 1024,
+      "clues": 2
+    },
+    {
+      "n": 4,
+      "N": 16,
+      "encoding": "seqcounter",
+      "primary_variables": 4096,
+      "auxiliary_variables": 15360,
+      "total_variables": 19456,
+      "clauses": 46082,
+      "exo_groups": 1024,
+      "clues": 2
+    },
+    {
+      "n": 4,
+      "N": 16,
+      "encoding": "bitwise",
+      "primary_variables": 4096,
+      "auxiliary_variables": 4096,
+      "total_variables": 8192,
+      "clauses": 66562,
+      "exo_groups": 1024,
+      "clues": 2
+    },
+    {
+      "n": 5,
+      "N": 25,
+      "encoding": "pairwise",
+      "primary_variables": 15625,
+      "auxiliary_variables": 0,
+      "total_variables": 15625,
+      "clauses": 752502,
+      "exo_groups": 2500,
+      "clues": 2
+    },
+    {
+      "n": 5,
+      "N": 25,
+      "encoding": "seqcounter",
+      "primary_variables": 15625,
+      "auxiliary_variables": 60000,
+      "total_variables": 75625,
+      "clauses": 180002,
+      "exo_groups": 2500,
+      "clues": 2
+    },
+    {
+      "n": 5,
+      "N": 25,
+      "encoding": "bitwise",
+      "primary_variables": 15625,
+      "auxiliary_variables": 12500,
+      "total_variables": 28125,
+      "clauses": 315002,
+      "exo_groups": 2500,
+      "clues": 2
+    }
+  ],
+  "small_cnf_logic": [
+    {
+      "encoding": "pairwise",
+      "case": "blank",
+      "satisfiable": true
+    },
+    {
+      "encoding": "pairwise",
+      "case": "complete",
+      "satisfiable": true
+    },
+    {
+      "encoding": "pairwise",
+      "case": "row_conflict",
+      "satisfiable": false
+    },
+    {
+      "encoding": "pairwise",
+      "case": "column_conflict",
+      "satisfiable": false
+    },
+    {
+      "encoding": "pairwise",
+      "case": "block_conflict",
+      "satisfiable": false
+    },
+    {
+      "encoding": "seqcounter",
+      "case": "blank",
+      "satisfiable": true
+    },
+    {
+      "encoding": "seqcounter",
+      "case": "complete",
+      "satisfiable": true
+    },
+    {
+      "encoding": "seqcounter",
+      "case": "row_conflict",
+      "satisfiable": false
+    },
+    {
+      "encoding": "seqcounter",
+      "case": "column_conflict",
+      "satisfiable": false
+    },
+    {
+      "encoding": "seqcounter",
+      "case": "block_conflict",
+      "satisfiable": false
+    },
+    {
+      "encoding": "bitwise",
+      "case": "blank",
+      "satisfiable": true
+    },
+    {
+      "encoding": "bitwise",
+      "case": "complete",
+      "satisfiable": true
+    },
+    {
+      "encoding": "bitwise",
+      "case": "row_conflict",
+      "satisfiable": false
+    },
+    {
+      "encoding": "bitwise",
+      "case": "column_conflict",
+      "satisfiable": false
+    },
+    {
+      "encoding": "bitwise",
+      "case": "block_conflict",
+      "satisfiable": false
+    }
+  ],
+  "result": "PASS"
+}

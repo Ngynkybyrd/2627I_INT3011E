@@ -1,0 +1,45 @@
+% VI-003: actual frozen main-20261016-01 configuration.
+\section{\lang{Thiết lập thực nghiệm}{Experimental setup}}
+\label{sec:setup}
+\lang{Đợt chính \texttt{main-20261016-01} đã thực hiện đủ 906 lượt mới với cutoff 10 giây. Dataset, source code, cấu hình và dependency đã khóa; \texttt{run.json} và \texttt{execution-freeze.json} lưu metadata/hash, được đối chiếu với audit analysis final. Các kết quả ở Mục~\ref{sec:results} chỉ thuộc đợt chính này.}{The main batch \texttt{main-20261016-01} completed 906 fresh runs with a 10-second cutoff. Dataset, source code, configuration, and dependencies are frozen; \texttt{run.json} and \texttt{execution-freeze.json} retain metadata/hashes reconciled with the final analysis audit. Results in Section~\ref{sec:results} belong only to this main batch.}
+
+\subsection{\lang{Máy và runtime}{Machine and runtimes}}
+\lang{Các lượt được cấu hình chạy tuần tự trên cùng máy Windows x64, một job tại một thời điểm và một luồng/worker mỗi engine. Bảng~\ref{tab:environment} tách binding khỏi native runtime khi có bằng chứng. Không suy phiên bản native Glucose3 từ PySAT, hoặc HiGHS nhúng SciPy từ highspy.}{Runs are configured sequentially on the same Windows x64 machine, one job at a time and one thread/worker per engine. Table~\ref{tab:environment} distinguishes bindings from native runtimes where evidence exists. The native Glucose3 version is not inferred from PySAT, nor SciPy's embedded HiGHS from highspy.}
+\begin{table}[pos=H]
+\centering
+\caption{\lang{Máy và phiên bản trong metadata đợt chính đã khóa.}{Machine and versions in the frozen main-run metadata.}}
+\label{tab:environment}
+\begin{tabular}{lp{0.68\linewidth}}
+\toprule
+\lang{Thành phần}{Component} & \lang{Giá trị đã ghi}{Recorded value}\\
+\midrule
+OS & Windows 11, 10.0.26300, x64\\
+CPU & AMD Ryzen 7 H 260 w/ Radeon 780M Graphics; 16 logical CPUs\\
+RAM & 33,618,251,776 bytes ($\approx31.31$ GiB)\\
+Python & 3.13.5\\
+SAT & python-sat 1.9.dev16; Glucose3 (\lang{probe không có API version native riêng}{no separate native-version API in the probe})\\
+CP-SAT & OR-Tools 9.15.6755\\
+HiGHS & highspy 1.15.1; native 1.15.1\\
+Gurobi & gurobipy 13.0.3; native 13.0.3\\
+CPLEX MIP & cplex 22.2.0.1; native 22.2.0.0\\
+CP Optimizer & docplex 2.32.264; native 22.2.0.0\\
+\lang{Ma trận sparse}{Sparse matrices} & SciPy 1.18.1\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{\lang{Dữ liệu và tập so sánh}{Data and comparison subsets}}
+\lang{S80 gồm 60 synthetic: bốn kích thước $N=4,9,16,25$, ba mật độ clue mục tiêu 30\%, 50\%, 70\%, mỗi nhóm năm đề; cộng 20 public $9\times9$. Clue count và seed thực dùng nằm trong manifest đã khóa. Public lấy từ một file hard.txt của Sudoku Exchange, commit \texttt{d8c8ebaee0c08c412cfba96af1923dfa61c83317}~\cite{sudoku-exchange-data}; seed lấy mẫu là 20261016, giữ thứ tự mẫu đã lưu.}{S80 comprises 60 synthetic instances: four sizes $N=4,9,16,25$, three target clue densities of 30\%, 50\%, and 70\%, and five instances per group; plus 20 public $9\times9$ instances. Actual clue counts and seeds are in the frozen manifest. Public instances come from one Sudoku Exchange hard.txt file at commit \texttt{d8c8ebaee0c08c412cfba96af1923dfa61c83317}~\cite{sudoku-exchange-data}, sampled with seed 20261016 in the saved sample order.}
+
+\lang{Chọn B16 trước kết quả: trong mỗi nhóm synthetic kích thước--mật độ, sắp theo actual seed rồi instance ID và lấy đề đầu (12 đề), cộng bốn public đầu theo thứ tự mẫu cố định. C10 là phần $4\times4/9\times9$ của B16: ba synthetic mỗi kích thước và cùng bốn public. Có $C10\subset B16\subset S80$. SAT chạy ba encoding trên S80; CP-SAT/HiGHS dùng B16; Gurobi/CPLEX MIP/CP Optimizer dùng C10. Không chạy lại SAT riêng cho các tập con.}{B16 is chosen before results: sort each synthetic size--density group by actual seed and then instance ID and take the first (12 instances), plus the first four public instances in the fixed sample order. C10 is the $4\times4/9\times9$ part of B16: three synthetic instances at each size and the same four public instances. Thus $C10\subset B16\subset S80$. SAT runs three encodings on S80; CP-SAT/HiGHS use B16; Gurobi/CPLEX MIP/CP Optimizer use C10. SAT is not rerun separately for subsets.}
+\lang{Cấu hình chính có ba lần lặp mỗi cặp đề--cấu hình: $720+96+90=906$ lượt, schedule xáo bằng seed 20261016 và lưu trước chạy. Pilot đã thực thi 55 job ở lần lặp thứ nhất để kiểm tích hợp/độ phủ, không phải 906 lượt hoặc ba lần lặp chính. Không dùng tỷ lệ SAT/timeout hay thời gian pilot làm Results chính.}{The main configuration has three repetitions per instance--configuration pair: $720+96+90=906$ runs, with a schedule shuffled using seed 20261016 and saved before execution. The pilot executed 55 jobs at repetition one to check integration/coverage, not 906 runs or three main repetitions. Pilot SAT/timeout rates and timings are not main Results.}
+
+\subsection{\lang{Đo thời gian và bảo vệ tiến trình}{Timing and process safeguards}}
+\lang{Worker import/đọc input trước START. START/END dùng trạng thái chia sẻ đồng bộ và đồng hồ đơn điệu. Từ START, cutoff 10 giây gồm dựng mô hình/CNF, tạo/nạp solver và solve; solve chỉ dùng ngân sách còn lại. END đúng hạn chuyển sang watchdog hậu xử lý riêng. Decode, validation, cleanup và ghi CSV/I/O đầu ra nằm ngoài build+solve. Thiếu hoặc muộn END là TIMEOUT; các thành phần thời gian chưa biết được để thiếu.}{Worker imports/input reading precede START. START/END use synchronized shared state and a monotonic clock. From START, the 10-second cutoff includes model/CNF construction, solver creation/loading, and solving; solving uses only the remaining budget. On-time END switches to a separate postprocessing watchdog. Decoding, validation, cleanup, and CSV/output I/O are outside build+solve. Missing or late END causes TIMEOUT; unknown timing components remain missing.}
+
+\lang{Runner Windows gán worker vào kill-on-close Job Object trước khi cho chạy, dừng process tree khi quá hạn và chờ hết descendants. Startup watchdog là 60 giây trước START; hậu xử lý là 30 giây sau END đúng hạn. Lỗi startup/hậu xử lý/cleanup là ERROR, không trộn với timeout đo. Watchdog không cấp thêm thời gian solve. Hard guard và measurement-end hook đã qua pilot trước khi dùng cho 906 lượt chính mới.}{The Windows runner assigns the worker to a kill-on-close Job Object before releasing execution, terminates the process tree on deadline, and waits for descendants. The startup watchdog is 60 seconds before START; postprocessing has 30 seconds after on-time END. Startup/postprocessing/cleanup failure is ERROR, distinct from measurement timeout. Watchdogs do not extend solve time. The hard guard and measurement-end hook passed the pilot before use in the 906 fresh main runs.}
+
+\lang{CP Optimizer dùng private preload của DOcplex 2.32.264 để tính compile/send/load vào build. Native TimeLimit nhúng trong CPO trước load; sau load, timer abort\_search hợp tác được bổ sung bởi external guard. Không hứa chỉnh chính xác native TimeLimit sau load; nâng DOcplex cần kiểm lại private hook như Mục~\ref{sec:workflow}.}{CP Optimizer uses DOcplex 2.32.264 private preload to charge compile/send/load to build. Native TimeLimit is embedded in CPO before loading; after loading, cooperative abort\_search is backed by the external guard. Exact post-load native TimeLimit changes are not promised; DOcplex upgrades require rechecking the private hook as in Section~\ref{sec:workflow}.}
+
+\subsection{\lang{Quy tắc tổng hợp}{Aggregation rules}}
+\lang{Với mỗi đề--cấu hình đủ ba SAT, lấy median ba lần lặp cho từng thành phần build, solve và total; sau đó lấy median các median theo đề trong đúng nhóm. Ba thành phần được tổng hợp độc lập: ở mức mỗi lượt total bằng build+solve (setup nằm trong build), nhưng hai median nhóm không nhất thiết cộng thành median total. So sánh runtime cặp chỉ dùng ID đủ ba SAT ở cả hai bên, kèm matched count; solved count và timeout vẫn công bố trên toàn tập được chọn. PAR-2 theo lượt là total của SAT và $2\times10=20$ giây cho TIMEOUT; ERROR, INVALID\_INPUT, UNAVAILABLE, LICENSE\_LIMIT bị loại khỏi penalty. Không lấy lượt nhanh nhất, không điền timing thiếu bằng 0.}{For each instance--configuration pair with three SAT runs, take the three-run median separately for build, solve, and total, then take the median of per-instance medians within the specified stratum. Components are aggregated independently: per-run total equals build+solve, with setup included in build, but the two group medians need not sum to the group total median. Paired runtime comparisons use only IDs with three SAT runs on both sides and report matched counts; solved counts and timeouts cover the full selected scope. Per-run PAR-2 uses SAT total or $2\times10=20$ seconds for TIMEOUT; ERROR, INVALID\_INPUT, UNAVAILABLE, and LICENSE\_LIMIT are excluded. The fastest repetition is not selected, and missing timings are not filled with zero.}

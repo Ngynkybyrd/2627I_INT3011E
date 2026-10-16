@@ -1,0 +1,20 @@
+\begin{table}[pos=H]
+\centering
+\small
+\caption{\lang{Độ phủ của 906 lượt chính.}{Coverage of the 906 main runs.}}
+\label{tab:coverage}
+\begin{tabular}{llrrr}
+\toprule
+\lang{Cấu hình}{Configuration} & \lang{Tập}{Scope} & SAT/\lang{lượt}{runs} & \lang{Đề đủ 3 SAT}{Instances with 3 SAT} & TIMEOUT\\
+\midrule
+Glucose3 pairwise & S80 & 240/240 & 80/80 & 0\\
+Glucose3 sequential & S80 & 240/240 & 80/80 & 0\\
+Glucose3 bitwise & S80 & 240/240 & 80/80 & 0\\
+CP-SAT & B16 & 48/48 & 16/16 & 0\\
+HiGHS ILP & B16 & 45/48 & 15/16 & 3\\
+Gurobi MIP & C10 & 30/30 & 10/10 & 0\\
+CPLEX MIP & C10 & 30/30 & 10/10 & 0\\
+CP Optimizer & C10 & 30/30 & 10/10 & 0\\
+\bottomrule
+\end{tabular}
+\end{table}

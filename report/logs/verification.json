@@ -1,0 +1,51 @@
+{
+  "build_id": "20261016-213741-992",
+  "documents": [
+    {
+      "language": "vi",
+      "pages": 10,
+      "a4": true,
+      "expected_text": "PASS",
+      "missing_glyph_or_reference_or_overfull": "none",
+      "generated_six_decimal_metrics_checked": 68,
+      "coverage_counts_checked": 8,
+      "author_metadata_pypdf_pdfium": "Tạ Đình Nguyên",
+      "destination_repository_link_and_unpublished_status": "PASS",
+      "previews": [
+        "output\\preview\\vi-page-1.png",
+        "output\\preview\\vi-page-2.png",
+        "output\\preview\\vi-page-3.png",
+        "output\\preview\\vi-page-4.png",
+        "output\\preview\\vi-page-5.png",
+        "output\\preview\\vi-page-6.png",
+        "output\\preview\\vi-page-7.png",
+        "output\\preview\\vi-page-8.png",
+        "output\\preview\\vi-page-9.png",
+        "output\\preview\\vi-page-10.png"
+      ]
+    },
+    {
+      "language": "en",
+      "pages": 10,
+      "a4": true,
+      "expected_text": "PASS",
+      "missing_glyph_or_reference_or_overfull": "none",
+      "generated_six_decimal_metrics_checked": 68,
+      "coverage_counts_checked": 8,
+      "author_metadata_pypdf_pdfium": "Tạ Đình Nguyên",
+      "destination_repository_link_and_unpublished_status": "PASS",
+      "previews": [
+        "output\\preview\\en-page-1.png",
+        "output\\preview\\en-page-2.png",
+        "output\\preview\\en-page-3.png",
+        "output\\preview\\en-page-4.png",
+        "output\\preview\\en-page-5.png",
+        "output\\preview\\en-page-6.png",
+        "output\\preview\\en-page-7.png",
+        "output\\preview\\en-page-8.png",
+        "output\\preview\\en-page-9.png",
+        "output\\preview\\en-page-10.png"
+      ]
+    }
+  ]
+}

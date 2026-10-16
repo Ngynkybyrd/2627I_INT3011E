@@ -1,0 +1,36 @@
+\usepackage[no-math]{fontspec}
+% TeX Gyre fonts are distributed with the TeX bundle; no system font required.
+\setmainfont{texgyretermes-regular.otf}[
+  BoldFont=texgyretermes-bold.otf,
+  ItalicFont=texgyretermes-italic.otf,
+  BoldItalicFont=texgyretermes-bolditalic.otf]
+\setsansfont{texgyreheros-regular.otf}[
+  BoldFont=texgyreheros-bold.otf,
+  ItalicFont=texgyreheros-italic.otf,
+  BoldItalicFont=texgyreheros-bolditalic.otf]
+% Already cached by the bibliography build; scalable OTF for API identifiers.
+\setmonofont{lmmono8-regular.otf}
+\usepackage{unicode-math}
+\setmathfont{texgyretermes-math.otf}
+\usepackage{tikz}
+\usepackage{float}
+\usepackage[numbers]{natbib}
+% cas-sc 2.4 sets a 192x262 mm stock even with the a4paper option.
+% Enforce the assignment's A4 stock after loading the unmodified class.
+\geometry{a4paper}
+\hypersetup{hypertexnames=false}
+\newcommand{\lang}[2]{\ifVietnamese#1\else#2\fi}
+\input{shared/result-values}
+\renewcommand{\printorcid}{}
+\ExplSyntaxOn
+\cs_set:Npn \__first_footerline:
+  { \small Tạ~Đình~Nguyên\quad INT3301E\_4 }
+\ExplSyntaxOff
+\ifVietnamese
+  \renewcommand{\abstractname}{Tóm tắt}
+  \renewcommand{\refname}{Tài liệu tham khảo}
+  \renewcommand{\figurename}{Hình}
+  \renewcommand{\tablename}{Bảng}
+\fi
+\shorttitle{\lang{Sudoku SAT: ba mã hóa AMO}{Sudoku SAT: three AMO encodings}}
+\shortauthors{Tạ Đình Nguyên}

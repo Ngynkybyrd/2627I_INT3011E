@@ -1,0 +1,26 @@
+[
+  {
+    "Path": "D:\\KHMT\\Project solo\\report\\.tools\\tectonic-curl.zip",
+    "Hash": "F61CE51F0B0ADE1015B7DE7EF368541C5424E9756ECBD0D7AF97D6D48030845F"
+  },
+  {
+    "Path": "D:\\KHMT\\Project solo\\report\\.tools\\tectonic\\tectonic.exe",
+    "Hash": "99FFCFDBF1EBF8BDDA9E791942E3D06AEDB12463FDDC33F07DE6F5211C8BF08D"
+  },
+  {
+    "Path": "D:\\KHMT\\Project solo\\report\\vendor\\els-cas-templates.zip",
+    "Hash": "36D97DA01C6BBD134F315BFF6C3DE553735E2550444A6DDD4F869DDC67A20757"
+  },
+  {
+    "Path": "D:\\KHMT\\Project solo\\report\\vendor\\els-cas-templates\\cas-sc.cls",
+    "Hash": "5030545ED09C770AFA31004817BF8626CA7F311CF795E6C2825ECAE113BB42E9"
+  },
+  {
+    "Path": "D:\\KHMT\\Project solo\\report\\vendor\\els-cas-templates\\cas-common.sty",
+    "Hash": "E95A01F4B33531D01ADE231669FCC1E42F52193DDDCB22EAD5B63240EB952F8F"
+  },
+  {
+    "Path": "D:\\KHMT\\Project solo\\report\\vendor\\els-cas-templates\\cas-model2-names.bst",
+    "Hash": "6F6204EB7670D762042AB363C2D05CF87196052BFBDF6DBEE51A1327A8CE479A"
+  }
+]

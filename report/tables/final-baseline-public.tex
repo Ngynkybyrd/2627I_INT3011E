@@ -1,0 +1,20 @@
+\begin{table}[pos=H]
+\centering
+\small
+\caption{\lang{Bốn public $9\times9$ chung của B16/C10, median total (giây).}{Four common public $9\times9$ instances in B16/C10, median total (seconds).}}
+\label{tab:public}
+\begin{tabular}{llrrr}
+\toprule
+\lang{Backend}{Backend} & \lang{Tập}{Scope} & $m$ & \lang{Backend}{Backend} & Pairwise\\
+\midrule
+CP-SAT & B16 & 4 & 0.006506 & 0.006534\\
+HiGHS ILP & B16 & 4 & 0.004704 & 0.006534\\
+Gurobi MIP & C10 & 4 & 0.008019 & 0.006534\\
+CPLEX MIP & C10 & 4 & 0.004748 & 0.006534\\
+CP Optimizer & C10 & 4 & 0.030911 & 0.006534\\
+\bottomrule
+\end{tabular}
+\par\smallskip\begin{minipage}{0.97\linewidth}\footnotesize
+\lang{Cùng bốn ID L069940, L293964, L269904, L215069 (prefix public-se-hard-). Pairwise là mốc cố định; không chọn encoding nhanh nhất cho từng đối thủ.}{The same four IDs are L069940, L293964, L269904, and L215069 (prefix public-se-hard-). Pairwise is a fixed reference, not the fastest encoding selected separately for each opponent.}
+\end{minipage}
+\end{table}

@@ -1,0 +1,34 @@
+{
+  "job_id": "synthetic-N04-p30-s0__cpoptimizer__none__r1",
+  "instance_id": "synthetic-N04-p30-s0",
+  "solution": [
+    [
+      3,
+      2,
+      1,
+      4
+    ],
+    [
+      1,
+      4,
+      2,
+      3
+    ],
+    [
+      2,
+      3,
+      4,
+      1
+    ],
+    [
+      4,
+      1,
+      3,
+      2
+    ]
+  ],
+  "validation": {
+    "valid": true,
+    "message": null
+  }
+}

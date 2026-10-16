@@ -1,0 +1,7 @@
+{
+  "cutoff_seconds": 10.0,
+  "repetitions": 3,
+  "schedule_seed": 20261016,
+  "startup_seconds": 60.0,
+  "postprocessing_seconds": 30.0
+}

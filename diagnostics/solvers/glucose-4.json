@@ -1,0 +1,39 @@
+{
+  "engine": "glucose",
+  "N": 4,
+  "clues": 1,
+  "variables": 64,
+  "exo_groups": 64,
+  "linear_constraints": 65,
+  "clauses": 449,
+  "raw_status": true,
+  "grid": [
+    [
+      1,
+      2,
+      3,
+      4
+    ],
+    [
+      3,
+      4,
+      1,
+      2
+    ],
+    [
+      2,
+      1,
+      4,
+      3
+    ],
+    [
+      4,
+      3,
+      2,
+      1
+    ]
+  ],
+  "status": "SAT",
+  "validation": "PASS",
+  "diagnostic_seconds": 0.08171709999805898
+}

@@ -1,0 +1,35 @@
+% PAPER-006: accepted model builders, not completed solver adapters.
+\section{\lang{Mô hình CP và ILP đối chứng}{CP and ILP comparison models}}
+\label{sec:baseline-models}
+\lang{Các đối chứng mô tả cùng bài toán: tìm một nghiệm giữ clues, không tối ưu độ khó hoặc chất lượng một bảng Sudoku. Phần này đối chiếu các builder đã nghiệm thu; dựng được mô hình không có nghĩa đã giải thành công hay được giấy phép cho phép ở mọi kích thước.}{The comparison models describe the same task: finding one completion that preserves the clues, not optimizing puzzle difficulty or solution quality. This section describes the accepted builders; successful construction does not establish successful solving or license coverage at every size.}
+
+\subsection{\lang{CP với AllDifferent}{CP with AllDifferent}}
+\lang{Với ký hiệu $I,J,D,G$ đã định nghĩa, đặt một biến nguyên $z_{r,c}\in D$ cho mỗi ô. Ràng buộc là}{Using the previously defined $I,J,D,G$, introduce an integer variable $z_{r,c}\in D$ for each cell and impose}
+\begin{align}
+ &\operatorname{AllDifferent}(z_{r,c}:c\in I), &&r\in I,\\
+ &\operatorname{AllDifferent}(z_{r,c}:r\in I), &&c\in I,\\
+ &\operatorname{AllDifferent}(z_{pn+u,qn+w}:u,w\in J), &&p,q\in J,\\
+ &z_{r,c}=v, &&(r,c,v)\in G.
+\end{align}
+\lang{Vì mỗi đơn vị có $N$ ô nhận giá trị trong miền $N$ phần tử, AllDifferent buộc mỗi giá trị xuất hiện đúng một lần. Có $N^2$ biến nguyên và $3N+g$ ràng buộc cấp mô hình; không coi số này là số clause/biến sau biến đổi nội bộ của solver.}{Each unit has $N$ cells with an $N$-element domain, so AllDifferent forces each value to occur exactly once. There are $N^2$ integer variables and $3N+g$ model-level constraints; these are not clause/variable counts after internal solver transformations.}
+
+\lang{Builder CP-SAT tạo \texttt{CpModel}, một \texttt{CpSolver} mới và đặt một worker~\cite{cp-sat-doc}. Builder CP Optimizer dùng cùng miền, ràng buộc AllDifferent và clues, với \texttt{Workers=1}~\cite{cplex-cp-doc}; executable được kiểm riêng. Các builder chưa thực hiện solve, decode hoặc xác nhận nghiệm trong gói đã bàn giao.}{The CP-SAT builder creates a \texttt{CpModel}, a fresh \texttt{CpSolver}, and sets one worker~\cite{cp-sat-doc}. The CP Optimizer builder uses the same domains, AllDifferent constraints, and clues with \texttt{Workers=1}~\cite{cplex-cp-doc}; its executable is checked separately. The accepted builder package does not itself solve, decode, or validate a solution.}
+
+\subsection{\lang{ILP nhị phân dùng chung}{Common binary ILP}}
+\lang{Đặt $y_{r,c,v}\in\{0,1\}$ cho $r,c\in I$, $v\in D$. Bốn họ đẳng thức và clues là}{Let $y_{r,c,v}\in\{0,1\}$ for $r,c\in I$ and $v\in D$. Use four equality families and the clues:}
+\begin{align}
+ &\sum_{v\in D}y_{r,c,v}=1, &&r,c\in I,\\
+ &\sum_{c\in I}y_{r,c,v}=1, &&r\in I,\ v\in D,\\
+ &\sum_{r\in I}y_{r,c,v}=1, &&c\in I,\ v\in D,\\
+ &\sum_{u,w\in J}y_{pn+u,qn+w,v}=1, &&p,q\in J,\ v\in D,\\
+ &y_{r,c,v}=1, &&(r,c,v)\in G.
+\end{align}
+\lang{Builder xuất ma trận CSR $M$, vector vế phải toàn 1 và objective toàn 0:}{The builder exports a CSR matrix $M$, an all-ones right-hand side, and an all-zero objective:}
+\begin{equation}
+ \min\ \mathbf{0}^{\mathsf T}Y=0
+ \quad\text{subject to}\quad MY=\mathbf{1},\quad
+ 0\leq Y\leq1,\quad Y\in\mathbb{Z}^{N^3}.
+\end{equation}
+\lang{Do mọi nghiệm hợp lệ có cùng objective 0, đây là bài toán khả thi. Không tối thiểu hóa thời gian chạy bằng objective này. Cột zero-based là $\operatorname{id}(r,c,v)-1$. Mô hình có $N^3$ biến nhị phân, $4N^2+g$ hàng đẳng thức và $4N^3+g$ phần tử khác 0, trước mọi preprocessing. Mỗi nhóm EXO/clue tạo một hàng; giữ cả các hàng có thể dư thừa, không giảm miền hoặc pruning riêng theo backend.}{All feasible solutions have objective 0, so this is a feasibility problem. The objective does not minimize execution time. Zero-based columns use $\operatorname{id}(r,c,v)-1$. The model has $N^3$ binary variables, $4N^2+g$ equality rows, and $4N^3+g$ nonzeros before preprocessing. Each EXO group/clue produces one row; potentially redundant rows remain, with no backend-specific domain reduction or pruning.}
+
+\lang{Cùng cấu trúc ILP được dùng cho các adapter Gurobi, CPLEX MIP và HiGHS. Luồng thực thi, thiết lập luồng/ngân sách, trạng thái và checker được mô tả riêng ở Mục~\ref{sec:workflow}; bằng chứng builder không tự chứng minh độ phủ runtime. Về mô hình, liên hệ $y_{r,c,v}=1\iff z_{r,c}=v$ cho cùng tập nghiệm Sudoku như biểu diễn SAT, dù cách solver biểu diễn nội bộ khác nhau.}{The same ILP structure is used by Gurobi, CPLEX MIP, and HiGHS adapters. Execution, thread/budget settings, statuses, and checker integration are described separately in Section~\ref{sec:workflow}; builder evidence alone does not establish runtime coverage. At the model level, $y_{r,c,v}=1\iff z_{r,c}=v$ yields the same Sudoku solutions as the SAT representation, despite different internal solver representations.}

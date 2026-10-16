@@ -1,0 +1,9 @@
+configuration,scope,scope_instances,planned_jobs,selected_jobs,observed_jobs,solved_runs,solved_instances_three
+cplex_mip,C10,10,30,30,30,30,10
+cpoptimizer,C10,10,30,30,30,30,10
+cpsat,B16,16,48,48,48,48,16
+gurobi,C10,10,30,30,30,30,10
+highs,B16,16,48,48,48,45,15
+sat:bitwise,S80,80,240,240,240,240,80
+sat:pairwise,S80,80,240,240,240,240,80
+sat:seqcounter,S80,80,240,240,240,240,80

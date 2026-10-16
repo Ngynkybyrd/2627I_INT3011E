@@ -1,0 +1,194 @@
+[
+  {
+    "path": "../README.md",
+    "sha256": "1e4e7d23b79843a74a825756015255d87d27d6fe244b5890651616f6f477f87e"
+  },
+  {
+    "path": "../docs/submission-info.md",
+    "sha256": "513587ae9d9c2f66729b7ca2893f89ec86c0091b5c64090998a2d9a5cc78840a"
+  },
+  {
+    "path": "bootstrap.ps1",
+    "sha256": "05fe43da58d706e017df36251bd53d896c9ad5d3f760f72692e0fafe795c6686"
+  },
+  {
+    "path": "build.ps1",
+    "sha256": "61e668e7485cc484680fb109ea5927b2403bf4f703fc79c5d22046656eda20b2"
+  },
+  {
+    "path": "check_metadata_closure.py",
+    "sha256": "e19f51a1a2420d2fa11e4968609ebf7fa38780b0df158d26abed762d13db1acf"
+  },
+  {
+    "path": "check_repository_destination.py",
+    "sha256": "b19a1988217d57a9675dacb0646af06f778f754e9664c1e7a0b2afb7e4817cdd"
+  },
+  {
+    "path": "export_final_results.py",
+    "sha256": "4b3f6f8483cb64005b656daf0dcd8eb4d51b74418da6e511ff9ef2ba9f494548"
+  },
+  {
+    "path": "export_model_counts.py",
+    "sha256": "3a4dd6ca63ef461016088ef9f64136b1598aca1a2727078c34ad36080cb1e575"
+  },
+  {
+    "path": "figures\\block-layout.tex",
+    "sha256": "01adc879aed4e022c9fb9c04be6cd533d0266e94ddc0d54d97076267d29c9d3d"
+  },
+  {
+    "path": "figures\\example4.tex",
+    "sha256": "89f3c07175df9717c4648809f30e9de282f8a11482e349cf35c8e4f436c63245"
+  },
+  {
+    "path": "figures\\figure-cnf-size.pdf",
+    "sha256": "1d9e751747bd884a003ba1bd5886da414619391d8410866af8e35ad62f885d87"
+  },
+  {
+    "path": "figures\\figure-runtime.pdf",
+    "sha256": "7f53f10df650092c73afd24fa49712a7943f916e25e130cd7d7c8394f6d32265"
+  },
+  {
+    "path": "main-en.tex",
+    "sha256": "15b58f667437962bba7ab629bbd6970c049e5f3fe4ae03d84c4e639c827f23a7"
+  },
+  {
+    "path": "main-vi.tex",
+    "sha256": "659492baa931dd336b5713bc647ca45c4998721e78a5a5fbe456802bc649da23"
+  },
+  {
+    "path": "reading\\FROZEN-CODE-ATTRIBUTION.md",
+    "sha256": "afd757dfcecb45c0d7cf9b62f8917ec3f2b8e19fd233e6d3d9eab95cf4b7f178"
+  },
+  {
+    "path": "reading\\evidence\\PySAT-installed-LICENSE.txt",
+    "sha256": "e9032f133c6a74f5c4a220195016992de2c5e215b64bcd5f8cacff4c7111d2e4"
+  },
+  {
+    "path": "reading\\evidence\\PySAT-installed-METADATA.txt",
+    "sha256": "3ccbd23121f01007f18bd93d713884d112e4cf6cef811f036016180230531a81"
+  },
+  {
+    "path": "reading\\verify-frozen-references.py",
+    "sha256": "1ca69398e54cfefa446ec68380caa91854f43e71159070bfe264e60e35431111"
+  },
+  {
+    "path": "references-check.tex",
+    "sha256": "d07b47968345d252a0952f500118d6705741543fcf3409fdeb5afa4ede21abcd"
+  },
+  {
+    "path": "references.bib",
+    "sha256": "5369d709a67e8e0fa2db00b85e68d0fe3972d782a9fa3d8bbe363dbde5b9f303"
+  },
+  {
+    "path": "shared\\abstract.tex",
+    "sha256": "c3e5ddc4e11f315d1de8b57ffb706f80e9ccd4dd08dedc48745117c9acf9f906"
+  },
+  {
+    "path": "shared\\baseline-models.tex",
+    "sha256": "c408acccf7998732e8cf8349903511f9b494ce42820a701c00cea04341050dd8"
+  },
+  {
+    "path": "shared\\class-options.tex",
+    "sha256": "8cf1fc73a8910719b5da46ef9419fa172ae126deadd04a2c2b303bca70d52c90"
+  },
+  {
+    "path": "shared\\conclusion.tex",
+    "sha256": "7a9f04fd986f66966c480a3b6d751f83ddb4dc88e386d32eb2e65c3b90df743f"
+  },
+  {
+    "path": "shared\\data-availability.tex",
+    "sha256": "2d547e62e192e774aa5c2eadb82f370df38e046f91cbebfd14f0ddbaef4099ca"
+  },
+  {
+    "path": "shared\\document.tex",
+    "sha256": "7dfeffd9f765211b72c2b9bd68f98a5aec9924e0c0e17e13d59e50d0f6c37927"
+  },
+  {
+    "path": "shared\\experimental-setup.tex",
+    "sha256": "bef004cbfd7a9049531bc5c148bc197ddb96c3608ca2077d64b540e194cef147"
+  },
+  {
+    "path": "shared\\formula.tex",
+    "sha256": "7273a7e22000ee683528c17f353bf4ebef3f66e79814ce8fd212e9162c8b7aa6"
+  },
+  {
+    "path": "shared\\introduction.tex",
+    "sha256": "4b853e1ff61fd6f6da11b223b6a0515be495244c82840a43e209cf75d7cf4d87"
+  },
+  {
+    "path": "shared\\limitations.tex",
+    "sha256": "8b6bae356ea32dc69df290ada3b979128b81b7fa25cf889b4c073b66793b0e52"
+  },
+  {
+    "path": "shared\\model-and-encoding.tex",
+    "sha256": "cf148f1d33d3c538321f8aed77ac6670de52a05f680752700f351c117cc9bfa3"
+  },
+  {
+    "path": "shared\\preamble.tex",
+    "sha256": "d610856872e0f6b78a89b7047c2103cd0ed1e0f62ec54f7116ef88afe93e95a2"
+  },
+  {
+    "path": "shared\\prototype-abstract.tex",
+    "sha256": "b4e5c8e098dfd7719997b95d6d175acfb886135d3079b8398f36c3090d94d9c6"
+  },
+  {
+    "path": "shared\\result-values.tex",
+    "sha256": "841f23243fbb9119d69f9df707faee61123d28fe92a6596e69f5549dade6bda4"
+  },
+  {
+    "path": "shared\\results.tex",
+    "sha256": "bfff3daaa307d017b672d29e52e33a462f80855c4346807b2416aac3f53bba1a"
+  },
+  {
+    "path": "shared\\solver-workflow.tex",
+    "sha256": "4ec9dbc87fbde88082055f941437caab92f0a832f9bd505a49ba6ad48c752939"
+  },
+  {
+    "path": "tables\\cnf-counts.tex",
+    "sha256": "7ab8ee32860fb87102f1245f7f1c98958186e2d920f7f70dbec7186265da34f5"
+  },
+  {
+    "path": "tables\\final-baseline-b16.tex",
+    "sha256": "3a08ea04e82c638c15f5ddbd0b9f0ea17d5ebbc90407f4dfafd25dfdee410437"
+  },
+  {
+    "path": "tables\\final-baseline-c10.tex",
+    "sha256": "62b7499aaab923aec4e76565d678909bcf09235f65b97a14a646fb033dfa16b0"
+  },
+  {
+    "path": "tables\\final-baseline-public.tex",
+    "sha256": "f824f16492e14c1f6f94032f05dd1dd2dad3671e7b6d3f48358fb6638b26decc"
+  },
+  {
+    "path": "tables\\final-build-solve.tex",
+    "sha256": "cf27d2341e889dd30ced8054dc21769239905cfe876e889d82050d83fe29250a"
+  },
+  {
+    "path": "tables\\final-cnf-example.tex",
+    "sha256": "a1ff9b7f8fe0f08be0ed2fcaa8b5c93c1ed3cbb4017885b75611de794b9bec31"
+  },
+  {
+    "path": "tables\\final-coverage.tex",
+    "sha256": "b0b17d3105ab211e170f0889d81ce4c5c7df89e56c63d185558705531874e938"
+  },
+  {
+    "path": "tables\\planned-scope.tex",
+    "sha256": "f6b04790454d1e0cd0fb8e00914e00a821797060f80c4dd3872c8646b555450d"
+  },
+  {
+    "path": "vendor\\els-cas-templates\\cas-common.sty",
+    "sha256": "e95a01f4b33531d01ade231669fcc1e42f52193dddcb22ead5b63240eb952f8f"
+  },
+  {
+    "path": "vendor\\els-cas-templates\\cas-model2-names.bst",
+    "sha256": "6f6204eb7670d762042ab363c2d05cf87196052bfbdf6dbee51a1327a8ce479a"
+  },
+  {
+    "path": "vendor\\els-cas-templates\\cas-sc.cls",
+    "sha256": "5030545ed09c770afa31004817bf8626ca7f311cf795e6c2825ecae113bb42e9"
+  },
+  {
+    "path": "verify_pdf.py",
+    "sha256": "4a0188a9094a8cdc637c863573b8bd4041937aa4c2b0d16bee6cc2cc277a59ad"
+  }
+]

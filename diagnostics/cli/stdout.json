@@ -1,0 +1,48 @@
+{
+  "status": "SAT",
+  "method": "sat",
+  "encoding": "seqcounter",
+  "raw_status": "True",
+  "solution": [
+    [
+      1,
+      2,
+      3,
+      4
+    ],
+    [
+      3,
+      4,
+      1,
+      2
+    ],
+    [
+      2,
+      1,
+      4,
+      3
+    ],
+    [
+      4,
+      3,
+      2,
+      1
+    ]
+  ],
+  "build_seconds": 0.0013919999983045273,
+  "solve_seconds": 7.270000060088933e-05,
+  "total_seconds": 0.0014646999989054166,
+  "stats": {
+    "primary_variables": 64,
+    "auxiliary_variables": 192,
+    "total_variables": 256,
+    "clauses": 584,
+    "exo_groups": 64,
+    "clues": 8
+  },
+  "validation": {
+    "valid": true,
+    "message": null
+  },
+  "error": null
+}

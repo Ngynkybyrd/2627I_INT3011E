@@ -1,0 +1,39 @@
+{
+  "engine": "cpsat",
+  "N": 4,
+  "clues": 1,
+  "variables": 16,
+  "alldifferent_constraints": 12,
+  "constraints": 13,
+  "raw_status": "OPTIMAL",
+  "workers": 1,
+  "grid": [
+    [
+      1,
+      2,
+      3,
+      4
+    ],
+    [
+      4,
+      3,
+      1,
+      2
+    ],
+    [
+      2,
+      1,
+      4,
+      3
+    ],
+    [
+      3,
+      4,
+      2,
+      1
+    ]
+  ],
+  "status": "SAT",
+  "validation": "PASS",
+  "diagnostic_seconds": 3.845814899999823
+}

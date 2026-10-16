@@ -1,0 +1,9 @@
+{
+  "technical_document_closure": "PASS",
+  "provenance_entries": 46,
+  "frozen_sources": 32,
+  "build_id": "20261016-203236-600",
+  "metadata_author": "Tạ Đình Nguyên",
+  "known_blocker": "VI-007/PDF-002: mandatory real repository URL is missing",
+  "suite_evidence": "diagnostics/final-qa/suite.xml: 653 pass; source unchanged"
+}

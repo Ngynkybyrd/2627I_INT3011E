@@ -1,0 +1,12 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "D:\\KHMT\\Project solo\\tmp\\solver-probe\\.venv\\Scripts\\python.exe",
+  "packages": {
+    "gurobipy": "13.0.3",
+    "cplex": "22.2.0.1",
+    "docplex": "2.32.264",
+    "python-sat": "1.9.dev16",
+    "ortools": "9.15.6755",
+    "highspy": "1.15.1"
+  }
+}

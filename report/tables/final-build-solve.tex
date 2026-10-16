@@ -1,0 +1,18 @@
+\begin{table}[pos=H]
+\centering
+\small
+\caption{\lang{Synthetic $25\times25$, 30\% clues: năm ID chung, giây.}{Synthetic $25\times25$, 30\% clues: five common IDs, seconds.}}
+\label{tab:buildsolve}
+\begin{tabular}{lrrr}
+\toprule
+Encoding & Median build & Median solve & Median total\\
+\midrule
+pairwise & 0.381882 & 0.022380 & 0.402449\\
+sequential & 0.130810 & 0.024383 & 0.159527\\
+bitwise & 0.193860 & 0.015416 & 0.210650\\
+\bottomrule
+\end{tabular}
+\par\smallskip\begin{minipage}{0.97\linewidth}\footnotesize
+\lang{Mỗi cột là median của median ba lượt theo đề, tổng hợp độc lập; không cộng hai median nhóm để suy median total.}{Each column is an independently aggregated median of per-instance three-run medians; the group build and solve medians do not sum to the group total median.}
+\end{minipage}
+\end{table}

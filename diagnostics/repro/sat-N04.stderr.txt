@@ -1,0 +1,13 @@
+Status: SAT
+Method: sat
+Encoding: pairwise
+Solution:
+ 3  2 |  1  4
+ 1  4 |  2  3
+------+------
+ 2  3 |  4  1
+ 4  1 |  3  2
+build_seconds: 0.001043
+solve_seconds: 0.000087
+total_seconds: 0.001130
+Raw status: True

@@ -1,0 +1,12 @@
+{
+  "summary_strata_recomputed": 86,
+  "synthetic_cnf_groups_constant_across_seeds": 36,
+  "raw_sha256_after": "aac4cde1fed90857ea81a1575e326049be71a528f27a6a744435b94c42dfdda7",
+  "analyzer_unchanged": true,
+  "findings_sha256": "5ee4550e73b27f614200278eb396ec6f70f53099ac3f37045c5e8bff8b842f9e",
+  "handoff_sha256": "136ce7e6ccdadf5289a5b85b952e04124f9237d9604514987c5b0cc0d0ae45e4",
+  "selected_pngs_visually_checked": [
+    "paper/figure-cnf-size.png",
+    "paper/figure-runtime.png"
+  ]
+}

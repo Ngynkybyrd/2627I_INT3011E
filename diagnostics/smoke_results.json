@@ -1,0 +1,49 @@
+{
+  "timestamp_utc": "2026-10-16T10:52:15.089132+00:00",
+  "python": "3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]",
+  "executable": "D:\\KHMT\\Project solo\\.venv\\Scripts\\python.exe",
+  "prefix": "D:\\KHMT\\Project solo\\.venv",
+  "base_prefix": "C:\\Users\\admin\\AppData\\Local\\Programs\\Python\\Python313",
+  "os": "Windows-11-10.0.26300-SP0",
+  "cpu": "AMD Ryzen 7 H 260 w/ Radeon 780M Graphics",
+  "logical_cpus": 16,
+  "ram_bytes": 33618251776,
+  "utf8_mode": 1,
+  "packages": {
+    "python-sat": "1.9.dev16",
+    "ortools": "9.15.6755",
+    "scipy": "1.18.1",
+    "highspy": "1.15.1",
+    "matplotlib": "3.11.2",
+    "pytest": "9.1.1",
+    "numpy": "2.5.4",
+    "pip": "25.1.1",
+    "setuptools": "84.0.0"
+  },
+  "highspy_engine_version": "1.15.1",
+  "glucose3_engine": "Glucose3 via python-sat; native version API unavailable",
+  "checks": {
+    "glucose3_sat": "PASS",
+    "cp_sat_sat": "OPTIMAL",
+    "scipy_milp_sat": {
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+    },
+    "highspy_sat": {
+      "status": "HighsModelStatus.kOptimal",
+      "threads": 1
+    },
+    "glucose3_unsat": "PASS",
+    "cp_sat_unsat": "INFEASIBLE",
+    "scipy_milp_unsat": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+    },
+    "highspy_unsat": {
+      "status": "HighsModelStatus.kInfeasible",
+      "threads": 1
+    },
+    "utf8_path": "PASS",
+    "matplotlib_png": "PASS"
+  }
+}

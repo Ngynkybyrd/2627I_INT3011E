@@ -1,0 +1,34 @@
+{
+  "job_id": "synthetic-N04-p70-s0__highs__none__r1",
+  "instance_id": "synthetic-N04-p70-s0",
+  "solution": [
+    [
+      3,
+      1,
+      2,
+      4
+    ],
+    [
+      4,
+      2,
+      1,
+      3
+    ],
+    [
+      2,
+      3,
+      4,
+      1
+    ],
+    [
+      1,
+      4,
+      3,
+      2
+    ]
+  ],
+  "validation": {
+    "valid": true,
+    "message": null
+  }
+}

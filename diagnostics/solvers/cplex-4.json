@@ -1,0 +1,40 @@
+{
+  "engine": "cplex",
+  "N": 4,
+  "clues": 1,
+  "variables": 64,
+  "exo_groups": 64,
+  "linear_constraints": 65,
+  "runtime_version": "22.2.0.0",
+  "threads": 1,
+  "raw_status": "integer optimal solution",
+  "grid": [
+    [
+      1,
+      2,
+      3,
+      4
+    ],
+    [
+      3,
+      4,
+      1,
+      2
+    ],
+    [
+      2,
+      1,
+      4,
+      3
+    ],
+    [
+      4,
+      3,
+      2,
+      1
+    ]
+  ],
+  "status": "SAT",
+  "validation": "PASS",
+  "diagnostic_seconds": 0.3426541000008001
+}

@@ -1,0 +1,14 @@
+{
+  "engine": "cplex",
+  "N": 16,
+  "clues": 1,
+  "variables": 4096,
+  "exo_groups": 1024,
+  "linear_constraints": 1025,
+  "runtime_version": "22.2.0.0",
+  "threads": 1,
+  "status": "LICENSE_LIMIT",
+  "error_type": "CplexSolverError",
+  "error": "CPLEX Error  1016: Community Edition. Problem size limits exceeded. Purchase at http://ibm.biz/error1016.",
+  "diagnostic_seconds": 0.31633009999859496
+}

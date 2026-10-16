@@ -1,0 +1,27 @@
+\begin{table}[pos=H]
+\centering
+\small
+\caption{\lang{B16 synthetic: median total trên từng ID chung, giây.}{B16 synthetic: median total on each common ID, seconds.}}
+\label{tab:b16}
+\begin{tabular}{rrrrrr}
+\toprule
+$N$ & \lang{Clues (\%)}{Clues (\%)} & $m_{CP}/m_H$ & CP-SAT & HiGHS & Pairwise\\
+\midrule
+4 & 30 & 1/1 & 0.004866 & 0.001704 & 0.001184\\
+4 & 50 & 1/1 & 0.004223 & 0.001638 & 0.001453\\
+4 & 70 & 1/1 & 0.004099 & 0.001468 & 0.001323\\
+9 & 30 & 1/1 & 0.013557 & 0.012148 & 0.006350\\
+9 & 50 & 1/1 & 0.006484 & 0.004400 & 0.006544\\
+9 & 70 & 1/1 & 0.005491 & 0.004467 & 0.006700\\
+16 & 30 & 1/1 & 0.057879 & 0.047280 & 0.057086\\
+16 & 50 & 1/1 & 0.009205 & 0.021862 & 0.058682\\
+16 & 70 & 1/1 & 0.007168 & 0.022792 & 0.055755\\
+25 & 30 & 1/0 & 0.230552 & -- & 0.394866\\
+25 & 50 & 1/1 & 0.055806 & 0.113672 & 0.382179\\
+25 & 70 & 1/1 & 0.012724 & 0.066873 & 0.383525\\
+\bottomrule
+\end{tabular}
+\par\smallskip\begin{minipage}{0.97\linewidth}\footnotesize
+\lang{$m$ là số ID đủ ba SAT ở cả hai bên. Mỗi hàng chỉ có một ID, khác năm ID/hàng của S80. Dấu --: HiGHS có 3 TIMEOUT ở N25/30\%, không có median SAT.}{Here $m$ counts IDs with three SAT runs in both configurations. Each row has one ID, unlike five IDs per S80 stratum. A dash denotes three HiGHS timeouts at N25/30\%, with no SAT median.}
+\end{minipage}
+\end{table}

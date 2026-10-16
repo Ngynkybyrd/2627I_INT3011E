@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "source": "locked SAT08 final analysis",
+  "no_solver_or_raw_reanalysis": true,
+  "input_sha256": {
+    "results\\summary\\main-20261016-01\\findings.md": "5ee4550e73b27f614200278eb396ec6f70f53099ac3f37045c5e8bff8b842f9e",
+    "results\\summary\\main-20261016-01\\final-checks.json": "85df43c9ee1bcbca632e66a96cf6a70c326357555abd53963c584a295a77c028",
+    "results\\summary\\main-20261016-01\\verification.json": "081078de08c1eb7233fcd96d4924ddf51bfa3207a9d11b977c9ff5a1799c0a39",
+    "results\\summary\\main-20261016-01\\audit.json": "93c4d181e597986f29e0cc0d462e929314b7e0a0040f71e67f778263023aeb90",
+    "results\\summary\\main-20261016-01\\summary.csv": "67330cb68d8c18752799bea8607bbb2f390810373e0ba37d974ebce30e5451e7",
+    "results\\summary\\main-20261016-01\\cnf.csv": "f5f6f09107767253325b408d646f717e402837ede32b9a5a3602d3d41fa0f0ac",
+    "results\\summary\\main-20261016-01\\paper\\coverage.csv": "2167ef97055ad97c2639e0fda1d78a51d0beb636ce3798560c43b9ac4299e7f1",
+    "results\\summary\\main-20261016-01\\paper\\baseline-matched.csv": "b954e97e1c1015f00b0ff22b0dd21b6e954583f7aee5cd1306a802165ddf397b",
+    "results\\summary\\main-20261016-01\\paper\\runtime-matched.csv": "5c29d1d0aa3aa7cec8ef196934f775e3349d047da7eda69282986a5c505357fe",
+    "results\\summary\\main-20261016-01\\paper\\cnf-size.csv": "20a18d36f626121d8d49f3b6be75235d46a9dbf4bf8be483fd43e946d5655d0b",
+    "results\\summary\\main-20261016-01\\paper\\figure-cnf-size.pdf": "1d9e751747bd884a003ba1bd5886da414619391d8410866af8e35ad62f885d87",
+    "results\\summary\\main-20261016-01\\paper\\figure-runtime.pdf": "7f53f10df650092c73afd24fa49712a7943f916e25e130cd7d7c8394f6d32265"
+  },
+  "values": {
+    "PairTotal": "0.402449",
+    "SeqTotal": "0.159527",
+    "BitTotal": "0.210650",
+    "PairSmallTotal": "0.001189",
+    "SeqSmallTotal": "0.001520",
+    "BitSmallTotal": "0.001582",
+    "CpPublicTotal": "0.006506",
+    "HighsPublicTotal": "0.004704",
+    "GurobiPublicTotal": "0.008019",
+    "CplexPublicTotal": "0.004748",
+    "CpoPublicTotal": "0.030911",
+    "PairPublicTotal": "0.006534"
+  },
+  "tables": [
+    "coverage",
+    "build-solve",
+    "cnf-example",
+    "baseline-b16",
+    "baseline-c10",
+    "baseline-public"
+  ],
+  "trace": {
+    "coverage": "paper/coverage.csv; verification.json statuses",
+    "buildsolve": "summary.csv: synthetic, N=25, density=0.300000, sat:pairwise/seqcounter/bitwise",
+    "cnfactual": "cnf.csv: synthetic-N25-p30-s0, all three SAT configurations",
+    "baselines": "paper/baseline-matched.csv; configuration_a, N, source, density; exact ID sets retained upstream",
+    "timeout": "findings.md Timeout and PAR-2; verification.json penalty_each=20 and sum=60"
+  }
+}

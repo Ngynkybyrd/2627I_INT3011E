@@ -1,0 +1,44 @@
+{
+  "engine": "gurobi",
+  "N": 4,
+  "clues": 1,
+  "variables": 64,
+  "exo_groups": 64,
+  "linear_constraints": 65,
+  "runtime_version": [
+    13,
+    0,
+    3
+  ],
+  "threads": 1,
+  "raw_status": 2,
+  "grid": [
+    [
+      1,
+      4,
+      3,
+      2
+    ],
+    [
+      3,
+      2,
+      4,
+      1
+    ],
+    [
+      4,
+      1,
+      2,
+      3
+    ],
+    [
+      2,
+      3,
+      1,
+      4
+    ]
+  ],
+  "status": "SAT",
+  "validation": "PASS",
+  "diagnostic_seconds": 0.2673737000004621
+}

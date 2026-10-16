@@ -1,0 +1,16 @@
+% Internal bibliography integration check; not a paper or submission output.
+\input{shared/class-options}
+\documentclass[a4paper,fleqn]{cas-sc}
+\newif\ifVietnamese
+\Vietnamesefalse
+\input{shared/preamble}
+\begin{document}
+\section*{Bibliography integration check}
+This internal document checks the shared bibliography only. Entries may be
+prepared sources for planned methods, not evidence of implemented backends.
+\nocite{*}
+\sloppy
+\raggedright
+\bibliographystyle{cas-model2-names}
+\bibliography{references}
+\end{document}

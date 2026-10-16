@@ -1,0 +1,48 @@
+{
+  "status": "SAT",
+  "method": "sat",
+  "encoding": "pairwise",
+  "raw_status": "True",
+  "solution": [
+    [
+      3,
+      2,
+      1,
+      4
+    ],
+    [
+      1,
+      4,
+      2,
+      3
+    ],
+    [
+      2,
+      3,
+      4,
+      1
+    ],
+    [
+      4,
+      1,
+      3,
+      2
+    ]
+  ],
+  "build_seconds": 0.0010425000000395812,
+  "solve_seconds": 8.740000339457765e-05,
+  "total_seconds": 0.0011299000034341589,
+  "stats": {
+    "primary_variables": 64,
+    "auxiliary_variables": 0,
+    "total_variables": 64,
+    "clauses": 453,
+    "exo_groups": 64,
+    "clues": 5
+  },
+  "validation": {
+    "valid": true,
+    "message": null
+  },
+  "error": null
+}

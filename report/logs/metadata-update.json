@@ -1,0 +1,10 @@
+{
+  "instructor": "TS. Tô Vân Khánh",
+  "source": "docs/submission-info.md",
+  "source_sha256": "b37ec1a510a55065806cd18e20ea810aececa8d47b499298a0a990b4d3f9c0a9",
+  "measurement_end_hook": "available and accepted",
+  "runner_hard_guard": "not yet accepted",
+  "build_id": "20261016-190359-657",
+  "pdf_text_and_targeted_visual_check": "PASS",
+  "readme_modified": false
+}

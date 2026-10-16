@@ -1,0 +1,13 @@
+{
+  "engine": "cpoptimizer",
+  "N": 25,
+  "clues": 1,
+  "variables": 625,
+  "alldifferent_constraints": 75,
+  "constraints": 76,
+  "executable": "D:\\KHMT\\Project solo\\tmp\\solver-probe\\.venv\\Scripts\\cpoptimizer.exe",
+  "status": "LICENSE_LIMIT",
+  "error_type": "CpoSolverException",
+  "error": "Solver error: Problem size limit exceeded.\nCP Optimizer Community Edition solves problems with search spaces up to 2^1000.\nUnrestricted version options (including academia) at https://ibm.biz/error1016\n",
+  "diagnostic_seconds": 1.1368703000007372
+}

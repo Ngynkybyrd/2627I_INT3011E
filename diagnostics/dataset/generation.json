@@ -1,0 +1,14 @@
+{
+  "frozen": true,
+  "public_sat_validation": "pass_all_20",
+  "note": "Dataset-only freeze; code/benchmark not frozen",
+  "python_version": "3.13.5",
+  "rng": "random.Random(f'{n}:{density_percent}:{actual_seed}')",
+  "clue_rounding": "(density_percent*N*N+50)//100 = floor(ratio*N*N+0.5)",
+  "synthetic_count": 60,
+  "public_count": 20,
+  "synthetic_full_and_masked_witness_checker": "pass_all_60",
+  "duplicate_rejections": [],
+  "public_selection_sha256": "13f6ff47669498070f53a1404ed1f0492b2d740a461401b3605b9d1bd988c96a",
+  "public_normalization_index_sha256": "8f1f236de4e365029fcdfd971fc24472fcb5b980134a380ed396d14480bcbccd"
+}

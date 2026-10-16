@@ -1,0 +1,34 @@
+\ifVietnamese
+Nghiên cứu này biểu diễn Sudoku tổng quát bằng mô hình Boolean ô--giá trị và
+so sánh ba mã hóa At-Most-One: pairwise, sequential counter và bitwise, cùng
+Glucose3. Bộ dữ liệu gồm 60 đề synthetic ở bốn kích thước 4, 9, 16, 25 và ba
+mật độ clue, cộng 20 đề public 9×9. CP-SAT/HiGHS được thử trên tập con 16 đề;
+Gurobi, CPLEX MIP và CP Optimizer trên tập con 10 đề. Với ba lần lặp và cutoff
+10 giây gồm dựng/nạp mô hình và giải, 906 lượt cho 903 nghiệm được checker độc
+lập chấp nhận và ba timeout HiGHS trên cùng một đề. Cả ba mã hóa SAT giải đủ
+80 đề trong mọi lần lặp. Trên năm đề synthetic 25×25, 30\% clues, median total
+của pairwise, sequential và bitwise lần lượt là \PairTotal{}, \SeqTotal{} và \BitTotal{}
+giây; chi phí build lớn hơn solve. Tuy nhiên, thứ tự thay đổi theo kích thước;
+CPLEX MIP thấp hơn pairwise trên bốn đề public chung. Kết quả nhấn mạnh việc
+tính cả chi phí dựng mô hình và so đúng tập giao, không chứng minh một solver
+hoặc mã hóa thắng trên mọi Sudoku. Uniqueness chưa được kiểm và độ phủ đối
+chứng còn nhỏ.
+\else
+This study represents generalized Sudoku with cell--value Boolean variables
+and compares pairwise, sequential-counter, and bitwise At-Most-One encodings
+using the same Glucose3 solver. The dataset contains 60 synthetic instances
+at grid sizes 4, 9, 16, and 25 and three clue densities, plus 20 public 9×9
+instances. CP-SAT/HiGHS are evaluated on a 16-instance subset; Gurobi, CPLEX
+MIP, and CP Optimizer on a 10-instance subset. Three repetitions and a
+10-second cutoff covering model construction/loading and solving produce
+906 runs: 903 independently checked solutions and three HiGHS timeouts on
+one instance. All three SAT encodings solve all 80 instances in every
+repetition. On five synthetic 25×25 instances with 30\% clues, median total
+times for pairwise, sequential, and bitwise are \PairTotal{}, \SeqTotal{}, and
+\BitTotal{} seconds; build costs exceed solving costs. However, rankings change
+with grid size; CPLEX MIP has a lower median than pairwise on four common
+public instances. These results emphasize construction costs and comparisons
+on identical instance sets, without establishing a universally superior
+solver or encoding. Uniqueness remains unverified and baseline coverage is
+limited.
+\fi

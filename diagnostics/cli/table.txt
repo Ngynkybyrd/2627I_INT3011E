@@ -1,0 +1,13 @@
+Status: SAT
+Method: sat
+Encoding: seqcounter
+Solution:
+ 1  2 |  3  4
+ 3  4 |  1  2
+------+------
+ 2  1 |  4  3
+ 4  3 |  2  1
+build_seconds: 0.001392
+solve_seconds: 0.000073
+total_seconds: 0.001465
+Raw status: True

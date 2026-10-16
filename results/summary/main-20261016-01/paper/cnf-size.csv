@@ -1,0 +1,13 @@
+instance_id,configuration,source,N,clue_count,primary_variables,auxiliary_variables,total_variables,clauses
+synthetic-N04-p50-s0,sat:bitwise,synthetic,4,8,64,128,192,584
+synthetic-N04-p50-s0,sat:pairwise,synthetic,4,8,64,0,64,456
+synthetic-N04-p50-s0,sat:seqcounter,synthetic,4,8,64,192,256,584
+synthetic-N09-p50-s0,sat:bitwise,synthetic,9,41,729,1296,2025,12029
+synthetic-N09-p50-s0,sat:pairwise,synthetic,9,41,729,0,729,12029
+synthetic-N09-p50-s0,sat:seqcounter,synthetic,9,41,729,2592,3321,7817
+synthetic-N16-p50-s0,sat:bitwise,synthetic,16,128,4096,4096,8192,66688
+synthetic-N16-p50-s0,sat:pairwise,synthetic,16,128,4096,0,4096,124032
+synthetic-N16-p50-s0,sat:seqcounter,synthetic,16,128,4096,15360,19456,46208
+synthetic-N25-p50-s0,sat:bitwise,synthetic,25,313,15625,12500,28125,315313
+synthetic-N25-p50-s0,sat:pairwise,synthetic,25,313,15625,0,15625,752813
+synthetic-N25-p50-s0,sat:seqcounter,synthetic,25,313,15625,60000,75625,180313

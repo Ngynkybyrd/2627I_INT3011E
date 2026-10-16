@@ -1,0 +1,2573 @@
+{
+  "purpose": "DATA-007 satisfiability verification, not main benchmark",
+  "method": "sat",
+  "encoding": "pairwise",
+  "cutoff_seconds": 10.0,
+  "python_version": "3.13.5",
+  "python_sat_version": "1.9.dev16",
+  "adapter_sha256_at_verification": "b1b36053537349bf9a18be756a2988499c5a463af408665913c181081be2dd8c",
+  "checker_sha256_at_verification": "46f546a1c37fec661663c282ff9056603addd79a89ea7fcd750aca0ca743e45d",
+  "uniqueness_checked": false,
+  "records": [
+    {
+      "instance_id": "public-se-hard-L069940",
+      "input_sha256": "4d3e0a82a3f97108b478afcc6a7c30e751730d1cd236763481054801cc20d842",
+      "result": {
+        "status": "SAT",
+        "method": "sat",
+        "encoding": "pairwise",
+        "raw_status": "True",
+        "solution": [
+          [
+            1,
+            7,
+            5,
+            4,
+            6,
+            3,
+            9,
+            2,
+            8
+          ],
+          [
+            3,
+            8,
+            2,
+            7,
+            9,
+            5,
+            4,
+            6,
+            1
+          ],
+          [
+            4,
+            6,
+            9,
+            2,
+            8,
+            1,
+            5,
+            3,
+            7
+          ],
+          [
+            8,
+            9,
+            7,
+            3,
+            5,
+            2,
+            1,
+            4,
+            6
+          ],
+          [
+            2,
+            4,
+            1,
+            9,
+            7,
+            6,
+            3,
+            8,
+            5
+          ],
+          [
+            6,
+            5,
+            3,
+            1,
+            4,
+            8,
+            2,
+            7,
+            9
+          ],
+          [
+            9,
+            3,
+            8,
+            6,
+            1,
+            4,
+            7,
+            5,
+            2
+          ],
+          [
+            5,
+            1,
+            4,
+            8,
+            2,
+            7,
+            6,
+            9,
+            3
+          ],
+          [
+            7,
+            2,
+            6,
+            5,
+            3,
+            9,
+            8,
+            1,
+            4
+          ]
+        ],
+        "build_seconds": 0.007256600001710467,
+        "solve_seconds": 0.0008985999993456062,
+        "total_seconds": 0.008155200001056073,
+        "stats": {
+          "primary_variables": 729,
+          "auxiliary_variables": 0,
+          "total_variables": 729,
+          "clauses": 12017,
+          "exo_groups": 324,
+          "clues": 29
+        },
+        "validation": {
+          "valid": true,
+          "message": null
+        },
+        "error": null
+      },
+      "witness_sha256": "a1b10a96a4069fe1b68f412c9263dc1817a2fc7fe061af2fc25930714022daa2"
+    },
+    {
+      "instance_id": "public-se-hard-L293964",
+      "input_sha256": "69c7d00e786d64a7d9867ce88b4a90a61c710b024e3002c9df4c18be19d22e90",
+      "result": {
+        "status": "SAT",
+        "method": "sat",
+        "encoding": "pairwise",
+        "raw_status": "True",
+        "solution": [
+          [
+            9,
+            3,
+            6,
+            1,
+            5,
+            8,
+            2,
+            4,
+            7
+          ],
+          [
+            1,
+            4,
+            8,
+            7,
+            9,
+            2,
+            5,
+            6,
+            3
+          ],
+          [
+            5,
+            7,
+            2,
+            4,
+            3,
+            6,
+            1,
+            9,
+            8
+          ],
+          [
+            2,
+            5,
+            4,
+            3,
+            8,
+            9,
+            7,
+            1,
+            6
+          ],
+          [
+            6,
+            8,
+            7,
+            2,
+            1,
+            5,
+            4,
+            3,
+            9
+          ],
+          [
+            3,
+            1,
+            9,
+            6,
+            7,
+            4,
+            8,
+            2,
+            5
+          ],
+          [
+            7,
+            9,
+            1,
+            5,
+            4,
+            3,
+            6,
+            8,
+            2
+          ],
+          [
+            8,
+            2,
+            5,
+            9,
+            6,
+            1,
+            3,
+            7,
+            4
+          ],
+          [
+            4,
+            6,
+            3,
+            8,
+            2,
+            7,
+            9,
+            5,
+            1
+          ]
+        ],
+        "build_seconds": 0.005468999999720836,
+        "solve_seconds": 0.0002455000030749943,
+        "total_seconds": 0.00571450000279583,
+        "stats": {
+          "primary_variables": 729,
+          "auxiliary_variables": 0,
+          "total_variables": 729,
+          "clauses": 12013,
+          "exo_groups": 324,
+          "clues": 25
+        },
+        "validation": {
+          "valid": true,
+          "message": null
+        },
+        "error": null
+      },
+      "witness_sha256": "a058d77422d0ebb8c21b1ff3b1d179db10e46aa902e74a1d15fc859497baec5f"
+    },
+    {
+      "instance_id": "public-se-hard-L269904",
+      "input_sha256": "2ec2a3f3a0d249db2d65cf872ea56e74c603a2eef2722b1ed6c1c88a81427fc4",
+      "result": {
+        "status": "SAT",
+        "method": "sat",
+        "encoding": "pairwise",
+        "raw_status": "True",
+        "solution": [
+          [
+            5,
+            2,
+            4,
+            3,
+            7,
+            8,
+            1,
+            6,
+            9
+          ],
+          [
+            3,
+            9,
+            1,
+            2,
+            6,
+            5,
+            7,
+            4,
+            8
+          ],
+          [
+            6,
+            7,
+            8,
+            4,
+            9,
+            1,
+            5,
+            3,
+            2
+          ],
+          [
+            2,
+            8,
+            6,
+            5,
+            4,
+            7,
+            9,
+            1,
+            3
+          ],
+          [
+            1,
+            3,
+            7,
+            8,
+            2,
+            9,
+            6,
+            5,
+            4
+          ],
+          [
+            9,
+            4,
+            5,
+            1,
+            3,
+            6,
+            2,
+            8,
+            7
+          ],
+          [
+            4,
+            6,
+            9,
+            7,
+            5,
+            3,
+            8,
+            2,
+            1
+          ],
+          [
+            8,
+            5,
+            3,
+            9,
+            1,
+            2,
+            4,
+            7,
+            6
+          ],
+          [
+            7,
+            1,
+            2,
+            6,
+            8,
+            4,
+            3,
+            9,
+            5
+          ]
+        ],
+        "build_seconds": 0.005019500000344124,
+        "solve_seconds": 0.00023489999875891954,
+        "total_seconds": 0.005254399999103043,
+        "stats": {
+          "primary_variables": 729,
+          "auxiliary_variables": 0,
+          "total_variables": 729,
+          "clauses": 12016,
+          "exo_groups": 324,
+          "clues": 28
+        },
+        "validation": {
+          "valid": true,
+          "message": null
+        },
+        "error": null
+      },
+      "witness_sha256": "0ed2cc9933ea3c4dacdb915df22789d3c171d58dfaa100f449f6f1247cf8ed1d"
+    },
+    {
+      "instance_id": "public-se-hard-L215069",
+      "input_sha256": "4072533e8145d775edfcd91add5ec5ac96e6bacace672400ad4f0419f68b47a4",
+      "result": {
+        "status": "SAT",
+        "method": "sat",
+        "encoding": "pairwise",
+        "raw_status": "True",
+        "solution": [
+          [
+            7,
+            8,
+            2,
+            3,
+            9,
+            1,
+            5,
+            6,
+            4
+          ],
+          [
+            9,
+            3,
+            6,
+            5,
+            7,
+            4,
+            1,
+            2,
+            8
+          ],
+          [
+            5,
+            4,
+            1,
+            8,
+            6,
+            2,
+            9,
+            3,
+            7
+          ],
+          [
+            4,
+            2,
+            9,
+            6,
+            8,
+            3,
+            7,
+            1,
+            5
+          ],
+          [
+            1,
+            5,
+            7,
+            2,
+            4,
+            9,
+            6,
+            8,
+            3
+          ],
+          [
+            8,
+            6,
+            3,
+            1,
+            5,
+            7,
+            4,
+            9,
+            2
+          ],
+          [
+            6,
+            9,
+            5,
+            7,
+            2,
+            8,
+            3,
+            4,
+            1
+          ],
+          [
+            3,
+            7,
+            8,
+            4,
+            1,
+            6,
+            2,
+            5,
+            9
+          ],
+          [
+            2,
+            1,
+            4,
+            9,
+            3,
+            5,
+            8,
+            7,
+            6
+          ]
+        ],
+        "build_seconds": 0.005134999999427237,
+        "solve_seconds": 0.0002587000017229002,
+        "total_seconds": 0.005393700001150137,
+        "stats": {
+          "primary_variables": 729,
+          "auxiliary_variables": 0,
+          "total_variables": 729,
+          "clauses": 12016,
+          "exo_groups": 324,
+          "clues": 28
+        },
+        "validation": {
+          "valid": true,
+          "message": null
+        },
+        "error": null
+      },
+      "witness_sha256": "a3cb0a49a03f82beec891021e4fbe715ddcb0538a33c99bc0e7241315a2951b2"
+    },
+    {
+      "instance_id": "public-se-hard-L287183",
+      "input_sha256": "03dc7494c1c662053d2503b04e46b4c85adcbf8f2bb7daade3e979cce31d6299",
+      "result": {
+        "status": "SAT",
+        "method": "sat",
+        "encoding": "pairwise",
+        "raw_status": "True",
+        "solution": [
+          [
+            9,
+            5,
+            2,
+            6,
+            1,
+            4,
+            3,
+            8,
+            7
+          ],
+          [
+            3,
+            7,
+            6,
+            9,
+            8,
+            2,
+            4,
+            5,
+            1
+          ],
+          [
+            8,
+            4,
+            1,
+            5,
+            3,
+            7,
+            9,
+            2,
+            6
+          ],
+          [
+            2,
+            3,
+            9,
+            7,
+            5,
+            6,
+            1,
+            4,
+            8
+          ],
+          [
+            6,
+            8,
+            4,
+            2,
+            9,
+            1,
+            5,
+            7,
+            3
+          ],
+          [
+            7,
+            1,
+            5,
+            8,
+            4,
+            3,
+            2,
+            6,
+            9
+          ],
+          [
+            1,
+            2,
+            8,
+            4,
+            7,
+            9,
+            6,
+            3,
+            5
+          ],
+          [
+            5,
+            6,
+            3,
+            1,
+            2,
+            8,
+            7,
+            9,
+            4
+          ],
+          [
+            4,
+            9,
+            7,
+            3,
+            6,
+            5,
+            8,
+            1,
+            2
+          ]
+        ],
+        "build_seconds": 0.004922799998894334,
+        "solve_seconds": 0.000247500000114087,
+        "total_seconds": 0.005170299999008421,
+        "stats": {
+          "primary_variables": 729,
+          "auxiliary_variables": 0,
+          "total_variables": 729,
+          "clauses": 12014,
+          "exo_groups": 324,
+          "clues": 26
+        },
+        "validation": {
+          "valid": true,
+          "message": null
+        },
+        "error": null
+      },
+      "witness_sha256": "5eb22391506dd3ebeeb61f36e0756b8dca1fdaab57b69e6c31ddd9897cc8a432"
+    },
+    {
+      "instance_id": "public-se-hard-L155430",
+      "input_sha256": "f15dc51eb0bad8f7dd52896dcb25e9e74981061100a3621fb95c017155a790d0",
+      "result": {
+        "status": "SAT",
+        "method": "sat",
+        "encoding": "pairwise",
+        "raw_status": "True",
+        "solution": [
+          [
+            1,
+            8,
+            9,
+            3,
+            6,
+            2,
+            7,
+            4,
+            5
+          ],
+          [
+            4,
+            7,
+            2,
+            9,
+            1,
+            5,
+            3,
+            8,
+            6
+          ],
+          [
+            5,
+            6,
+            3,
+            8,
+            7,
+            4,
+            9,
+            2,
+            1
+          ],
+          [
+            2,
+            5,
+            7,
+            6,
+            4,
+            8,
+            1,
+            9,
+            3
+          ],
+          [
+            9,
+            4,
+            8,
+            5,
+            3,
+            1,
+            2,
+            6,
+            7
+          ],
+          [
+            3,
+            1,
+            6,
+            7,
+            2,
+            9,
+            8,
+            5,
+            4
+          ],
+          [
+            7,
+            2,
+            5,
+            1,
+            9,
+            6,
+            4,
+            3,
+            8
+          ],
+          [
+            6,
+            9,
+            1,
+            4,
+            8,
+            3,
+            5,
+            7,
+            2
+          ],
+          [
+            8,
+            3,
+            4,
+            2,
+            5,
+            7,
+            6,
+            1,
+            9
+          ]
+        ],
+        "build_seconds": 0.005311100001563318,
+        "solve_seconds": 0.0003386999997019302,
+        "total_seconds": 0.005649800001265248,
+        "stats": {
+          "primary_variables": 729,
+          "auxiliary_variables": 0,
+          "total_variables": 729,
+          "clauses": 12016,
+          "exo_groups": 324,
+          "clues": 28
+        },
+        "validation": {
+          "valid": true,
+          "message": null
+        },
+        "error": null
+      },
+      "witness_sha256": "e981ec5c5656b8362e4783b392a980090e6724163b3f6e7055155de3be1da422"
+    },
+    {
+      "instance_id": "public-se-hard-L232809",
+      "input_sha256": "1435c69967f6f687d7f856575a1408150dfc048f5b15e7d5aa709984eccc76b5",
+      "result": {
+        "status": "SAT",
+        "method": "sat",
+        "encoding": "pairwise",
+        "raw_status": "True",
+        "solution": [
+          [
+            4,
+            2,
+            3,
+            1,
+            8,
+            9,
+            5,
+            7,
+            6
+          ],
+          [
+            8,
+            5,
+            7,
+            2,
+            6,
+            3,
+            4,
+            9,
+            1
+          ],
+          [
+            1,
+            9,
+            6,
+            7,
+            5,
+            4,
+            8,
+            2,
+            3
+          ],
+          [
+            7,
+            6,
+            2,
+            4,
+            3,
+            1,
+            9,
+            5,
+            8
+          ],
+          [
+            9,
+            3,
+            4,
+            8,
+            7,
+            5,
+            1,
+            6,
+            2
+          ],
+          [
+            5,
+            1,
+            8,
+            9,
+            2,
+            6,
+            3,
+            4,
+            7
+          ],
+          [
+            3,
+            4,
+            9,
+            6,
+            1,
+            2,
+            7,
+            8,
+            5
+          ],
+          [
+            2,
+            7,
+            1,
+            5,
+            9,
+            8,
+            6,
+            3,
+            4
+          ],
+          [
+            6,
+            8,
+            5,
+            3,
+            4,
+            7,
+            2,
+            1,
+            9
+          ]
+        ],
+        "build_seconds": 0.004936900000757305,
+        "solve_seconds": 0.00036610000097425655,
+        "total_seconds": 0.0053030000017315615,
+        "stats": {
+          "primary_variables": 729,
+          "auxiliary_variables": 0,
+          "total_variables": 729,
+          "clauses": 12017,
+          "exo_groups": 324,
+          "clues": 29
+        },
+        "validation": {
+          "valid": true,
+          "message": null
+        },
+        "error": null
+      },
+      "witness_sha256": "6f933cb0a920a7b4268f29fb9382aa63cb7c2848e24723f3f74edaee2316cd8c"
+    },
+    {
+      "instance_id": "public-se-hard-L091326",
+      "input_sha256": "155e396719e2d5ddfacc4123f4d214c73bc7df94ef831d4d3d6032bdb38801ef",
+      "result": {
+        "status": "SAT",
+        "method": "sat",
+        "encoding": "pairwise",
+        "raw_status": "True",
+        "solution": [
+          [
+            6,
+            1,
+            7,
+            4,
+            3,
+            5,
+            8,
+            9,
+            2
+          ],
+          [
+            8,
+            9,
+            5,
+            2,
+            6,
+            7,
+            4,
+            3,
+            1
+          ],
+          [
+            2,
+            3,
+            4,
+            9,
+            8,
+            1,
+            5,
+            6,
+            7
+          ],
+          [
+            4,
+            7,
+            9,
+            5,
+            1,
+            3,
+            2,
+            8,
+            6
+          ],
+          [
+            5,
+            6,
+            8,
+            7,
+            2,
+            4,
+            3,
+            1,
+            9
+          ],
+          [
+            3,
+            2,
+            1,
+            6,
+            9,
+            8,
+            7,
+            5,
+            4
+          ],
+          [
+            9,
+            5,
+            6,
+            8,
+            7,
+            2,
+            1,
+            4,
+            3
+          ],
+          [
+            1,
+            8,
+            2,
+            3,
+            4,
+            9,
+            6,
+            7,
+            5
+          ],
+          [
+            7,
+            4,
+            3,
+            1,
+            5,
+            6,
+            9,
+            2,
+            8
+          ]
+        ],
+        "build_seconds": 0.0066242000029888,
+        "solve_seconds": 0.0008232000000134576,
+        "total_seconds": 0.007447400003002258,
+        "stats": {
+          "primary_variables": 729,
+          "auxiliary_variables": 0,
+          "total_variables": 729,
+          "clauses": 12020,
+          "exo_groups": 324,
+          "clues": 32
+        },
+        "validation": {
+          "valid": true,
+          "message": null
+        },
+        "error": null
+      },
+      "witness_sha256": "42bcf6315872fbf95c69ea36b936d6171b45a08b78df916b9f0deab21400429b"
+    },
+    {
+      "instance_id": "public-se-hard-L051662",
+      "input_sha256": "88bea37c3ed071ca127249b5f1d1d07cc446fe83473ee659f1b93f78d5377aa5",
+      "result": {
+        "status": "SAT",
+        "method": "sat",
+        "encoding": "pairwise",
+        "raw_status": "True",
+        "solution": [
+          [
+            7,
+            5,
+            6,
+            3,
+            4,
+            9,
+            8,
+            1,
+            2
+          ],
+          [
+            9,
+            1,
+            2,
+            6,
+            7,
+            8,
+            5,
+            4,
+            3
+          ],
+          [
+            3,
+            8,
+            4,
+            2,
+            5,
+            1,
+            7,
+            6,
+            9
+          ],
+          [
+            6,
+            4,
+            9,
+            7,
+            8,
+            2,
+            1,
+            3,
+            5
+          ],
+          [
+            5,
+            7,
+            3,
+            1,
+            9,
+            6,
+            4,
+            2,
+            8
+          ],
+          [
+            1,
+            2,
+            8,
+            5,
+            3,
+            4,
+            6,
+            9,
+            7
+          ],
+          [
+            4,
+            9,
+            5,
+            8,
+            1,
+            3,
+            2,
+            7,
+            6
+          ],
+          [
+            2,
+            3,
+            7,
+            4,
+            6,
+            5,
+            9,
+            8,
+            1
+          ],
+          [
+            8,
+            6,
+            1,
+            9,
+            2,
+            7,
+            3,
+            5,
+            4
+          ]
+        ],
+        "build_seconds": 0.005460099997435464,
+        "solve_seconds": 0.0002535999992687721,
+        "total_seconds": 0.005713699996704236,
+        "stats": {
+          "primary_variables": 729,
+          "auxiliary_variables": 0,
+          "total_variables": 729,
+          "clauses": 12017,
+          "exo_groups": 324,
+          "clues": 29
+        },
+        "validation": {
+          "valid": true,
+          "message": null
+        },
+        "error": null
+      },
+      "witness_sha256": "c1126ec09ff5405e92348a6864f6e8b5a2638bef828a05548f3ae7ee872005f9"
+    },
+    {
+      "instance_id": "public-se-hard-L307500",
+      "input_sha256": "438f8282531ef0b8ff65bf0b6512a8818d02a03fbcbd7cd2da5bb4d603fb8ba0",
+      "result": {
+        "status": "SAT",
+        "method": "sat",
+        "encoding": "pairwise",
+        "raw_status": "True",
+        "solution": [
+          [
+            4,
+            7,
+            6,
+            9,
+            2,
+            8,
+            3,
+            5,
+            1
+          ],
+          [
+            3,
+            8,
+            2,
+            4,
+            1,
+            5,
+            9,
+            6,
+            7
+          ],
+          [
+            5,
+            9,
+            1,
+            7,
+            3,
+            6,
+            2,
+            8,
+            4
+          ],
+          [
+            1,
+            3,
+            9,
+            5,
+            6,
+            2,
+            4,
+            7,
+            8
+          ],
+          [
+            7,
+            5,
+            8,
+            3,
+            4,
+            9,
+            6,
+            1,
+            2
+          ],
+          [
+            6,
+            2,
+            4,
+            1,
+            8,
+            7,
+            5,
+            9,
+            3
+          ],
+          [
+            9,
+            6,
+            3,
+            2,
+            7,
+            1,
+            8,
+            4,
+            5
+          ],
+          [
+            2,
+            1,
+            5,
+            8,
+            9,
+            4,
+            7,
+            3,
+            6
+          ],
+          [
+            8,
+            4,
+            7,
+            6,
+            5,
+            3,
+            1,
+            2,
+            9
+          ]
+        ],
+        "build_seconds": 0.0056244000006699935,
+        "solve_seconds": 0.0002870999996957835,
+        "total_seconds": 0.005911500000365777,
+        "stats": {
+          "primary_variables": 729,
+          "auxiliary_variables": 0,
+          "total_variables": 729,
+          "clauses": 12015,
+          "exo_groups": 324,
+          "clues": 27
+        },
+        "validation": {
+          "valid": true,
+          "message": null
+        },
+        "error": null
+      },
+      "witness_sha256": "fb3d48f640b1687bb01467fc6e03e37b2fed40cbe7137868be17b7543264b37c"
+    },
+    {
+      "instance_id": "public-se-hard-L275967",
+      "input_sha256": "e16c9fa7400c5dcdaaa3e0544e7314051056ee6f408753f726be1e28826d79e2",
+      "result": {
+        "status": "SAT",
+        "method": "sat",
+        "encoding": "pairwise",
+        "raw_status": "True",
+        "solution": [
+          [
+            9,
+            6,
+            4,
+            7,
+            1,
+            5,
+            3,
+            2,
+            8
+          ],
+          [
+            7,
+            1,
+            8,
+            3,
+            4,
+            2,
+            9,
+            6,
+            5
+          ],
+          [
+            5,
+            3,
+            2,
+            8,
+            6,
+            9,
+            1,
+            7,
+            4
+          ],
+          [
+            8,
+            4,
+            1,
+            6,
+            7,
+            3,
+            5,
+            9,
+            2
+          ],
+          [
+            6,
+            5,
+            9,
+            2,
+            8,
+            1,
+            7,
+            4,
+            3
+          ],
+          [
+            2,
+            7,
+            3,
+            9,
+            5,
+            4,
+            6,
+            8,
+            1
+          ],
+          [
+            1,
+            8,
+            7,
+            5,
+            2,
+            6,
+            4,
+            3,
+            9
+          ],
+          [
+            3,
+            2,
+            5,
+            4,
+            9,
+            7,
+            8,
+            1,
+            6
+          ],
+          [
+            4,
+            9,
+            6,
+            1,
+            3,
+            8,
+            2,
+            5,
+            7
+          ]
+        ],
+        "build_seconds": 0.005539899997529574,
+        "solve_seconds": 0.0009637000002840068,
+        "total_seconds": 0.0065035999978135806,
+        "stats": {
+          "primary_variables": 729,
+          "auxiliary_variables": 0,
+          "total_variables": 729,
+          "clauses": 12016,
+          "exo_groups": 324,
+          "clues": 28
+        },
+        "validation": {
+          "valid": true,
+          "message": null
+        },
+        "error": null
+      },
+      "witness_sha256": "f82ba878da910dcce26cb52985b343d7de543ddbd17fd443013d27a6823f52bc"
+    },
+    {
+      "instance_id": "public-se-hard-L120921",
+      "input_sha256": "8aafb0c22a210a734bf065ab3832b51d1dc5b5a69baf823c5650952f05bead81",
+      "result": {
+        "status": "SAT",
+        "method": "sat",
+        "encoding": "pairwise",
+        "raw_status": "True",
+        "solution": [
+          [
+            6,
+            8,
+            3,
+            4,
+            2,
+            5,
+            9,
+            1,
+            7
+          ],
+          [
+            1,
+            4,
+            2,
+            8,
+            7,
+            9,
+            5,
+            6,
+            3
+          ],
+          [
+            5,
+            7,
+            9,
+            3,
+            6,
+            1,
+            2,
+            8,
+            4
+          ],
+          [
+            4,
+            6,
+            8,
+            5,
+            9,
+            3,
+            7,
+            2,
+            1
+          ],
+          [
+            3,
+            5,
+            7,
+            2,
+            1,
+            8,
+            4,
+            9,
+            6
+          ],
+          [
+            2,
+            9,
+            1,
+            6,
+            4,
+            7,
+            3,
+            5,
+            8
+          ],
+          [
+            7,
+            3,
+            6,
+            1,
+            5,
+            2,
+            8,
+            4,
+            9
+          ],
+          [
+            9,
+            2,
+            4,
+            7,
+            8,
+            6,
+            1,
+            3,
+            5
+          ],
+          [
+            8,
+            1,
+            5,
+            9,
+            3,
+            4,
+            6,
+            7,
+            2
+          ]
+        ],
+        "build_seconds": 0.005566399999224814,
+        "solve_seconds": 0.00039180000021588057,
+        "total_seconds": 0.005958199999440694,
+        "stats": {
+          "primary_variables": 729,
+          "auxiliary_variables": 0,
+          "total_variables": 729,
+          "clauses": 12020,
+          "exo_groups": 324,
+          "clues": 32
+        },
+        "validation": {
+          "valid": true,
+          "message": null
+        },
+        "error": null
+      },
+      "witness_sha256": "d08315e9e9010c49dedc5ae18649eacac642e4a1cee9fd549b6baf9d33a1f0c0"
+    },
+    {
+      "instance_id": "public-se-hard-L277959",
+      "input_sha256": "213fb6366072807ac4fd198e257cdbd8e3637f62252385f2b42cc280aad97c82",
+      "result": {
+        "status": "SAT",
+        "method": "sat",
+        "encoding": "pairwise",
+        "raw_status": "True",
+        "solution": [
+          [
+            7,
+            1,
+            2,
+            4,
+            9,
+            6,
+            5,
+            3,
+            8
+          ],
+          [
+            6,
+            3,
+            4,
+            7,
+            5,
+            8,
+            9,
+            2,
+            1
+          ],
+          [
+            5,
+            8,
+            9,
+            2,
+            1,
+            3,
+            6,
+            7,
+            4
+          ],
+          [
+            8,
+            4,
+            5,
+            1,
+            2,
+            9,
+            3,
+            6,
+            7
+          ],
+          [
+            3,
+            2,
+            7,
+            8,
+            6,
+            5,
+            4,
+            1,
+            9
+          ],
+          [
+            9,
+            6,
+            1,
+            3,
+            7,
+            4,
+            8,
+            5,
+            2
+          ],
+          [
+            1,
+            9,
+            3,
+            5,
+            4,
+            7,
+            2,
+            8,
+            6
+          ],
+          [
+            4,
+            7,
+            8,
+            6,
+            3,
+            2,
+            1,
+            9,
+            5
+          ],
+          [
+            2,
+            5,
+            6,
+            9,
+            8,
+            1,
+            7,
+            4,
+            3
+          ]
+        ],
+        "build_seconds": 0.00518000000010943,
+        "solve_seconds": 0.00029999999969732016,
+        "total_seconds": 0.0054799999998067506,
+        "stats": {
+          "primary_variables": 729,
+          "auxiliary_variables": 0,
+          "total_variables": 729,
+          "clauses": 12014,
+          "exo_groups": 324,
+          "clues": 26
+        },
+        "validation": {
+          "valid": true,
+          "message": null
+        },
+        "error": null
+      },
+      "witness_sha256": "e164edb4be4547b5e75a44de3f5ab5727214656edebf4101f1a89f91f731bccf"
+    },
+    {
+      "instance_id": "public-se-hard-L141105",
+      "input_sha256": "112d8e1a84b932f5a7720afbc308d18fa9d3a55b14788093444960f9749657d6",
+      "result": {
+        "status": "SAT",
+        "method": "sat",
+        "encoding": "pairwise",
+        "raw_status": "True",
+        "solution": [
+          [
+            7,
+            8,
+            4,
+            2,
+            3,
+            6,
+            1,
+            5,
+            9
+          ],
+          [
+            5,
+            2,
+            9,
+            1,
+            8,
+            7,
+            4,
+            6,
+            3
+          ],
+          [
+            6,
+            3,
+            1,
+            4,
+            9,
+            5,
+            8,
+            7,
+            2
+          ],
+          [
+            3,
+            9,
+            6,
+            5,
+            7,
+            8,
+            2,
+            4,
+            1
+          ],
+          [
+            1,
+            5,
+            2,
+            6,
+            4,
+            9,
+            3,
+            8,
+            7
+          ],
+          [
+            8,
+            4,
+            7,
+            3,
+            2,
+            1,
+            5,
+            9,
+            6
+          ],
+          [
+            2,
+            1,
+            5,
+            7,
+            6,
+            4,
+            9,
+            3,
+            8
+          ],
+          [
+            9,
+            6,
+            3,
+            8,
+            5,
+            2,
+            7,
+            1,
+            4
+          ],
+          [
+            4,
+            7,
+            8,
+            9,
+            1,
+            3,
+            6,
+            2,
+            5
+          ]
+        ],
+        "build_seconds": 0.005266600001050392,
+        "solve_seconds": 0.00030669999978272244,
+        "total_seconds": 0.005573300000833115,
+        "stats": {
+          "primary_variables": 729,
+          "auxiliary_variables": 0,
+          "total_variables": 729,
+          "clauses": 12016,
+          "exo_groups": 324,
+          "clues": 28
+        },
+        "validation": {
+          "valid": true,
+          "message": null
+        },
+        "error": null
+      },
+      "witness_sha256": "a6b5477543dcc270b09171ec769ec56cbaf95ab952ec7de90f98423d5e53ddbf"
+    },
+    {
+      "instance_id": "public-se-hard-L027825",
+      "input_sha256": "286e997e6abe005ae8cb19fcf2fa909227766aaf0851235fac879fada4908846",
+      "result": {
+        "status": "SAT",
+        "method": "sat",
+        "encoding": "pairwise",
+        "raw_status": "True",
+        "solution": [
+          [
+            4,
+            1,
+            5,
+            3,
+            2,
+            9,
+            6,
+            7,
+            8
+          ],
+          [
+            2,
+            9,
+            3,
+            8,
+            7,
+            6,
+            4,
+            5,
+            1
+          ],
+          [
+            7,
+            8,
+            6,
+            1,
+            5,
+            4,
+            3,
+            2,
+            9
+          ],
+          [
+            9,
+            2,
+            7,
+            4,
+            1,
+            5,
+            8,
+            3,
+            6
+          ],
+          [
+            8,
+            5,
+            1,
+            6,
+            9,
+            3,
+            7,
+            4,
+            2
+          ],
+          [
+            6,
+            3,
+            4,
+            2,
+            8,
+            7,
+            1,
+            9,
+            5
+          ],
+          [
+            5,
+            7,
+            8,
+            9,
+            3,
+            1,
+            2,
+            6,
+            4
+          ],
+          [
+            3,
+            6,
+            2,
+            5,
+            4,
+            8,
+            9,
+            1,
+            7
+          ],
+          [
+            1,
+            4,
+            9,
+            7,
+            6,
+            2,
+            5,
+            8,
+            3
+          ]
+        ],
+        "build_seconds": 0.005150900000444381,
+        "solve_seconds": 0.0007048000006761868,
+        "total_seconds": 0.005855700001120567,
+        "stats": {
+          "primary_variables": 729,
+          "auxiliary_variables": 0,
+          "total_variables": 729,
+          "clauses": 12014,
+          "exo_groups": 324,
+          "clues": 26
+        },
+        "validation": {
+          "valid": true,
+          "message": null
+        },
+        "error": null
+      },
+      "witness_sha256": "bc33a935284ba1013e88f9275a09da0f8ef41fa0de0c6739e09b052444f0f0bd"
+    },
+    {
+      "instance_id": "public-se-hard-L087170",
+      "input_sha256": "49bc48ec0a060113beccaf5474e83c736c0ea67456aa0d3230d062781ad53542",
+      "result": {
+        "status": "SAT",
+        "method": "sat",
+        "encoding": "pairwise",
+        "raw_status": "True",
+        "solution": [
+          [
+            3,
+            8,
+            2,
+            7,
+            5,
+            1,
+            6,
+            9,
+            4
+          ],
+          [
+            5,
+            4,
+            1,
+            6,
+            9,
+            3,
+            7,
+            2,
+            8
+          ],
+          [
+            9,
+            7,
+            6,
+            4,
+            8,
+            2,
+            3,
+            5,
+            1
+          ],
+          [
+            8,
+            1,
+            9,
+            2,
+            7,
+            6,
+            4,
+            3,
+            5
+          ],
+          [
+            2,
+            6,
+            5,
+            3,
+            4,
+            8,
+            9,
+            1,
+            7
+          ],
+          [
+            7,
+            3,
+            4,
+            9,
+            1,
+            5,
+            2,
+            8,
+            6
+          ],
+          [
+            4,
+            5,
+            3,
+            1,
+            2,
+            7,
+            8,
+            6,
+            9
+          ],
+          [
+            6,
+            9,
+            8,
+            5,
+            3,
+            4,
+            1,
+            7,
+            2
+          ],
+          [
+            1,
+            2,
+            7,
+            8,
+            6,
+            9,
+            5,
+            4,
+            3
+          ]
+        ],
+        "build_seconds": 0.006679399997665314,
+        "solve_seconds": 0.00036840000029769726,
+        "total_seconds": 0.007047799997963011,
+        "stats": {
+          "primary_variables": 729,
+          "auxiliary_variables": 0,
+          "total_variables": 729,
+          "clauses": 12014,
+          "exo_groups": 324,
+          "clues": 26
+        },
+        "validation": {
+          "valid": true,
+          "message": null
+        },
+        "error": null
+      },
+      "witness_sha256": "bb5b11e5680c637c1d1dadb72587b6b8c6a05f9939c72e3c8fe2aef2520bf196"
+    },
+    {
+      "instance_id": "public-se-hard-L032223",
+      "input_sha256": "65ee1b1e07c1c572ca775b3360703d7b49cd594f97c349d051d35a97f8365375",
+      "result": {
+        "status": "SAT",
+        "method": "sat",
+        "encoding": "pairwise",
+        "raw_status": "True",
+        "solution": [
+          [
+            3,
+            2,
+            7,
+            5,
+            9,
+            6,
+            1,
+            4,
+            8
+          ],
+          [
+            5,
+            6,
+            9,
+            8,
+            4,
+            1,
+            7,
+            3,
+            2
+          ],
+          [
+            8,
+            1,
+            4,
+            7,
+            2,
+            3,
+            5,
+            6,
+            9
+          ],
+          [
+            9,
+            8,
+            5,
+            4,
+            3,
+            7,
+            6,
+            2,
+            1
+          ],
+          [
+            1,
+            4,
+            6,
+            2,
+            8,
+            5,
+            9,
+            7,
+            3
+          ],
+          [
+            7,
+            3,
+            2,
+            1,
+            6,
+            9,
+            8,
+            5,
+            4
+          ],
+          [
+            4,
+            7,
+            3,
+            9,
+            5,
+            8,
+            2,
+            1,
+            6
+          ],
+          [
+            6,
+            5,
+            8,
+            3,
+            1,
+            2,
+            4,
+            9,
+            7
+          ],
+          [
+            2,
+            9,
+            1,
+            6,
+            7,
+            4,
+            3,
+            8,
+            5
+          ]
+        ],
+        "build_seconds": 0.005641799998556962,
+        "solve_seconds": 0.0008529000006092247,
+        "total_seconds": 0.006494699999166187,
+        "stats": {
+          "primary_variables": 729,
+          "auxiliary_variables": 0,
+          "total_variables": 729,
+          "clauses": 12020,
+          "exo_groups": 324,
+          "clues": 32
+        },
+        "validation": {
+          "valid": true,
+          "message": null
+        },
+        "error": null
+      },
+      "witness_sha256": "b7b33f69031f734c4a2d2c2ca9a93315167697c2732c3661737123d2b884ab8b"
+    },
+    {
+      "instance_id": "public-se-hard-L001693",
+      "input_sha256": "3d40fb2b54d7a8676d439b8cd5e745bbcaa9b5f5ffc57f2e08e9213c9a5568ab",
+      "result": {
+        "status": "SAT",
+        "method": "sat",
+        "encoding": "pairwise",
+        "raw_status": "True",
+        "solution": [
+          [
+            6,
+            2,
+            3,
+            8,
+            1,
+            5,
+            7,
+            4,
+            9
+          ],
+          [
+            7,
+            8,
+            4,
+            9,
+            2,
+            3,
+            6,
+            5,
+            1
+          ],
+          [
+            1,
+            5,
+            9,
+            6,
+            4,
+            7,
+            2,
+            3,
+            8
+          ],
+          [
+            8,
+            9,
+            7,
+            2,
+            5,
+            6,
+            4,
+            1,
+            3
+          ],
+          [
+            5,
+            3,
+            1,
+            7,
+            8,
+            4,
+            9,
+            2,
+            6
+          ],
+          [
+            2,
+            4,
+            6,
+            1,
+            3,
+            9,
+            5,
+            8,
+            7
+          ],
+          [
+            3,
+            7,
+            2,
+            4,
+            6,
+            1,
+            8,
+            9,
+            5
+          ],
+          [
+            4,
+            6,
+            5,
+            3,
+            9,
+            8,
+            1,
+            7,
+            2
+          ],
+          [
+            9,
+            1,
+            8,
+            5,
+            7,
+            2,
+            3,
+            6,
+            4
+          ]
+        ],
+        "build_seconds": 0.005412899998191278,
+        "solve_seconds": 0.0004810999998881016,
+        "total_seconds": 0.00589399999807938,
+        "stats": {
+          "primary_variables": 729,
+          "auxiliary_variables": 0,
+          "total_variables": 729,
+          "clauses": 12014,
+          "exo_groups": 324,
+          "clues": 26
+        },
+        "validation": {
+          "valid": true,
+          "message": null
+        },
+        "error": null
+      },
+      "witness_sha256": "eedcfe631379373b883ad169e37a25e135287ab5ebca0557ca1984262fca5613"
+    },
+    {
+      "instance_id": "public-se-hard-L315444",
+      "input_sha256": "6b362b9c6c2137ec98a9e30ac7021b1b305a3c518543bdc293f3c8561e27be3e",
+      "result": {
+        "status": "SAT",
+        "method": "sat",
+        "encoding": "pairwise",
+        "raw_status": "True",
+        "solution": [
+          [
+            8,
+            6,
+            9,
+            1,
+            2,
+            5,
+            3,
+            4,
+            7
+          ],
+          [
+            7,
+            4,
+            5,
+            8,
+            3,
+            6,
+            1,
+            2,
+            9
+          ],
+          [
+            2,
+            1,
+            3,
+            9,
+            4,
+            7,
+            8,
+            6,
+            5
+          ],
+          [
+            9,
+            2,
+            4,
+            7,
+            5,
+            1,
+            6,
+            3,
+            8
+          ],
+          [
+            6,
+            7,
+            8,
+            3,
+            9,
+            2,
+            4,
+            5,
+            1
+          ],
+          [
+            3,
+            5,
+            1,
+            4,
+            6,
+            8,
+            7,
+            9,
+            2
+          ],
+          [
+            4,
+            9,
+            7,
+            2,
+            8,
+            3,
+            5,
+            1,
+            6
+          ],
+          [
+            1,
+            3,
+            6,
+            5,
+            7,
+            9,
+            2,
+            8,
+            4
+          ],
+          [
+            5,
+            8,
+            2,
+            6,
+            1,
+            4,
+            9,
+            7,
+            3
+          ]
+        ],
+        "build_seconds": 0.005198399998334935,
+        "solve_seconds": 0.00029120000181137584,
+        "total_seconds": 0.005489600000146311,
+        "stats": {
+          "primary_variables": 729,
+          "auxiliary_variables": 0,
+          "total_variables": 729,
+          "clauses": 12016,
+          "exo_groups": 324,
+          "clues": 28
+        },
+        "validation": {
+          "valid": true,
+          "message": null
+        },
+        "error": null
+      },
+      "witness_sha256": "b2cdd3e618f1cd7679f61d547b67e24e950c2b18d63088151de49c11c440fa28"
+    },
+    {
+      "instance_id": "public-se-hard-L247515",
+      "input_sha256": "eb34ba3993a7474ce9cc079f4f1ff92723ee25d62779cdb523dd9679ad62a92d",
+      "result": {
+        "status": "SAT",
+        "method": "sat",
+        "encoding": "pairwise",
+        "raw_status": "True",
+        "solution": [
+          [
+            4,
+            5,
+            3,
+            2,
+            8,
+            7,
+            9,
+            1,
+            6
+          ],
+          [
+            6,
+            7,
+            9,
+            1,
+            3,
+            4,
+            5,
+            2,
+            8
+          ],
+          [
+            1,
+            8,
+            2,
+            6,
+            9,
+            5,
+            3,
+            7,
+            4
+          ],
+          [
+            8,
+            3,
+            7,
+            5,
+            2,
+            9,
+            6,
+            4,
+            1
+          ],
+          [
+            9,
+            4,
+            1,
+            3,
+            6,
+            8,
+            7,
+            5,
+            2
+          ],
+          [
+            5,
+            2,
+            6,
+            4,
+            7,
+            1,
+            8,
+            9,
+            3
+          ],
+          [
+            3,
+            1,
+            4,
+            7,
+            5,
+            6,
+            2,
+            8,
+            9
+          ],
+          [
+            7,
+            6,
+            8,
+            9,
+            1,
+            2,
+            4,
+            3,
+            5
+          ],
+          [
+            2,
+            9,
+            5,
+            8,
+            4,
+            3,
+            1,
+            6,
+            7
+          ]
+        ],
+        "build_seconds": 0.012763500002620276,
+        "solve_seconds": 0.0002752999971562531,
+        "total_seconds": 0.01303879999977653,
+        "stats": {
+          "primary_variables": 729,
+          "auxiliary_variables": 0,
+          "total_variables": 729,
+          "clauses": 12020,
+          "exo_groups": 324,
+          "clues": 32
+        },
+        "validation": {
+          "valid": true,
+          "message": null
+        },
+        "error": null
+      },
+      "witness_sha256": "6a3059cf3d70022d4daed0b509d1cc368b468264035ed8d80ad4c3a96a8447a0"
+    }
+  ]
+}
