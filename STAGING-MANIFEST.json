@@ -22,8 +22,8 @@
     "report/output/pdf/sudoku-vi.pdf": "931aeed9248473fa65062c8061868e2ac79ab8a09a3fe7f2c422c454cd990282",
     "report/output/pdf/sudoku-en.pdf": "1a10d9c08ae776160d96498268969fa06c5e18c728ecd39f648987d039e62ee7"
   },
-  "file_count_before_manifest": 1384,
-  "total_bytes_before_manifest": 53558887,
+  "file_count_before_manifest": 1383,
+  "total_bytes_before_manifest": 53450272,
   "secret_scan": {
     "status": "pass",
     "files_scanned": 1384
@@ -34,11 +34,6 @@
       "path": ".gitignore",
       "size_bytes": 173,
       "sha256": "1a2339262d8e1c092b03430c42a54a0e831f218638751e2e0e5ea6a3b03080fd"
-    },
-    {
-      "path": ".mplconfig/fontlist-v3.11.0.json",
-      "size_bytes": 108615,
-      "sha256": "9644a5c892c6380e809ebf53005b650f8c1436edcecdf123e1af02d191cbe4e2"
     },
     {
       "path": "configs/benchmark.json",
@@ -6950,5 +6945,8 @@
       "size_bytes": 2273,
       "sha256": "4910b89be8d61495c0e1fcb919d611658e0f6b8d593f6989d2e2f9c0916eaa46"
     }
+  ],
+  "excluded_generated_cache": [
+    ".mplconfig/fontlist-v3.11.0.json"
   ]
 }
