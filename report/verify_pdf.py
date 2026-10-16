@@ -45,11 +45,16 @@ for language in ("vi", "en"):
         assert count in text, f'Missing coverage count: {count}'
     assert 'https://github.com/Ngynkybyrd/2627I_INT3011E' in re.sub(r'\s+', '', text)
     availability_text = re.sub(r'\s+', ' ', text)
-    assert ('chưa được đồng bộ lên repository đích' in availability_text if language == 'vi'
-            else 'not yet synchronized to the destination repository' in availability_text)
+    assert ('kết quả đã được công bố' in availability_text if language == 'vi'
+            else 'results are published at' in availability_text)
+    for stale in ('chưa được đồng bộ', 'not yet synchronized', 'Chưa có URL repository', 'No online repository URL'):
+        assert stale not in availability_text, stale
+    commit = 'f45d37894cfb19fe3bb890e8f0e06f13b472c2a2'
+    assert commit in re.sub(r'\s+', '', text)
     links = [annotation.get_object().get('/A', {}).get('/URI')
              for page in reader.pages for annotation in page.get('/Annots', [])]
     assert 'https://github.com/Ngynkybyrd/2627I_INT3011E' in links
+    assert f'https://github.com/Ngynkybyrd/2627I_INT3011E/tree/{commit}' in links
     for symbol in ("∈", "∧", "×"):
         assert symbol in text, f"Math symbol is not correctly mapped: {symbol}"
     for page in reader.pages:
@@ -78,7 +83,7 @@ for language in ("vi", "en"):
         "generated_six_decimal_metrics_checked": len(table_metrics),
         "coverage_counts_checked": 8,
         "author_metadata_pypdf_pdfium": "Tạ Đình Nguyên",
-        "destination_repository_link_and_unpublished_status": "PASS",
+        "published_repository_and_immutable_commit_links": "PASS",
         "previews": previews,
     })
 (root / "logs" / "verification.json").write_text(

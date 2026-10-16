@@ -1,0 +1,186 @@
+{
+  "status": "PASS",
+  "run_id": "main-20261016-01",
+  "freeze_sha256": "e57b52e50b91ee258dba788fbc196a2f773bbaa9356e3ac4bd06782e6f83c840",
+  "run_sha256": "7dab6c8e7bb47524a50da825365cbe419c73b3417c1556b191675beb5633eb1b",
+  "frozen_files_verified": [
+    {
+      "path": "configs\\benchmark.json",
+      "sha256": "f0ccbc95e1d298e8571a8d475d7d4f165910cb7a62c04acad50752e90df9f8ed"
+    },
+    {
+      "path": "data\\freeze.json",
+      "sha256": "fd84c10458d41fde0e2de0ebb204b68ea0b95f587cf6a19e00d4e1cb58de2e25"
+    },
+    {
+      "path": "diagnostics\\runner\\main_supervisor.py",
+      "sha256": "67e65c4c559a0041f8c14f34f9665c310ea082ff9258615fc377ceda7ce40066"
+    },
+    {
+      "path": "diagnostics\\runner\\prepare_main.py",
+      "sha256": "c727eacb7c380bdd26db14f3a47e57e1d0f4071eb8428dcd00ed00586db9d040"
+    },
+    {
+      "path": "docs\\adapter-contract.md",
+      "sha256": "663c49c7af29b52f606f6accd7ceabb29eef73e3c82e060c097484b7578f57d0"
+    },
+    {
+      "path": "docs\\analysis-api.md",
+      "sha256": "591cfbef1829a0fe28b837a349e2fd019a884685df1cfdcd96c3c1969a38fd31"
+    },
+    {
+      "path": "docs\\contracts.md",
+      "sha256": "3085d6de84677de232b6bfc5d2e32ad44d5474d0e1d592f2dc02aaa9e218ebf0"
+    },
+    {
+      "path": "docs\\results-schema.md",
+      "sha256": "b16fc88231f6375ede2dd739a0dadd971005e121e4d111f9ec80c7ae8db77d0e"
+    },
+    {
+      "path": "docs\\runner-api.md",
+      "sha256": "1a1119c93d6c7693e629c6aecbf258f04cb19d6f0d934c90595e6b3215de54f8"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "a4a410c351f26d0907278a98bb1dfcb03afd213454dc9c816b8762efc8835aa6"
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "0a19cc083faae93af7773b7ffa0ee1ea8f7c33856daa1b600ec89030a71380bf"
+    },
+    {
+      "path": "scripts\\analyze_results.py",
+      "sha256": "5c961b4ba0895d29f66fa2cb2eb55638c9fa08e91a7fa049fc23c91e4a283951"
+    },
+    {
+      "path": "scripts\\plot_sudoku.py",
+      "sha256": "a5aacf6cbff95ef8d8cb7ca1aebd736784da6799a75c059d67e4c06bda1dd48d"
+    },
+    {
+      "path": "scripts\\prepare_data.py",
+      "sha256": "a5510ff7527e7308bba0db40243430d4ed790bf558cccc55cb79defd1ddfb26d"
+    },
+    {
+      "path": "scripts\\prepare_public.py",
+      "sha256": "3d5fb0b3ed1c6ea7023b8e5197f2970731b2e12702ea979bff553a9e90d8e962"
+    },
+    {
+      "path": "scripts\\run_benchmark.py",
+      "sha256": "a401ca385d42d838b845794fd432daa2185b420ef100c6879561ee17a4105848"
+    },
+    {
+      "path": "scripts\\verify_public.py",
+      "sha256": "849ba268261a60a5ef5480f3668ad5016465130e409943a7d82633ec7655407c"
+    },
+    {
+      "path": "src\\sudoku\\__init__.py",
+      "sha256": "a55dce0049cb527760f8972b937cf9a2b56ef3423b419cc3777e2e7b6809ebfb"
+    },
+    {
+      "path": "src\\sudoku\\__main__.py",
+      "sha256": "8726b4feb64c28cc71314bf1fd54a92bf3ec74b52dcaa88c93ed3d828d0f6a01"
+    },
+    {
+      "path": "src\\sudoku\\baselines\\__init__.py",
+      "sha256": "5ceda9f61e47ef4de4c55900c6361dfc3a4541abb02f951e1aa65342331a2af2"
+    },
+    {
+      "path": "src\\sudoku\\baselines\\adapters.py",
+      "sha256": "3f8aba7f2d77d8f9bbea799e0ee271176b4b6a3d7c95cbbb6ce0df7dacc63045"
+    },
+    {
+      "path": "src\\sudoku\\baselines\\cp.py",
+      "sha256": "ee1e1d3b34b77630733185b4e4e259a3652b31d33f1b718cb95919a0b7e3ab9b"
+    },
+    {
+      "path": "src\\sudoku\\baselines\\ilp.py",
+      "sha256": "dd0933c802d8c223616f11cf9ff285c308665b47dfadf3eac526b0e74abc68ec"
+    },
+    {
+      "path": "src\\sudoku\\cli.py",
+      "sha256": "7d51e2c4a802209aa71214bf47cb8d0d06f71413d83d68ee60dac115a5441c9e"
+    },
+    {
+      "path": "src\\sudoku\\contracts.py",
+      "sha256": "c739e640946ad53268e0a34496efc63cb6e34b491fb5c9109623fc99f559fd7a"
+    },
+    {
+      "path": "src\\sudoku\\decoding.py",
+      "sha256": "d929c0d5cbeecfebfbbf4e55e5c6fcba69468cd42175ffce8debb6b8a2521713"
+    },
+    {
+      "path": "src\\sudoku\\model.py",
+      "sha256": "7c266f3b3168c089d6e13a2b6ded4255038eda58d88fc2776d7b9878a049d9bf"
+    },
+    {
+      "path": "src\\sudoku\\runner.py",
+      "sha256": "3d068f73ac117ed63c9743b696130716628d67d0ed156dcc82462807d551a2e4"
+    },
+    {
+      "path": "src\\sudoku\\runner_process.py",
+      "sha256": "defa8d5e4e0c126b27ea6ed34cd71120987e81e0df3f7aa9858d10e072efb3b3"
+    },
+    {
+      "path": "src\\sudoku\\runner_worker.py",
+      "sha256": "414968bbcdc7b6ce693747b2c137b2da74527d4da4cf2df593c9758516bb05b3"
+    },
+    {
+      "path": "src\\sudoku\\sat.py",
+      "sha256": "656a013eb5289731ea7aaae308207c9fb3dca0d8cbe4b03c3ffafef5b914bc08"
+    },
+    {
+      "path": "src\\sudoku\\validation.py",
+      "sha256": "46f546a1c37fec661663c282ff9056603addd79a89ea7fcd750aca0ca743e45d"
+    }
+  ],
+  "requirements_match_installed_metadata": true,
+  "installed_pysat_notice_metadata_copies_identical": true,
+  "recorded_packages": {
+    "python-sat": "1.9.dev16",
+    "ortools": "9.15.6755",
+    "scipy": "1.18.1",
+    "highspy": "1.15.1",
+    "gurobipy": "13.0.3",
+    "cplex": "22.2.0.1",
+    "docplex": "2.32.264"
+  },
+  "installed_artifacts": [
+    {
+      "path": "python_sat-1.9.dev16.dist-info/METADATA",
+      "sha256": "3ccbd23121f01007f18bd93d713884d112e4cf6cef811f036016180230531a81"
+    },
+    {
+      "path": "python_sat-1.9.dev16.dist-info/RECORD",
+      "sha256": "e5cc680fb263b44914c6ff2f8f68861e26f4411c1b9ad82e085b47e1af73953d"
+    },
+    {
+      "path": "python_sat-1.9.dev16.dist-info/licenses/LICENSE.txt",
+      "sha256": "e9032f133c6a74f5c4a220195016992de2c5e215b64bcd5f8cacff4c7111d2e4"
+    },
+    {
+      "path": "pysat/card.py",
+      "sha256": "adabf7fedfe60b36cbc3c48075770e87e3cd6c5b5a013552009ce96f282a890e"
+    },
+    {
+      "path": "pysat/solvers.py",
+      "sha256": "b84f0790c70b5af2f85ab82d0e1441aea874c2ae6483d90da40286a01397e065"
+    },
+    {
+      "path": "pycard.cp313-win_amd64.pyd",
+      "sha256": "fb6d5cd386434c291b2d8f8fae1cd107072bafc24c62d87b17aec78508045eb8"
+    },
+    {
+      "path": "pysolvers.cp313-win_amd64.pyd",
+      "sha256": "27c1f1e308a241f4894b8273fcb6255ece2f96ed8bad826e0e8d6e36db9aa593"
+    },
+    {
+      "path": "cplex/__init__.py",
+      "sha256": "0480f9e68a5ca173fd595639bb1263a1b253123ca11e74f3768be79e3fd3dfa2"
+    }
+  ],
+  "upstream_snapshot_matches_installed_binary": "not established; not asserted",
+  "project_repository_url": "https://github.com/Ngynkybyrd/2627I_INT3011E",
+  "repository_role": "published source/data/results; coordinator verified all 1384 GitHub tree blobs against initial local HEAD",
+  "initial_publication_commit": "f45d37894cfb19fe3bb890e8f0e06f13b472c2a2",
+  "online_project_contents_confirmed": true
+}

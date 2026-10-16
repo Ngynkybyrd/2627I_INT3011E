@@ -1,11 +1,15 @@
 [
   {
     "path": "../README.md",
-    "sha256": "1e4e7d23b79843a74a825756015255d87d27d6fe244b5890651616f6f477f87e"
+    "sha256": "6bca274714839334c22d176cbedc9f60b5a7577cfddf999d770e45d4e96bfa8b"
+  },
+  {
+    "path": "../diagnostics/package/initial-publication-verification.json",
+    "sha256": "06251d52dde897bd3ea31f67a66cf4269319da2bb89619d10786c2c154a2e9f4"
   },
   {
     "path": "../docs/submission-info.md",
-    "sha256": "513587ae9d9c2f66729b7ca2893f89ec86c0091b5c64090998a2d9a5cc78840a"
+    "sha256": "d10db5267bc399fc096d2f514d65543a413c5a94c3a11032e317cd79c69229e4"
   },
   {
     "path": "bootstrap.ps1",
@@ -21,7 +25,7 @@
   },
   {
     "path": "check_repository_destination.py",
-    "sha256": "b19a1988217d57a9675dacb0646af06f778f754e9664c1e7a0b2afb7e4817cdd"
+    "sha256": "2a7ffdf1d4339644ab6376728d062a88a14994eba3903c52880c557afdbb3927"
   },
   {
     "path": "export_final_results.py",
@@ -57,7 +61,7 @@
   },
   {
     "path": "reading\\FROZEN-CODE-ATTRIBUTION.md",
-    "sha256": "afd757dfcecb45c0d7cf9b62f8917ec3f2b8e19fd233e6d3d9eab95cf4b7f178"
+    "sha256": "03d95a583683e7bf2d7beba753320b8a19d7578e4ff0f6264f43b62c12efd3fc"
   },
   {
     "path": "reading\\evidence\\PySAT-installed-LICENSE.txt",
@@ -69,7 +73,7 @@
   },
   {
     "path": "reading\\verify-frozen-references.py",
-    "sha256": "1ca69398e54cfefa446ec68380caa91854f43e71159070bfe264e60e35431111"
+    "sha256": "e5b7de0fa0e3690de5a03c019e9f3051eefa2885270cbc90474867f695c2ea7b"
   },
   {
     "path": "references-check.tex",
@@ -97,7 +101,7 @@
   },
   {
     "path": "shared\\data-availability.tex",
-    "sha256": "2d547e62e192e774aa5c2eadb82f370df38e046f91cbebfd14f0ddbaef4099ca"
+    "sha256": "63d9e929c59b2b2f69579c549cd73141f7c6f343518bf94a5850da1632b16481"
   },
   {
     "path": "shared\\document.tex",
@@ -189,6 +193,6 @@
   },
   {
     "path": "verify_pdf.py",
-    "sha256": "4a0188a9094a8cdc637c863573b8bd4041937aa4c2b0d16bee6cc2cc277a59ad"
+    "sha256": "153928921599736d2cab4f7e778b0dd18b42b58bf4aab1b2d4672ce59bcc3e73"
   }
 ]

@@ -1,5 +1,5 @@
 {
-  "build_id": "20261016-213741-992",
+  "build_id": "20261016-214737-395",
   "documents": [
     {
       "language": "vi",
@@ -10,7 +10,7 @@
       "generated_six_decimal_metrics_checked": 68,
       "coverage_counts_checked": 8,
       "author_metadata_pypdf_pdfium": "Tạ Đình Nguyên",
-      "destination_repository_link_and_unpublished_status": "PASS",
+      "published_repository_and_immutable_commit_links": "PASS",
       "previews": [
         "output\\preview\\vi-page-1.png",
         "output\\preview\\vi-page-2.png",
@@ -33,7 +33,7 @@
       "generated_six_decimal_metrics_checked": 68,
       "coverage_counts_checked": 8,
       "author_metadata_pypdf_pdfium": "Tạ Đình Nguyên",
-      "destination_repository_link_and_unpublished_status": "PASS",
+      "published_repository_and_immutable_commit_links": "PASS",
       "previews": [
         "output\\preview\\en-page-1.png",
         "output\\preview\\en-page-2.png",

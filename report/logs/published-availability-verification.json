@@ -1,0 +1,66 @@
+{
+  "status": "PASS",
+  "baseline_build": "20261016-213741-992",
+  "build_id": "20261016-214737-395",
+  "destination_repository": "https://github.com/Ngynkybyrd/2627I_INT3011E",
+  "online_project_contents_confirmed": true,
+  "initial_publication_commit": "f45d37894cfb19fe3bb890e8f0e06f13b472c2a2",
+  "publication_evidence": "coordinator GitHub API audit: 1384 blobs matched initial local HEAD; docs/submission-info.md",
+  "published_by_this_task": false,
+  "documents": [
+    {
+      "language": "vi",
+      "pages": 10,
+      "changed_pages": [
+        9
+      ],
+      "other_pages_pixel_identical": true,
+      "author": "Tạ Đình Nguyên",
+      "pdf_sha256": "931aeed9248473fa65062c8061868e2ac79ab8a09a3fe7f2c422c454cd990282"
+    },
+    {
+      "language": "en",
+      "pages": 10,
+      "changed_pages": [
+        10
+      ],
+      "other_pages_pixel_identical": true,
+      "author": "Tạ Đình Nguyên",
+      "pdf_sha256": "1a10d9c08ae776160d96498268969fa06c5e18c728ecd39f648987d039e62ee7"
+    }
+  ],
+  "source_manifest_entries_verified": 49,
+  "readme_sha256": "6bca274714839334c22d176cbedc9f60b5a7577cfddf999d770e45d4e96bfa8b",
+  "readme_matches_owner_approved_final_hash": true,
+  "initial_publication_evidence_sha256": "06251d52dde897bd3ea31f67a66cf4269319da2bb89619d10786c2c154a2e9f4",
+  "submission_info_sha256": "d10db5267bc399fc096d2f514d65543a413c5a94c3a11032e317cd79c69229e4",
+  "source_manifest_sha256": "4b511c01e37859e582f5163122879833197cd99a2012fb3dc8c0336730b7967d",
+  "locked_analysis_inputs_verified": 12,
+  "execution_frozen_files_verified": 32,
+  "raw_sha256_unchanged": "aac4cde1fed90857ea81a1575e326049be71a528f27a6a744435b94c42dfdda7",
+  "metrics_per_pdf": 68,
+  "coverage_strings_per_pdf": 8,
+  "missing_repository_url_or_source_contents_blocker": false,
+  "pending": "coordinator final QA and push of revised report; course submission deferred",
+  "targeted_visual_review": {
+    "status": "PASS",
+    "pages_viewed": {
+      "vi": [
+        9,
+        10
+      ],
+      "en": [
+        10
+      ]
+    },
+    "changed_pages_only": {
+      "vi": [
+        9
+      ],
+      "en": [
+        10
+      ]
+    },
+    "other_18_pages_pixel_identical": true
+  }
+}

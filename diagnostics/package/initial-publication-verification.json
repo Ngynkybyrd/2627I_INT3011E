@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "repository": "https://github.com/Ngynkybyrd/2627I_INT3011E",
+  "commit": "f45d37894cfb19fe3bb890e8f0e06f13b472c2a2",
+  "branch": "main",
+  "public": true,
+  "remote_tree_truncated": false,
+  "remote_and_local_blob_sha_match": 1384,
+  "includes": [
+    "src",
+    "data",
+    "results/raw/main-20261016-01",
+    "results/summary/main-20261016-01",
+    "report"
+  ],
+  "submission_performed": false
+}

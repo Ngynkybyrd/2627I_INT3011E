@@ -8,8 +8,7 @@ phân tích; số liệu/phạm vi được tóm tắt trong phần Trạng thá
 Sinh viên: Tạ Đình Nguyên — 24021587 — INT3301E_4.
 Môn: Các vấn đề hiện đại KHMT; học kỳ I, năm học 2026–2027.
 Hạn do người dùng xác nhận: **23:59 ngày 19/10/2026, Asia/Saigon**.
-Giảng viên: TS. Tô Vân Khánh. Tên file/gói, kênh nộp và repository đích chưa
-xác nhận.
+Giảng viên: TS. Tô Vân Khánh. Repository công khai: [Ngynkybyrd/2627I_INT3011E](https://github.com/Ngynkybyrd/2627I_INT3011E), nhánh `main`, khởi tạo tại commit `f45d37894cfb19fe3bb890e8f0e06f13b472c2a2`. Kênh/quy cách nộp chưa xác nhận; việc nộp bài vẫn hoãn.
 
 ## Cài đặt (Windows PowerShell, Python 3.13)
 
@@ -44,9 +43,9 @@ SciPy MILP cũng được smoke riêng; không suy ra bản HiGHS nhúng trong S
 - `src/sudoku/sat.py`: `encode_amo`, `build_cnf` và số đếm trước preprocessing;
   `build_cnf` dựng CNF, không tự giải Sudoku.
 - `docs/contracts.md`: contract v1 về input, CNF, checker/result và thời gian.
-- `tests/`, `data/`, `results/`: nơi các chat sở hữu triển khai tiếp.
-- `report/`: nguồn `cas-sc`, bibliography, phần toán/bảng đếm chung và hai PDF mẫu.
-- `diagnostics/`: probe môi trường, JSON bằng chứng và hình kiểm Matplotlib.
+- `tests/`, `data/`, `results/`: bộ kiểm, dữ liệu đóng băng, raw run và summary đã audit.
+- `report/`: nguồn `cas-sc`, bibliography, bảng/hình, báo cáo Việt–Anh và PDF hiện hành.
+- `diagnostics/`: bằng chứng môi trường, chạy benchmark, kiểm dữ liệu và report.
 
 Quy ước chung: `n >= 2`, `N=n²`, bảng `N×N`, khối `n×n`, `0` là ô trống.
 Ba AMO: pairwise, sequential counter, bitwise; SAT dùng Glucose3. Kế hoạch hiện
@@ -93,9 +92,7 @@ hạn search space Community `2^1000`. Đây là phạm vi ca đã probe, không
 Các probe/smoke không phải benchmark.
 Chi tiết tích hợp: [diagnostics/environment-integration.md](diagnostics/environment-integration.md).
 
-Yêu cầu bài nộp: chương trình Python, thực nghiệm bảng lớn và đối chứng,
-báo cáo `cas-sc` (`a4paper,fleqn`), Data Availability có repository thật.
-Hai bản Việt–Anh dùng chung số liệu. Gói bàn giao cần dependency list, dữ liệu/cách lấy, CSV/config, bảng/hình, README, nguồn LaTeX, hai PDF và URL repository thật. Báo cáo đã qua review khoa học; URL repository vẫn là điều kiện bắt buộc chưa được cung cấp.
+Yêu cầu bài nộp gồm chương trình Python, thực nghiệm bảng lớn và đối chứng, báo cáo `cas-sc` (`a4paper,fleqn`), và Data Availability. Hai bản Việt–Anh dùng chung số liệu. Commit công khai `f45d37894cfb19fe3bb890e8f0e06f13b472c2a2` đã được đối chiếu đủ 1.384 blob với snapshot local, gồm source, data, raw results, summary, report và PDF của snapshot đó. Các cập nhật README và final report/provenance hiện hành sẽ đồng bộ sau final QA. Gói bàn giao cần dependency list, dữ liệu/cách lấy, CSV/config, bảng/hình, README, nguồn LaTeX, hai PDF và URL repository. Việc nộp LMS vẫn hoãn.
 
 Nguồn đối chiếu: `D:\KHMT\Tài liệu\Assignment 1 - requirements.pdf` (1 trang)
 và `D:\KHMT\Tài liệu\Module 0 - Introduction.pdf` (trang 6: hạn 19/10/2026).
@@ -225,10 +222,7 @@ $analysis = 'results\analysis pilot new'
 
 Dùng `--mode partial` cho đợt chạy gián đoạn và `--mode final` chỉ khi toàn bộ
 schedule được chọn có đủ ba lần lặp. Có thể lặp `--run` cho các đợt disjoint
-cùng code, máy, package, dataset, cutoff, seed và watchdog. Analyzer sinh CSV,
-LaTeX, audit và hình từ dữ liệu đã kiểm. Lệnh `--mode pilot` trên output runner
-thật chưa được xác nhận ở pipeline benchmark; README này ghi lệnh theo API, không
-khẳng định đã tạo bảng/hình hay kết quả benchmark.
+cùng code, máy, package, dataset, cutoff, seed và watchdog. Analyzer sinh CSV, LaTeX, audit và hình từ run artifacts đã kiểm. Benchmark chính `main-20261016-01` đã chạy đủ 906 lượt và summary ở mode `final` đã được audit. Lệnh `--mode pilot` phía trên chỉ là ví dụ API cho một phân tích pilot mới, không phải lệnh tạo summary final hiện hành.
 
 ## Build hai PDF
 
@@ -241,7 +235,7 @@ Toolchain LaTeX portable và cache package/font nằm riêng dưới `report/.to
 
 Output hiện hành: `report/output/pdf/sudoku-vi.pdf` và
 `report/output/pdf/sudoku-en.pdf`, mỗi bản 10 trang. Acceptance record xác nhận
-PDF-001/PDF-003 và VI-004/VI-006, EN-001..004 đạt; VI-007/PDF-002 còn chờ URL repository thật. Các prototype cũ là lịch sử, không phải PDF hiện hành.
+PDF-001/PDF-003 và VI-004/VI-006, EN-001..004 đạt. Snapshot initial commit đã chứa và đối chiếu hash các PDF cùng source/data/raw/summary. README và final report/provenance revisions mới sẽ đồng bộ, xác minh sau final QA; các prototype cũ là lịch sử.
 Trên máy chưa có toolchain/cache, chạy bootstrap và một lần build online:
 
 ```powershell
@@ -284,7 +278,10 @@ cutoff; runner dùng hard Windows process-tree guard khi chạy schedule, còn
 ## Trạng thái bàn giao
 
 Run `main-20261016-01` có 906 lượt (903 SAT, 3 TIMEOUT, đều là HiGHS).
-Summary final được audit; chi tiết scope, giới hạn solver và report acceptance
-nằm trong `diagnostics/package/compliance-brief.md` và
-`report/logs/SCIENTIFIC-REPORT-ACCEPTANCE.md`. Chưa cấu hình remote và chưa
-công bố/nộp. Data Availability cần URL repository thật; không dùng URL giả.
+Summary final được audit; chi tiết scope và giới hạn solver nằm trong
+`diagnostics/package/compliance-brief.md`. Repository công khai là
+[Ngynkybyrd/2627I_INT3011E](https://github.com/Ngynkybyrd/2627I_INT3011E),
+nhánh `main`, có commit khởi tạo `f45d37894cfb19fe3bb890e8f0e06f13b472c2a2`.
+Source/data/raw results/summary/report/PDF trong snapshot initial commit đã được
+đối chiếu hash với repository. README và final report/provenance revisions mới
+chờ đồng bộ sau final QA. Gói bàn giao và việc nộp LMS vẫn hoãn.

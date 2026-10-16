@@ -2,7 +2,8 @@
 
 Hai bản dùng chung công thức, số liệu và nội dung song ngữ; kết quả lấy từ
 analysis final đã khóa của main-20261016-01. Chỉ `report/` được thay đổi.
-URL repo đích đã có; nội dung chưa đồng bộ/publish, chưa xác nhận đủ điều kiện nộp cuối.
+Source/data/results đã công bố tại repo thật, snapshot ban đầu bất biến
+f45d37894cfb19fe3bb890e8f0e06f13b472c2a2. Root giữ bước push báo cáo cuối và final QA.
 Không chạy solver hoặc thay đổi Python `.venv` của dự án để build report.
 
 ## Windows / PowerShell
@@ -122,9 +123,11 @@ Phần toán PAPER-001..005 đã đối chiếu model/CNF contract v1; bảng co
 diagnostics vẫn được ghi rõ là kiểm cấu trúc, tách khỏi count thực main.
 Giảng viên đã được người dùng xác nhận: TS. Tô Vân Khánh;
 nguồn thông tin hiện hành là docs/submission-info.md.
-Repo đích là https://github.com/Ngynkybyrd/2627I_INT3011E ; nội dung còn ở gói
-cục bộ/chưa đồng bộ. VI-007/DEL-007/PDF-002 chờ xác nhận repo có nội dung thật.
-Không tự công bố/nộp. Xem `logs/SCIENTIFIC-REPORT-ACCEPTANCE.md` cho trạng thái
+Repo công bố là https://github.com/Ngynkybyrd/2627I_INT3011E ; snapshot ban đầu
+f45d37894cfb19fe3bb890e8f0e06f13b472c2a2 chứa source/data/results đã được root
+kiểm toàn bộ 1.384 blob GitHub với bản cục bộ. Data Availability dùng link repo
+và link commit này. Báo cáo hoàn thiện sau snapshot, root sẽ push sau final QA.
+Không tự nộp bài. Xem `logs/PUBLISHED-AVAILABILITY-HANDOFF.md` cho trạng thái
 hiện hành; `SETUP-LIMITATIONS-ACCEPTANCE.md` là snapshot trước main.
 
 Không dùng compiler standalone của app cho project nhiều file này. Có thể mở

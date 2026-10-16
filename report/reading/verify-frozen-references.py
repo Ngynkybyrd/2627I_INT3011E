@@ -53,8 +53,9 @@ record = {
     "installed_artifacts": [{"path": x, "sha256": sha(site / x)} for x in artifacts],
     "upstream_snapshot_matches_installed_binary": "not established; not asserted",
     "project_repository_url": "https://github.com/Ngynkybyrd/2627I_INT3011E",
-    "repository_role": "user-supplied destination; project contents not yet synchronized",
-    "online_project_contents_confirmed": False,
+    "repository_role": "published source/data/results; coordinator verified all 1384 GitHub tree blobs against initial local HEAD",
+    "initial_publication_commit": "f45d37894cfb19fe3bb890e8f0e06f13b472c2a2",
+    "online_project_contents_confirmed": True,
 }
 out = REPORT / "logs/frozen-reference-verification.json"
 out.write_text(json.dumps(record, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

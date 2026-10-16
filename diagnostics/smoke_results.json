@@ -1,8 +1,8 @@
 {
-  "timestamp_utc": "2026-10-16T10:52:15.089132+00:00",
+  "timestamp_utc": "2026-10-16T14:54:45.936111+00:00",
   "python": "3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]",
-  "executable": "D:\\KHMT\\Project solo\\.venv\\Scripts\\python.exe",
-  "prefix": "D:\\KHMT\\Project solo\\.venv",
+  "executable": "D:\\KHMT\\Project solo\\tmp\\repro-env\\venv\\Scripts\\python.exe",
+  "prefix": "D:\\KHMT\\Project solo\\tmp\\repro-env\\venv",
   "base_prefix": "C:\\Users\\admin\\AppData\\Local\\Programs\\Python\\Python313",
   "os": "Windows-11-10.0.26300-SP0",
   "cpu": "AMD Ryzen 7 H 260 w/ Radeon 780M Graphics",

@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "run_id": "main-20261016-01",
+  "frozen_source_files": 32,
+  "frozen_data_files": 169,
+  "raw_rows": 906,
+  "checker_revalidated": 903,
+  "statuses": {
+    "SAT": 903,
+    "TIMEOUT": 3
+  },
+  "raw_sha256": "aac4cde1fed90857ea81a1575e326049be71a528f27a6a744435b94c42dfdda7",
+  "execution_freeze_sha256": "e57b52e50b91ee258dba788fbc196a2f773bbaa9356e3ac4bd06782e6f83c840",
+  "data_freeze_sha256": "fd84c10458d41fde0e2de0ebb204b68ea0b95f587cf6a19e00d4e1cb58de2e25",
+  "run_sha256": "7dab6c8e7bb47524a50da825365cbe419c73b3417c1556b191675beb5633eb1b",
+  "summary_sha256": "67330cb68d8c18752799bea8607bbb2f390810373e0ba37d974ebce30e5451e7",
+  "findings_sha256": "5ee4550e73b27f614200278eb396ec6f70f53099ac3f37045c5e8bff8b842f9e",
+  "python": "3.13.5",
+  "versions_match": {
+    "python-sat": "1.9.dev16",
+    "ortools": "9.15.6755",
+    "scipy": "1.18.1",
+    "highspy": "1.15.1",
+    "gurobipy": "13.0.3",
+    "cplex": "22.2.0.1",
+    "docplex": "2.32.264"
+  },
+  "benchmark_rerun": false,
+  "report_qa": "outside scope; owner building"
+}

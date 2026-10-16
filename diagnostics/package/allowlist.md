@@ -1,10 +1,12 @@
 # Local package staging allowlist
 
-Status: partial local preview. The destination is
-`https://github.com/Ngynkybyrd/2627I_INT3011E`, and the report links to it, but
-the project contents have not been synchronized or verified online. VI-007,
-DEL-007, and PDF-002 remain pending. Build 20261016-213741-992 is the current
-report build; earlier no-URL acceptance files are historical snapshots.
+Status: partial local preview. Public destination:
+`https://github.com/Ngynkybyrd/2627I_INT3011E`, branch `main`, initial commit
+`f45d37894cfb19fe3bb890e8f0e06f13b472c2a2`. Root verified all 1,384 initial
+snapshot blobs against GitHub, including source, frozen data, raw results,
+summary, report and PDFs. New README and final report/provenance revisions will
+be synchronized after final QA; LMS submission remains deferred. Earlier
+no-URL acceptance files are historical snapshots.
 
 ## Include
 
@@ -21,5 +23,7 @@ report build; earlier no-URL acceptance files are historical snapshots.
 
 - Prototypes, caches, environments, compiler binaries, local machine state,
   credentials, solver license files, private keys, and temporary files.
-- Any claim that project content is already present online or the package is a
-  final submission. No push, publication, or submission action is authorized.
+- Any claim that README/final report revisions made after the initial commit
+  are already online, or that this preview is a final submission. The local
+  preview repository is uncommitted and has no remote. LMS submission remains
+  deferred.

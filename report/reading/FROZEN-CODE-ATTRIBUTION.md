@@ -58,10 +58,11 @@ bản. DOI/năm paper giữ metadata đã kiểm trong reading-notes.md.
 
 ## Trạng thái còn chờ
 
-Repository đích đã được người dùng cung cấp:
-https://github.com/Ngynkybyrd/2627I_INT3011E . Nội dung hiện ở gói cục bộ,
-chưa đồng bộ/publish; chưa xác nhận code/results khả dụng online. REF
-citation/attribution không hoàn tất VI-007/DEL-007/PDF-002. Không tự chọn
-license cho toàn repository, công bố/nộp hoặc đưa runtime thương mại vào gói.
-Findings đã khóa và Results/VI-004/VI-006/EN đã tích hợp; xem scientific report
-acceptance và repository-destination evidence hiện hành trong logs/.
+Source/data/results đã công bố tại https://github.com/Ngynkybyrd/2627I_INT3011E,
+initial commit f45d37894cfb19fe3bb890e8f0e06f13b472c2a2. Root xác minh 1.384
+blob GitHub khớp bản local của commit này; metadata input ở docs/submission-info.md.
+Report dùng link repo và snapshot bất biến, không giả snapshot upstream PySAT
+là binary match. Root giữ final QA và push báo cáo hoàn thiện sau snapshot.
+Phần nộp bài và benchmark 10.000 đề vẫn hoãn. Không đưa runtime thương mại vào
+gói hoặc tự chọn license toàn repository. Xem published-availability evidence
+hiện hành trong logs/; các acceptance trước publish là snapshot lịch sử.

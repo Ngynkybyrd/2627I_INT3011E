@@ -1,5 +1,6 @@
-"""Check the destination-only availability update; no publishing/network calls."""
+"""Check published-availability report integration; no publishing/network calls."""
 from pathlib import Path
+import argparse
 import hashlib
 import json
 import pypdfium2 as pdfium
@@ -7,14 +8,26 @@ from pypdf import PdfReader
 
 ROOT = Path(__file__).resolve().parent
 PROJECT = ROOT.parent
-BASE = '20261016-203236-600'
+BASE = '20261016-213741-992'
 CURRENT = (ROOT / 'logs/latest-build.txt').read_text(encoding='utf-8-sig').strip()
 URL = 'https://github.com/Ngynkybyrd/2627I_INT3011E'
+parser = argparse.ArgumentParser()
+parser.add_argument('--readme-sha256', required=True, help='Final README hash supplied after its owner finishes')
+options = parser.parse_args()
 def sha(p):
     return hashlib.sha256(p.read_bytes()).hexdigest()
 
+assert sha(PROJECT / 'README.md') == options.readme_sha256.lower(), 'README differs from owner-approved final hash'
+publication_path = PROJECT / 'diagnostics/package/initial-publication-verification.json'
+publication = json.loads(publication_path.read_text())
+assert publication['status'] == 'PASS' and publication['repository'] == URL
+assert publication['commit'] == 'f45d37894cfb19fe3bb890e8f0e06f13b472c2a2'
+assert publication['remote_and_local_blob_sha_match'] == 1384 and not publication['remote_tree_truncated']
+
 record = {'status': 'PASS', 'baseline_build': BASE, 'build_id': CURRENT,
-          'destination_repository': URL, 'online_project_contents_confirmed': False,
+          'destination_repository': URL, 'online_project_contents_confirmed': True,
+          'initial_publication_commit': 'f45d37894cfb19fe3bb890e8f0e06f13b472c2a2',
+          'publication_evidence': 'coordinator GitHub API audit: 1384 blobs matched initial local HEAD; docs/submission-info.md',
           'published_by_this_task': False, 'documents': []}
 for lang in ('vi', 'en'):
     old = ROOT / 'build' / BASE / lang / f'main-{lang}.pdf'
@@ -43,34 +56,38 @@ raw_digest = sha(PROJECT / 'results/raw/main-20261016-01/results.csv')
 assert raw_digest == 'aac4cde1fed90857ea81a1575e326049be71a528f27a6a744435b94c42dfdda7'
 manifest_path = ROOT / 'logs/source-dependencies.json'
 manifest = json.loads(manifest_path.read_text(encoding='utf-8-sig'))
-paths = {e['path'] for e in manifest} | {'check_repository_destination.py', '../docs/submission-info.md'}
+paths = {e['path'] for e in manifest} | {'check_repository_destination.py', '../docs/submission-info.md', '../diagnostics/package/initial-publication-verification.json'}
 updated = [{'path': p, 'sha256': sha(ROOT / p)} for p in sorted(paths)]
 manifest_path.write_text(json.dumps(updated, indent=2) + '\n', encoding='utf-8')
 assert all(sha(ROOT / e['path']) == e['sha256'] for e in updated)
 verified = json.loads((ROOT / 'logs/verification.json').read_text(encoding='utf-8'))
 assert verified['build_id'] == CURRENT
 assert all(d['generated_six_decimal_metrics_checked'] == 68 and
-           d['destination_repository_link_and_unpublished_status'] == 'PASS' for d in verified['documents'])
+           d['published_repository_and_immutable_commit_links'] == 'PASS' for d in verified['documents'])
 for lang in ('vi', 'en'):
     blg = (ROOT / 'build' / CURRENT / lang / f'main-{lang}.blg').read_text()
     assert 'warning' not in blg.lower() and 'error' not in blg.lower()
 record.update({'source_manifest_entries_verified': len(updated),
     'readme_sha256': sha(PROJECT / 'README.md'),
+    'readme_matches_owner_approved_final_hash': True,
+    'initial_publication_evidence_sha256': sha(publication_path),
     'submission_info_sha256': sha(PROJECT / 'docs/submission-info.md'),
     'source_manifest_sha256': sha(manifest_path),
     'locked_analysis_inputs_verified': len(inputs['input_sha256']),
     'execution_frozen_files_verified': len(freeze['files_sha256']),
     'raw_sha256_unchanged': raw_digest,
     'metrics_per_pdf': 68, 'coverage_strings_per_pdf': 8,
-    'known_blocker': 'VI-007/DEL-007/PDF-002: destination contents await publishing and verification'})
+    'missing_repository_url_or_source_contents_blocker': False,
+    'pending': 'coordinator final QA and push of revised report; course submission deferred'})
 summary_path = ROOT / 'logs/scientific-report-verification.json'
 summary = json.loads(summary_path.read_text(encoding='utf-8'))
 summary.update({'build_id': CURRENT, 'destination_repository': URL,
-    'blocked_tasks': {key: 'destination contents await publishing and verification' for key in ('VI-007', 'DEL-007', 'PDF-002')},
+    'blocked_tasks': {},
+    'publication_source_data_results': 'verified initial commit; report revision awaits coordinator push/final QA',
     'pdf_sha256': {f"sudoku-{d['language']}.pdf": d['pdf_sha256'] for d in record['documents']}})
 summary.pop('body_unchanged_from_build', None)
 summary['visual_delta_baseline'] = BASE
 summary_path.write_text(json.dumps(summary, indent=2) + '\n', encoding='utf-8')
-(ROOT / 'logs/repository-destination-verification.json').write_text(
+(ROOT / 'logs/published-availability-verification.json').write_text(
     json.dumps(record, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
 print(json.dumps(record, ensure_ascii=False, indent=2))
