@@ -1,0 +1,259 @@
+{
+  "fingerprint_schema": "sat-expanded-env-v1",
+  "python": "3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "architecture": "AMD64",
+  "interpreter_files": [
+    {
+      "path": "D:\\KHMT\\Project solo\\.venv\\Scripts\\python.exe",
+      "bytes": 254800,
+      "sha256": "935016795f3e6908e75acbc2040a01e2e4cdb494a57c42f63a0d6eedb2372256",
+      "file_version": "3.13.5150.1013"
+    },
+    {
+      "path": "C:\\Users\\admin\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "bytes": 105816,
+      "sha256": "5341746f92483a93e44c313de830f2fba2956f0759094404a16b2fed06c9a2ed",
+      "file_version": "3.13.5150.1013"
+    },
+    {
+      "path": "C:\\Users\\admin\\AppData\\Local\\Programs\\Python\\Python313\\python313.dll",
+      "bytes": 6110416,
+      "sha256": "0565965617d94274d7f2c2958d0bef33392cd9d2f346f99d8e1bedbdf264ee85",
+      "file_version": "3.13.5150.1013"
+    },
+    {
+      "path": "D:\\KHMT\\Project solo\\.venv\\pyvenv.cfg",
+      "bytes": 311,
+      "sha256": "9a8ecaed436f75c5323740eb8948db70113c4ca55a769804656ea5e4d6fc3bf6",
+      "file_version": null
+    }
+  ],
+  "packages": [
+    {
+      "name": "absl-py",
+      "version": "2.5.1",
+      "files_hashed": 31,
+      "missing_record_files": [],
+      "installed_files_sha256": "9c862b24ab64eb999fa066fef052bd7fc4e9a26753cf08f9f2e56c94c50c6660"
+    },
+    {
+      "name": "colorama",
+      "version": "0.4.6",
+      "files_hashed": 18,
+      "missing_record_files": [],
+      "installed_files_sha256": "1a18f1143c537b6a555b3608cbe13adb94a80c802d16a096bc78420b55b12260"
+    },
+    {
+      "name": "contourpy",
+      "version": "1.4.0",
+      "files_hashed": 26,
+      "missing_record_files": [],
+      "installed_files_sha256": "ab564d2cff91c9b84a79a7df69f1fb7ce8eda8d0bdc2852fbcaa72077ca02b29"
+    },
+    {
+      "name": "cplex",
+      "version": "22.2.0.1",
+      "files_hashed": 44,
+      "missing_record_files": [],
+      "installed_files_sha256": "f6368b7d6ae646ceee5bac788d56e284e8ac674dccaccf490c45de2279d6b2e3"
+    },
+    {
+      "name": "cycler",
+      "version": "0.12.1",
+      "files_hashed": 8,
+      "missing_record_files": [],
+      "installed_files_sha256": "bd1a2253f39a8e815f959309efe82d77b03a6c0d8e781512d0317b3a481b45ee"
+    },
+    {
+      "name": "docplex",
+      "version": "2.32.264",
+      "files_hashed": 133,
+      "missing_record_files": [],
+      "installed_files_sha256": "2c2978335946a824e7c47d2dd89fb07aa65b1f19fff07421348aaeae006cf531"
+    },
+    {
+      "name": "fonttools",
+      "version": "4.67.0",
+      "files_hashed": 369,
+      "missing_record_files": [],
+      "installed_files_sha256": "95d3d567399d1004ae4bf4160ffdd651f6f74ed905b33f39adc403b2c22b4f9c"
+    },
+    {
+      "name": "gurobipy",
+      "version": "13.0.3",
+      "files_hashed": 32,
+      "missing_record_files": [],
+      "installed_files_sha256": "fb4540a9b07dd3e74e7cbfb3c181335b69a55424c76b44dd6c081c052a6ead69"
+    },
+    {
+      "name": "highspy",
+      "version": "1.15.1",
+      "files_hashed": 17,
+      "missing_record_files": [],
+      "installed_files_sha256": "fd92f2c04119231a48667785811e32d9efaf04c927bcb221fc6474e990e83220"
+    },
+    {
+      "name": "immutabledict",
+      "version": "4.3.1",
+      "files_hashed": 7,
+      "missing_record_files": [],
+      "installed_files_sha256": "6ac6c1565781c6459a5870dd0a797434fb37a4f11fb2c4cf77a9acfe298f5c50"
+    },
+    {
+      "name": "iniconfig",
+      "version": "2.3.1",
+      "files_hashed": 11,
+      "missing_record_files": [],
+      "installed_files_sha256": "7c569fbe816575e8800cd8b77bc3963776634eb8d4843cf272b340c3b7cad684"
+    },
+    {
+      "name": "kiwisolver",
+      "version": "1.5.1",
+      "files_hashed": 11,
+      "missing_record_files": [],
+      "installed_files_sha256": "caf7966f764c440687ebed941bb3cbef451cf5f2e42a468894d07418c6f6a0fc"
+    },
+    {
+      "name": "matplotlib",
+      "version": "3.11.2",
+      "files_hashed": 603,
+      "missing_record_files": [],
+      "installed_files_sha256": "1b3bdd0741d71a1443ff7b601824cb14ec047debbe12c1291125028164e97606"
+    },
+    {
+      "name": "numpy",
+      "version": "2.5.4",
+      "files_hashed": 948,
+      "missing_record_files": [],
+      "installed_files_sha256": "c3d309d56e4f2273abee9b825fce81f21c91e19aed99fe23cf33fa5a6a515bdd"
+    },
+    {
+      "name": "ortools",
+      "version": "9.15.6755",
+      "files_hashed": 240,
+      "missing_record_files": [],
+      "installed_files_sha256": "67b9ac2af6606f1c05089424f2ec550d5d5a0550a499118152d3672aa09bec5f"
+    },
+    {
+      "name": "packaging",
+      "version": "26.3",
+      "files_hashed": 30,
+      "missing_record_files": [],
+      "installed_files_sha256": "e94ccbf1fdc00db50095c6211283cc7af220aa2ced3fe1ae7db6c928a67f7836"
+    },
+    {
+      "name": "pandas",
+      "version": "3.0.6",
+      "files_hashed": 1569,
+      "missing_record_files": [],
+      "installed_files_sha256": "f0affe14e820a70d57fca86d92df7a454270e52941d36a861b1e261f77a47c38"
+    },
+    {
+      "name": "pillow",
+      "version": "12.3.0",
+      "files_hashed": 122,
+      "missing_record_files": [],
+      "installed_files_sha256": "62da1c8a7fe27028f8678581555078b40daecfdc445e13d4c2a4a79ab9fb5de0"
+    },
+    {
+      "name": "pip",
+      "version": "25.1.1",
+      "files_hashed": 445,
+      "missing_record_files": [],
+      "installed_files_sha256": "0da4cb3cdde8e442f6d029b2962d560bb69dd43c402211a47c45a57ede7e1ac5"
+    },
+    {
+      "name": "pluggy",
+      "version": "1.7.0",
+      "files_hashed": 20,
+      "missing_record_files": [],
+      "installed_files_sha256": "73011ac2c3a5d15b3c78d7a030a481f8552302a06f9616d009ff6a69fffdfb5b"
+    },
+    {
+      "name": "protobuf",
+      "version": "6.33.6",
+      "files_hashed": 60,
+      "missing_record_files": [],
+      "installed_files_sha256": "9fe19d14a4087f900c9ccccfb87c7fcfd64d941000c058903c1d852a3f0b180f"
+    },
+    {
+      "name": "Pygments",
+      "version": "2.21.0",
+      "files_hashed": 351,
+      "missing_record_files": [],
+      "installed_files_sha256": "f62242058347492554ea05489a65cc49a285029dc03ffe51880cc6b78e6ccb0f"
+    },
+    {
+      "name": "pyparsing",
+      "version": "3.3.3",
+      "files_hashed": 24,
+      "missing_record_files": [],
+      "installed_files_sha256": "9a282cc99d7923d7154b97e125872000c22e67558d2ee0181059c7b6dc6c8e74"
+    },
+    {
+      "name": "pytest",
+      "version": "9.1.1",
+      "files_hashed": 93,
+      "missing_record_files": [],
+      "installed_files_sha256": "1fd68416c7990abc5bae46bd6c4bbeb3739b2df694f6acc70938f4b6ca8cebfb"
+    },
+    {
+      "name": "python-dateutil",
+      "version": "2.9.0.post0",
+      "files_hashed": 26,
+      "missing_record_files": [],
+      "installed_files_sha256": "68a1da2f5b08ba6d423d600f52012e7a3d22537afde904c873ba944f4182e016"
+    },
+    {
+      "name": "python-sat",
+      "version": "1.9.dev16",
+      "files_hashed": 52,
+      "missing_record_files": [],
+      "installed_files_sha256": "d78ac6d4210ff0b6db77b7dd91c90bdda20dae8b32d09bd20428be448d6725c5"
+    },
+    {
+      "name": "scipy",
+      "version": "1.18.1",
+      "files_hashed": 1537,
+      "missing_record_files": [],
+      "installed_files_sha256": "bb1696b36f1f49a49fb3422ae9b882358bcc557e2fc7f0afe93d24ad0fc5725b"
+    },
+    {
+      "name": "setuptools",
+      "version": "84.0.0",
+      "files_hashed": 345,
+      "missing_record_files": [],
+      "installed_files_sha256": "7895a080eab577f9b95b9165121ab02674a23623b0f2ffab1499c9d20675e5c2"
+    },
+    {
+      "name": "six",
+      "version": "1.17.0",
+      "files_hashed": 7,
+      "missing_record_files": [],
+      "installed_files_sha256": "940d87101b253d8363c5eaa3fd19749d881d5c987331e0450b2d0a4fcaa96b6d"
+    },
+    {
+      "name": "sudoku-sat-btl1",
+      "version": "0.1.0",
+      "files_hashed": 8,
+      "missing_record_files": [],
+      "installed_files_sha256": "8ac2e7a5aae409743ceb365852d55d85b5c740526ef8de420801f3003ef523fc"
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.16.0",
+      "files_hashed": 6,
+      "missing_record_files": [],
+      "installed_files_sha256": "659fded6f2b044796247df9b9a985ef7d73832c44a56d270dfd3f4cf8d3200f2"
+    },
+    {
+      "name": "tzdata",
+      "version": "2026.5",
+      "files_hashed": 634,
+      "missing_record_files": [],
+      "installed_files_sha256": "62432bc0538f6a7e9da64ecb7e926fe5798487c6a3cfa41e63e997b95a9cb0e0"
+    }
+  ],
+  "native_files_sha256": "ddf16e2e0d5e3976648eefd004c238a53907d80474a2c09dcc394cdc33c52901"
+}

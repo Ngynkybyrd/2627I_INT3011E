@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "common_SAT_three_encoding_ids": 86,
+  "paired_scatter_ids": 86,
+  "checks": [
+    "selected IDs exactly equal raw snapshot common intersection",
+    "NumPy independent linear quantiles equal figure medians,p90,p95",
+    "component medians equal raw build/solve",
+    "ECDF sorted actual runtimes and rank fractions",
+    "paired scatter equals exact same-session/stratum raw values"
+  ],
+  "solver_calls": 0
+}

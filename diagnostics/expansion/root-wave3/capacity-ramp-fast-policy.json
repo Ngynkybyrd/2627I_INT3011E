@@ -1,0 +1,27 @@
+{
+  "profile": "capacity-ramp-fast-v1",
+  "accepted": true,
+  "coordinator_sha256": "19a098e6cf55d863298103910d070274e5cf10516f3365c3b831dfc0a9b92b51",
+  "initial_8_worker_evidence": "results/expanded/wave3-20261019-212023-main/session-manifests/4bd685e0-8d3c-495c-bf58-1af0c0880735.metrics.json",
+  "schema_version": 1,
+  "selected_repetitions": [
+    1
+  ],
+  "allow_final_run": true,
+  "worker_memory_reserve_mb_initial": 256,
+  "scientific_sha256": "e357163bf7a687ceaf6f6849b3e0e813c122a2e54057d3121272111cddb69b2c",
+  "checks_removed": false,
+  "user_authorization": "Latest user: accelerate validation and use8 then24 then40; choose highest safe throughput; retain all primary results",
+  "accepted_local": "2026-10-19T23:40:04.6557653+07:00",
+  "stage_jobs": 160,
+  "min_available_ram_mb": 6144,
+  "accepted_by": "root",
+  "driver_sha256": "6e8cdab0685f92f39d9b89a745d9f53b493dd47c6415e5593f0778e0d8c3b112",
+  "experiment_id": "wave3-20261019-212023-main",
+  "target_jobs": 110000,
+  "allowed_ladder": [
+    8,
+    24,
+    40
+  ]
+}

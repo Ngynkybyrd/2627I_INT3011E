@@ -1,0 +1,207 @@
+% EXP-09A: proposed methods only; not included in either final report.
+% No expanded execution, achieved coverage, timing or performance is claimed.
+\section{Planned expanded experimental methods}
+\label{sec:expanded-methods-en}
+\textbf{Status: a prospective design under the accepted contract/schema v2;
+this is not an expanded-results section.}
+The target is 16,000 puzzles and, under the accepted matrix, 330,000 main runs.
+These are target denominators, not counts of completed puzzles or runs.
+The original S80/B16/C10 experiment with 906 runs remains separate;
+pilot, fixture, and expanded observations will not be pooled into its statistics.
+This framework is not included in either main report.
+
+\subsection{Data sources, selection, and witnesses}
+The design plans 10,000 $9\times9$ puzzles: 2,500 from each of the easy,
+medium, hard, and diabolical source labels in Sudoku Exchange at commit
+\texttt{d8c8ebaee0c08c412cfba96af1923dfa61c83317}~\cite{sudoku-exchange-data}.
+URLs, source files/lines, SHA-256, license/attribution, and original ratings
+will be retained; ratings are source labels, not independently calibrated difficulty.
+Deduplication uses canonical puzzle content across source groups, synthetic
+families, pilot/main phases, and the old S80, rather than only hashes of
+different serializations. Public duplicate ownership follows easy, medium,
+hard, diabolical order and then ascending source line; excluded copies retain
+both provenances in the log. After exclusions, fixed ranking selects the first
+2,500 per group for main and the next two for pilot. Insufficient unique supply
+fails the data gate; it does not authorize substitution or a reduced quota.
+
+The planned master seed is 20261019. Deterministic ordering uses the contract's
+SHA-256 rank over seed, operation label, and ID, sorted by digest and then ID;
+it does not depend on Python's salted hash. Derived seeds, labels, and
+resampling indices will be recorded before measurement, without speed-based
+puzzle selection. Every selected puzzle must have a complete SAT witness
+independently checked for domains, rows, columns, blocks, and clues before
+freeze. Failure to find or validate a selected public witness blocks acceptance,
+rather than silently replacing it with an easier puzzle. Witnesses remain
+separate from solver inputs. Synthetic instances will carry
+\texttt{uniqueness=unverified}; public instances may carry
+\texttt{source\_claimed} only with a cited source. A valid witness does not
+establish uniqueness.
+
+\subsection{Synthetic roots and two transformation families}
+The synthetic target is 5,000 $16\times16$ and 1,000 $25\times25$ puzzles.
+Five target clue levels are 20\%, 30\%, 40\%, 50\%, and 60\%: 1,000 N16
+and 200 N25 puzzles per level. N16 uses 1,000 roots and N25 uses 200 roots,
+with five masks per root. Families are balanced: 500 roots/family for N16 and
+100 roots/family for N25. A root is the final transformed completed grid,
+not the common initial pattern.
+
+The \texttt{permutation} family uses legal value, band/row, and stack/column
+permutations. The \texttt{row\_cycle} family starts from a legally permuted
+grid, selects two distinct rows in one band, and exchanges entries in all
+columns belonging to one complete nontrivial cycle of their value mapping.
+The cycle must have length $2,\ldots,N-1$; a whole-row exchange alone does not
+qualify as the second family. If no proper cycle is available, the base/row
+pair is resampled deterministically without changing family. The checker will
+validate each transformed root and every witness. Row indices, cycle
+values/columns, base hash, family, root ID, and resampling history are retained.
+
+For each root and integer percentage $p$, retain
+$\lfloor pN^2/100+0.5\rfloor$ cells by mask rank; actual clue count and actual
+density $g/N^2$ are stored separately from the requested level. Masks are
+ranked independently across densities, without a nesting guarantee. Roots
+must be exactly distinct; a duplicate puzzle triggers mask resampling within
+the same root/family/quota, while a duplicate root triggers regeneration of
+that root slot before masking. After 10,000 failed attempts for a slot, stop
+with evidence rather than substitute a family. Exact deduplication does not
+establish uniform sampling or distinct isomorphism classes.
+
+\subsection{Batches, configuration matrix, and separate pilot}
+The plan fixes 100 main batches before measurement. Each contains 100 public
+N9 puzzles (25/group), 50 synthetic N16 puzzles, and 10 synthetic N25 puzzles,
+for 160 puzzles. Each batch receives five N16 roots per family and one N25
+root per family, retaining all five masks of each root in that batch. Thus
+N16 has ten puzzles/level (five/family), while N25 has two/level (one/family).
+Batch and job order are frozen before execution, without selecting batches
+by observed performance or estimated speed.
+
+\begin{table}[pos=H]
+\centering
+\caption{Planned expanded matrix; three main repetitions, not measured coverage.}
+\begin{tabular}{lrrr}
+\hline
+Grid size & Target puzzles & Eligible configurations & Target runs\\
+\hline
+$9\times9$ & 10,000 & 8 & 240,000\\
+$16\times16$ & 5,000 & 5 & 75,000\\
+$25\times25$ & 1,000 & 5 & 15,000\\
+\hline
+Total & 16,000 & & 330,000\\
+\hline
+\end{tabular}
+\end{table}
+
+The eight planned N9 configurations are Glucose3 with pairwise, sequential
+counter, and bitwise AMO; CP-SAT; HiGHS; Gurobi; CPLEX MIP; and CP Optimizer.
+N16/N25 use the three SAT configurations, CP-SAT, and HiGHS. Excluding the
+three commercial engines on large grids is a scope policy based on observed
+limits, not proof that every large instance fails. The v2 matrix will retain
+reasons, evidence/hashes, and thread settings; 18 included and six excluded
+cells imply a planned 3,300 runs/batch. Excluded cells create neither timed
+jobs nor fake TIMEOUT rows. No license purchase/application is planned.
+Eligibility changes require an explicit pre-freeze decision and revised
+denominators, not matrix reduction after observing failures.
+
+The separate planned pilot contains 28 puzzles: eight public (two/group) and
+ten each N16/N25 (one additional root/family at each size, all five masks).
+Pilot roots are outside main root quotas; pilot inputs are disjoint from
+main and old inputs. One repetition gives a planned $8\times8+20\times5=164$
+runs, not a three-repetition main sample. SAT/UNSAT/invalid correctness cases
+and artificial fixtures are also separate from pilot/main. Only accepted
+pilot walltime will inform operational estimates; completion of all 330,000
+runs before the deadline is not promised.
+
+\subsection{Planned timing, storage, and recovery}
+Main execution plans three repetitions with a 10-second cutoff for build
+(including setup, solver creation/loading) plus solve; solve receives only
+the remaining budget. Imports/input reading, decoding/checking/cleanup, and
+checkpointing are outside build+solve. START/END synchronization and the
+Windows Job Object hard guard are reused; the 60-second startup and
+30-second postprocessing watchdogs are separate from the solve cutoff.
+Every job has fresh model/solver state, one worker/thread, and sequential
+execution without concurrent witness generation, builds, or heavy workloads.
+CNF is not persisted for each job. Attempt wall surrounds \texttt{run\_job}
+and includes startup/checking/cleanup; checkpoint time measures commit
+separately, while session wall also includes scheduling/I/O/idle. Exact
+component breakdowns are not inferred by subtraction when the API does not
+expose them. Timings unknown after forced termination remain null, not zero.
+
+The v2 design uses SQLite as the result authority: a RUNNING claim commits
+before solving; result, SAT witness, checker evidence, and primary terminal
+attempt commit atomically after solving. Checkpoint telemetry follows that
+commit; absent telemetry cannot authorize rerunning a committed job. An
+exclusive OS lock prevents concurrent writers; resume checks fingerprints
+of code/data/config/matrix/schedule/checker/environment/runtime. A crash after
+solving but before commit can lose an observation, so exactly-once solving
+is not claimed. Explicit, reasoned resume may recover only PENDING or orphan
+INTERRUPTED jobs after proving the old owner/worker is gone; all attempts
+remain visible, and terminal SAT/TIMEOUT/ERROR jobs are not retried. Invalid
+solutions, UNSAT on witnessed SAT, cleanup failures, or unexpected error
+statuses retain their observation and halt rather than bypassing the failing
+configuration.
+
+The planned boundary for starting new jobs is 22:30 on 19 October 2026,
+Asia/Saigon, reserving QA/report time before the 23:59 deadline. A running
+job still finishes under its guards. Resume after this boundary needs a
+reason and an audited future operational boundary; it neither changes the
+scientific cutoff nor automatically permits later observations in the
+pre-deadline report.
+
+\subsection{Planned batch selection and statistical definitions}
+Only main \texttt{qa\_complete} batches may be exported through a consistent
+SQLite snapshot: the entire eligible matrix and all three repetitions must
+be present, statuses limited to SAT/TIMEOUT, all SAT solutions independently
+rechecked, identity/hash/timing/count/balance/root checks intact, and no
+unresolved interrupted job or fatal flag. TIMEOUT does not make a batch
+incomplete. ERROR and other excluded statuses cannot be dropped to shrink
+denominators. All partial data remain available for later recovery;
+pilot/artificial/partial observations are not final main evidence. Report
+planned/started/execution-complete/QA-complete batches and exclusion reasons,
+without claiming all 16,000 puzzles from a pre-deadline subset.
+
+Runtime for an instance/configuration is the median of all three primary SAT
+repetitions, separately for build/solve/total. Mixed SAT/TIMEOUT retains its
+status vector and has no successful-only median. Group median, p90, and p95
+use per-instance medians; quantiles use type 7 with $h=(m-1)q$ and linear
+interpolation between floor/ceil order positions, for $q=0.90,0.95$.
+For $m=0$ return null; for $m=1$ use the sole value; always report $m$ and
+missing/mixed counts. Time components are aggregated independently: group
+build and solve medians are not added to reconstruct the group total median.
+
+PAR-2 for a primary attempt is observed total for SAT or 20 seconds for
+TIMEOUT. ERROR/UNAVAILABLE/LICENSE\_LIMIT/INVALID\_INPUT/UNSAT/INTERRUPTED
+have no penalty, not a timeout or zero. Per-instance PAR-2 is the mean of
+three penalties only when all three attempts are eligible; the stratum mean
+over instances equals the attempt mean for complete three-repetition blocks.
+Publish both attempt and instance denominators. Coverage distinguishes target,
+matrix-planned, selected complete blocks/jobs, observed primary, solved
+primary, any-SAT, all-three-SAT, timeouts, and every excluded status; historical
+interrupted attempts are not additional independent samples.
+
+Paired comparisons use identical IDs in the same eligible batches/strata
+with three SAT repetitions on both sides; report IDs/counts and the median
+of per-instance A/B runtime ratios. A zero denominator yields null, not
+infinity; division of group medians is not a substitute. Stratify by N,
+source/rating group, clue level, and family, retaining original ratings and
+actual clues. Do not pool timing averages from the old 906-run and expanded
+experiments.
+
+\subsection{Limitations and inputs required before results}
+Three repetitions are not three independent puzzles. Five masks sharing a
+root form a cluster; if uncertainty intervals are computed, resample roots
+jointly with all five masks within N/family while retaining density strata;
+public resampling uses instances. State the method, seed, and counts or omit
+intervals when unsupported. Both transformation families remain biased;
+uniformity, non-isomorphism, and uniqueness are not established. Fewer clues
+are not treated as proof of greater difficulty, and public N9 versus synthetic
+N16/N25 is not a size-only complexity experiment. Engine scope, one machine,
+the cutoff, and inclusion of only QA-complete batches limit generalization;
+coverage and partial observations must remain explicit.
+
+Before results integration, SAT08 must supply QA-approved export/summary,
+selected/excluded batch and ID sets, denominators, coverage/mixed-status/
+runtime/PAR-2/paired tables, quantile/cluster definitions, figures/captions,
+and the SQLite--CSV--summary--tables/figures hash chain. Frozen dataset,
+matrix, execution, and environment metadata plus the pilot estimate must
+accompany the handoff from their respective owners. Only after these gates
+may expanded Results/Abstract/Conclusion and both PDFs be updated in a later
+authorized package.

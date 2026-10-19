@@ -1,0 +1,174 @@
+{
+  "schema_version": "exp04-preflight-v1",
+  "matrix": [
+    {
+      "N": 9,
+      "method": "sat",
+      "encoding": "pairwise",
+      "included": true,
+      "evidence": "fresh guarded diagnostic"
+    },
+    {
+      "N": 9,
+      "method": "sat",
+      "encoding": "seqcounter",
+      "included": true,
+      "evidence": "fresh guarded diagnostic"
+    },
+    {
+      "N": 9,
+      "method": "sat",
+      "encoding": "bitwise",
+      "included": true,
+      "evidence": "fresh guarded diagnostic"
+    },
+    {
+      "N": 9,
+      "method": "cpsat",
+      "encoding": null,
+      "included": true,
+      "evidence": "fresh guarded diagnostic"
+    },
+    {
+      "N": 9,
+      "method": "highs",
+      "encoding": null,
+      "included": true,
+      "evidence": "fresh guarded diagnostic"
+    },
+    {
+      "N": 9,
+      "method": "gurobi",
+      "encoding": null,
+      "included": true,
+      "evidence": "fresh guarded diagnostic"
+    },
+    {
+      "N": 9,
+      "method": "cplex_mip",
+      "encoding": null,
+      "included": true,
+      "evidence": "fresh guarded diagnostic"
+    },
+    {
+      "N": 9,
+      "method": "cpoptimizer",
+      "encoding": null,
+      "included": true,
+      "evidence": "fresh guarded diagnostic"
+    },
+    {
+      "N": 16,
+      "method": "sat",
+      "encoding": "pairwise",
+      "included": true,
+      "evidence": "reused frozen run + checker recheck"
+    },
+    {
+      "N": 16,
+      "method": "sat",
+      "encoding": "seqcounter",
+      "included": true,
+      "evidence": "reused frozen run + checker recheck"
+    },
+    {
+      "N": 16,
+      "method": "sat",
+      "encoding": "bitwise",
+      "included": true,
+      "evidence": "reused frozen run + checker recheck"
+    },
+    {
+      "N": 16,
+      "method": "cpsat",
+      "encoding": null,
+      "included": true,
+      "evidence": "reused frozen run + checker recheck"
+    },
+    {
+      "N": 16,
+      "method": "highs",
+      "encoding": null,
+      "included": true,
+      "evidence": "reused frozen run + checker recheck"
+    },
+    {
+      "N": 25,
+      "method": "sat",
+      "encoding": "pairwise",
+      "included": true,
+      "evidence": "reused frozen run + checker recheck"
+    },
+    {
+      "N": 25,
+      "method": "sat",
+      "encoding": "seqcounter",
+      "included": true,
+      "evidence": "reused frozen run + checker recheck"
+    },
+    {
+      "N": 25,
+      "method": "sat",
+      "encoding": "bitwise",
+      "included": true,
+      "evidence": "reused frozen run + checker recheck"
+    },
+    {
+      "N": 25,
+      "method": "cpsat",
+      "encoding": null,
+      "included": true,
+      "evidence": "reused frozen run + checker recheck"
+    },
+    {
+      "N": 25,
+      "method": "highs",
+      "encoding": null,
+      "included": true,
+      "evidence": "reused frozen run + checker recheck"
+    }
+  ],
+  "exclusions": [
+    {
+      "N": 16,
+      "method": "gurobi",
+      "included": false,
+      "reason": "declared scope; full MIP exceeds known variable cap"
+    },
+    {
+      "N": 16,
+      "method": "cplex_mip",
+      "included": false,
+      "reason": "declared scope; full MIP exceeds known variable cap"
+    },
+    {
+      "N": 16,
+      "method": "cpoptimizer",
+      "included": false,
+      "reason": "declared scope; prior low-clue CP probes exceeded search-space cap; not universal impossibility"
+    },
+    {
+      "N": 25,
+      "method": "gurobi",
+      "included": false,
+      "reason": "declared scope; full MIP exceeds known variable cap"
+    },
+    {
+      "N": 25,
+      "method": "cplex_mip",
+      "included": false,
+      "reason": "declared scope; full MIP exceeds known variable cap"
+    },
+    {
+      "N": 25,
+      "method": "cpoptimizer",
+      "included": false,
+      "reason": "declared scope; prior low-clue CP probes exceeded search-space cap; not universal impossibility"
+    }
+  ],
+  "projected_jobs": 330000,
+  "projected_block_jobs": 3300,
+  "projected_pilot_jobs": 164,
+  "not_dataset_freeze": true,
+  "not_benchmark": true
+}

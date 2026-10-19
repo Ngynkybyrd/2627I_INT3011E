@@ -1,0 +1,48 @@
+{
+  "status": "READY_FOR_REPORT_WITH_DECLARED_ERROR",
+  "error_free": false,
+  "real_data_analysis_run": true,
+  "observed_primary": 110000,
+  "distinct_attempted_puzzles": 16000,
+  "primary_counts": {
+    "SAT": 109664,
+    "TIMEOUT": 335,
+    "ERROR": 1
+  },
+  "posthoc_non_completed": 336,
+  "non_completed_by_N": {
+    "9": 0,
+    "16": 2,
+    "25": 334
+  },
+  "puzzles_with_any_primary_SAT": 16000,
+  "effective_repetitions": 1,
+  "original_three_repetition_experiment_complete": false,
+  "historical_repetitions_excluded": {
+    "2": 324,
+    "3": 343
+  },
+  "diagnostic_retry_included": false,
+  "output_dir": "results\\final-analysis\\final-20261020-rep1",
+  "analysis_receipt": "results\\final-analysis\\final-20261020-rep1\\analysis-hashes.json",
+  "analysis_receipt_sha256": "c109097df642a7a3709e13093dbf98cb489806ebcceeabd73c13862d2f43d069",
+  "snapshot_sha256": "70eaaf0acb6c74ba02f4ca65d8ca3db5d42d83cdbafe6620865d42d5b8af4781",
+  "contract_sha256": "c15d3072b6b5e8f0e2baaf168ce8f92514dc4b1a6692a8ec71f6b24a8dfbaeef",
+  "provenance_receipt_sha256": "7c11accf78f831d33542b621b06d80d00420cae5fc9a7ec89e291322d9871efc",
+  "focused_tests_passed": 11,
+  "paired_strata_checked": 1264,
+  "native_PGFPlots_groups": 8,
+  "common_encoding_panel_instances": 86,
+  "solver_calls": 0,
+  "output_files_checked": 60,
+  "files_sha256": {
+    "scripts/analyze_final_report.py": "6dc3b974e9cdd5b67b3e5f494712a985d0c0916a0912f2af7f992a3bab9e79a9",
+    "tests/expanded/test_final_analysis.py": "4113a8522d74a46c4eb46f6a7828f58203fbf3dc69465e7500b7bd552342bfe0",
+    "diagnostics/expansion/final-analysis/finish_figures.py": "e722fbf0731929f53df943442ba1ad12052497b5777e8fcacb77299e50640a80",
+    "diagnostics/expansion/final-analysis/audit_outputs.py": "6d0365da304fa557122d42b694fae24f92b212e60d5cbf7bba4019f2da4c32a1",
+    "diagnostics/expansion/final-analysis/HANDOFF.md": "2886bb04513f86a179820a2b5f4b41691f99f43de88b324139f16974f89b6da6",
+    "diagnostics/expansion/final-analysis/tests-sealed.xml": "3c4a1f1afa8d3cc1324ec64f014282d45446c44714afb68b2f26ab291398afde",
+    "diagnostics/expansion/final-analysis/final-QA.json": "0e1e6d3c8c4f0842db06b0ed58f1445be7d7ad472a785221cd4c9a30f72fe50d"
+  },
+  "downstream_pending": "SAT09 typesetting/render/font/pagecount and SAT10 package QA; not claimed"
+}

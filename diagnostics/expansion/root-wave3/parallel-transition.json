@@ -1,0 +1,15 @@
+{
+  "workers": 4,
+  "running_attempts": 0,
+  "from": "sequential",
+  "interrupted_before_launch": 1,
+  "SAT": 1009,
+  "existing_results_preserved": true,
+  "TIMEOUT": 3,
+  "open_sessions": 0,
+  "at_local": "2026-10-19T22:50:09.6942911+07:00",
+  "user_requested": true,
+  "to": "parallel-throughput-v1",
+  "measurement_policy": "resource-contended; separate-by-session",
+  "paused_primary_results": 1012
+}

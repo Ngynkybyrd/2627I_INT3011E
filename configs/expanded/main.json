@@ -1,0 +1,10 @@
+{
+  "schema_version": 2,
+  "phase": "main",
+  "cutoff_seconds": 10.0,
+  "repetitions": 3,
+  "schedule_seed": 20261019,
+  "startup_seconds": 60.0,
+  "postprocessing_seconds": 30.0,
+  "disk_reserve_bytes": 1073741824
+}

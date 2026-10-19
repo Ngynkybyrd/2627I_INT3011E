@@ -1,0 +1,9 @@
+{
+  "selected_repetition": 1,
+  "workers": 32,
+  "console_pid": 3468,
+  "target": 110000,
+  "script": "scripts/start_capacity32_recovery.ps1",
+  "original_error_preserved": true,
+  "started_local": "2026-10-20T02:16:06.0714982+07:00"
+}

@@ -1,0 +1,15 @@
+{
+  "full_regression_passed": 835,
+  "to_release": "d956ab9dc4f46e114a60ec91108fe5e52af0089a522ff9b501575aff3d0eec56",
+  "changed_source_paths": [
+    "scripts/start_full_expanded_run.ps1",
+    "tests/expanded/test_terminal_launcher.py"
+  ],
+  "witness_attempts_preserved": 10000,
+  "accepted_by": "root",
+  "solver_reexecution_authorized": false,
+  "from_release": "1baded0a8f1e22c5cb61a4047f12de6b1cc9c5ddc38c312fc1bab1d42011c7d2",
+  "updated_local": "2026-10-19T22:24:07.8331580+07:00",
+  "scientific_sources_unchanged": true,
+  "reason": "Launcher-only fix for empty stderr after successful witness collection"
+}

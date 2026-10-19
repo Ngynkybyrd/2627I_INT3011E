@@ -1,0 +1,76 @@
+{
+  "status": "SOFTWARE_AND_RAW_DATA_AUDIT_PASS_WITH_PRESERVED_PRIMARY_ERROR",
+  "time": "2026-10-20T02:26:18.721702+07:00",
+  "software_tests": {
+    "collected": 991,
+    "initial_passed": 989,
+    "initial_failures": [
+      "tests.expanded.test_pipeline_integration::test_producer_to_complete_export_and_actual_analysis[False]",
+      "tests.expanded.test_pipeline_integration::test_producer_to_complete_export_and_actual_analysis[True]"
+    ],
+    "failure_cause": "Test --basetemp was on D: while tempfile.gettempdir() was C:. Artificial-analysis sandbox intentionally rejected output outside diagnostics or the declared temp root. No solver/analysis code failure.",
+    "retest_passed": 2,
+    "retest_configuration": "TEMP and TMP process-local set to .tmp/final-recovery-runtime; --basetemp beneath that root",
+    "unresolved_test_failures": 0
+  },
+  "data_audit": {
+    "time": "2026-10-20T02:23:41.393710+07:00",
+    "sqlite_integrity": "ok",
+    "foreign_key_errors": 0,
+    "prior_preserved": {
+      "results": true,
+      "solutions": true,
+      "primary_attempt": true
+    },
+    "by_size": [
+      {
+        "N": 9,
+        "puzzles": 10000,
+        "jobs": 80000,
+        "SAT": 80000,
+        "TIMEOUT": 0,
+        "ERROR": 0
+      },
+      {
+        "N": 16,
+        "puzzles": 5000,
+        "jobs": 25000,
+        "SAT": 24998,
+        "TIMEOUT": 1,
+        "ERROR": 1
+      },
+      {
+        "N": 25,
+        "puzzles": 1000,
+        "jobs": 5000,
+        "SAT": 4666,
+        "TIMEOUT": 334,
+        "ERROR": 0
+      }
+    ],
+    "no_active_attempts": true,
+    "no_open_sessions": true,
+    "completion_receipt": {
+      "scope_state": "COMPLETED_WITH_ERROR",
+      "independent_validation": "Full schema2 load/integrity and stored primary result checks passed; original three-repetition batch QA remains separate.",
+      "error_free": false
+    },
+    "recovery_session": {
+      "SAT": 1930,
+      "TIMEOUT": 6
+    },
+    "prior_primary_digest_matches": true,
+    "status": "PASS"
+  },
+  "remaining_work": [
+    "Final scoped CSV/snapshot export preserving all statuses, raw evidence and session/worker metadata.",
+    "Final analysis for one repetition, separate resource-contended session profiles; keep historical ERROR and all335 TIMEOUTs visible; no universal all-solved claim.",
+    "Integrate verified full-scope figures/tables into both LaTeX reports, rebuild and visual/numeric QA, update handoff. Existing rolling PDFs use480 puzzles/3300 observations."
+  ],
+  "not_performed": [
+    "No full benchmark rerun",
+    "No timeout retry",
+    "No raw ERROR replacement",
+    "No repository push or course submission"
+  ]
+}

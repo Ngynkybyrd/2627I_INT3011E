@@ -1,0 +1,11 @@
+{
+  "time": "2026-10-19T23:49:24.129213+07:00",
+  "state": "RUNNING",
+  "done": 12629,
+  "active": 32,
+  "open_sessions": 1,
+  "counts": {
+    "SAT": 12598,
+    "TIMEOUT": 40
+  }
+}

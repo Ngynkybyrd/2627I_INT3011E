@@ -1,0 +1,49 @@
+{
+  "time": "2026-10-20T02:23:41.393710+07:00",
+  "sqlite_integrity": "ok",
+  "foreign_key_errors": 0,
+  "prior_preserved": {
+    "results": true,
+    "solutions": true,
+    "primary_attempt": true
+  },
+  "by_size": [
+    {
+      "N": 9,
+      "puzzles": 10000,
+      "jobs": 80000,
+      "SAT": 80000,
+      "TIMEOUT": 0,
+      "ERROR": 0
+    },
+    {
+      "N": 16,
+      "puzzles": 5000,
+      "jobs": 25000,
+      "SAT": 24998,
+      "TIMEOUT": 1,
+      "ERROR": 1
+    },
+    {
+      "N": 25,
+      "puzzles": 1000,
+      "jobs": 5000,
+      "SAT": 4666,
+      "TIMEOUT": 334,
+      "ERROR": 0
+    }
+  ],
+  "no_active_attempts": true,
+  "no_open_sessions": true,
+  "completion_receipt": {
+    "scope_state": "COMPLETED_WITH_ERROR",
+    "independent_validation": "Full schema2 load/integrity and stored primary result checks passed; original three-repetition batch QA remains separate.",
+    "error_free": false
+  },
+  "recovery_session": {
+    "SAT": 1930,
+    "TIMEOUT": 6
+  },
+  "prior_primary_digest_matches": true,
+  "status": "PASS"
+}

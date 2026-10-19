@@ -1,0 +1,182 @@
+% EXP-09A: proposed methods only; not included in either final report.
+% No expanded execution, achieved coverage, timing or performance is claimed.
+\section{Phương pháp thực nghiệm mở rộng dự kiến}
+\label{sec:expanded-methods-vi}
+\textbf{Trạng thái: thiết kế dự kiến theo contract/schema v2 đã nghiệm thu;
+chưa phải kết quả thực nghiệm mở rộng.}
+Mục tiêu là 16.000 đề và, theo ma trận đã chốt, 330.000 lượt chính.
+Các con số này là mẫu số mục tiêu, không phải số đề/lượt đã hoàn tất.
+Thực nghiệm gốc S80/B16/C10 với 906 lượt giữ nguyên như một thực nghiệm riêng;
+không gộp pilot, fixture hoặc dữ liệu mở rộng vào thống kê của bộ gốc.
+Khung này chưa được nối vào hai báo cáo chính.
+
+\subsection{Nguồn dữ liệu, lấy mẫu và witness}
+Thiết kế dự kiến chọn 10.000 đề $9\times9$: 2.500 đề cho mỗi nhãn
+easy, medium, hard và diabolical từ Sudoku Exchange tại commit
+\texttt{d8c8ebaee0c08c412cfba96af1923dfa61c83317}~\cite{sudoku-exchange-data}.
+URL, file nguồn, dòng gốc, SHA-256, license/attribution và rating nguyên bản
+sẽ được lưu; rating chỉ là nhãn của nguồn, chưa được hiệu chuẩn độc lập.
+Khử trùng dùng nội dung puzzle chuẩn hóa, xuyên nhóm nguồn, hai họ synthetic,
+pilot/main và bộ S80 cũ, không chỉ so hash của các cách serialize khác nhau.
+Quyền sở hữu bản trùng public theo thứ tự easy, medium, hard, diabolical rồi
+dòng nguồn tăng dần; mọi bản loại đều giữ provenance trong log.
+Sau loại trùng, thứ tự rank cố định chọn 2.500 đề mỗi nhóm cho main và hai đề
+kế tiếp cho pilot. Thiếu nguồn duy nhất là lỗi cổng dữ liệu, không được đổi nhóm
+hoặc tự giảm quota.
+
+Master seed dự kiến là 20261019. Thứ tự xác định bằng rank SHA-256 trên chuỗi
+seed, nhãn thao tác và ID theo contract, digest tăng dần rồi ID để phá hòa;
+không phụ thuộc hash ngẫu nhiên của Python. Derived seed, nhãn và lần sinh lại
+sẽ được ghi trước phép đo, không chọn đề theo tốc độ solver.
+Mọi đề được chọn phải có witness SAT hoàn chỉnh được checker độc lập kiểm
+miền, hàng, cột, khối và clues trước freeze. Witness public chưa tìm được hoặc
+không kiểm được sẽ chặn nghiệm thu, không bị thay âm thầm bằng đề dễ hơn.
+Witness tách khỏi input cho solver. Synthetic sẽ mang
+\texttt{uniqueness=unverified}; public chỉ mang \texttt{source\_claimed} khi có
+nguồn dẫn. Tìm một witness hợp lệ không chứng minh nghiệm duy nhất.
+
+\subsection{Bảng gốc synthetic và hai họ biến đổi}
+Mục tiêu synthetic là 5.000 đề $16\times16$ và 1.000 đề $25\times25$.
+Năm mức clue mục tiêu là 20\%, 30\%, 40\%, 50\%, 60\%: mỗi mức có 1.000
+đề N16 và 200 đề N25. N16 dùng 1.000 root, N25 dùng 200 root, mỗi root sinh
+năm masks. Hai họ cân bằng: N16 có 500 root/họ, N25 có 100 root/họ.
+Root là bảng nghiệm cuối sau biến đổi, không phải pattern chung ban đầu.
+
+Họ \texttt{permutation} dùng các hoán vị hợp lệ của giá trị, band/hàng và
+stack/cột. Họ \texttt{row\_cycle} bắt đầu bằng bảng đã hoán vị hợp lệ, chọn hai
+hàng khác nhau cùng band và tráo các ô tại toàn bộ cột thuộc một chu trình
+không tầm thường của ánh xạ giá trị giữa hai hàng. Chu trình phải có độ dài
+$2,\ldots,N-1$; đổi trọn hai hàng không đủ để được tính là họ thứ hai.
+Nếu không có chu trình thích hợp thì sinh lại base/cặp hàng theo seed cố định,
+không thay họ. Checker sẽ kiểm root sau biến đổi và mọi witness.
+Lưu hàng, giá trị/cột chu trình, hash base, family, root ID và log sinh lại.
+
+Với mỗi root và phần trăm nguyên $p$, giữ
+$\lfloor pN^2/100+0.5\rfloor$ ô theo rank của mask; actual clues và mật độ
+thực $g/N^2$ được lưu riêng với mức yêu cầu. Masks được rank độc lập theo mức,
+không hứa lồng nhau. Root phải khác nhau chính xác; puzzle trùng được sinh lại
+mask đúng root/họ/quota, root trùng được sinh lại đúng slot trước khi tạo mask.
+Sau 10.000 lần thất bại một slot phải dừng và báo bằng chứng, không đổi họ.
+Dedup chính xác không chứng minh lấy mẫu đồng đều hoặc khác lớp đẳng cấu.
+
+\subsection{Batch, ma trận cấu hình và pilot riêng}
+Dự kiến có 100 main batch được khóa trước phép đo. Mỗi batch chứa 100 public
+N9 (25/nhóm), 50 synthetic N16 và 10 synthetic N25, tổng 160 đề.
+N16 nhận năm root mỗi họ/batch; N25 nhận một root mỗi họ/batch, luôn giữ cả
+năm masks của root trong batch. Vì vậy N16 có 10 đề/mức (năm/họ), N25 có hai
+đề/mức (một/họ). Thứ tự batch và job cố định trước khi chạy; không chọn batch
+theo kết quả hay ước lượng tốc độ.
+
+\begin{table}[pos=H]
+\centering
+\caption{Ma trận mở rộng dự kiến; ba lần lặp chính, không phải độ phủ đã đo.}
+\begin{tabular}{lrrr}
+\hline
+Cỡ bảng & Đề mục tiêu & Cấu hình hợp lệ & Lượt mục tiêu\\
+\hline
+$9\times9$ & 10.000 & 8 & 240.000\\
+$16\times16$ & 5.000 & 5 & 75.000\\
+$25\times25$ & 1.000 & 5 & 15.000\\
+\hline
+Tổng & 16.000 & & 330.000\\
+\hline
+\end{tabular}
+\end{table}
+
+Tám cấu hình N9 dự kiến gồm Glucose3 với pairwise, sequential counter,
+bitwise AMO; CP-SAT; HiGHS; Gurobi; CPLEX MIP; CP Optimizer.
+N16/N25 dùng ba cấu hình SAT, CP-SAT và HiGHS. Loại ba engine thương mại ở
+bảng lớn là chính sách phạm vi theo giới hạn đã quan sát, không chứng minh
+mọi đề lớn đều thất bại. Ma trận v2 sẽ giữ lý do, evidence/hash và thread setting;
+18 ô hợp lệ và sáu ô loại cho tổng dự kiến 3.300 lượt/batch.
+Ô bị loại không sinh job hoặc TIMEOUT giả. Không mua/xin license.
+Thay eligibility cần quyết định rõ trước freeze và tính lại mẫu số, không giảm
+ma trận sau khi thấy lỗi.
+
+Pilot dự kiến riêng 28 đề: tám public (hai/nhóm) và mười đề mỗi N16/N25
+(mỗi cỡ thêm một root/họ với đủ năm masks). Root pilot không thuộc quota root
+main; mọi input pilot disjoint với main và bộ cũ. Pilot dùng một repetition,
+dự kiến $8\times8+20\times5=164$ lượt, không phải mẫu ba repetitions chính.
+Correctness SAT/UNSAT/invalid và fixture artificial cũng tách khỏi pilot/main.
+Chỉ pilot walltime đã nghiệm thu mới dùng cho dự báo vận hành, không hứa
+hoàn tất 330.000 lượt trước hạn.
+
+\subsection{Đo thời gian, lưu trữ và phục hồi dự kiến}
+Main dự kiến ba repetitions, cutoff 10 giây cho build (đã gồm setup/tạo/nạp
+solver) cộng solve; solve chỉ nhận ngân sách còn lại. Import/đọc input,
+decode/checker/cleanup và checkpoint không thuộc build+solve.
+Tái dùng START/END và Windows Job Object hard guard; watchdog startup 60 giây
+và hậu xử lý 30 giây tách khỏi cutoff solve. Mỗi lần giải tạo model/solver mới,
+một worker/luồng, chạy tuần tự; không sinh witness, build hoặc chạy việc nặng
+cạnh tranh. Không lưu CNF cho từng job.
+Attempt wall đo quanh \texttt{run\_job}, gồm startup/checker/cleanup;
+checkpoint đo commit riêng và session wall còn gồm scheduling/I/O/idle.
+Không suy breakdown chính xác bằng phép trừ khi API không cung cấp.
+Timing không biết sau cưỡng bức dừng giữ null, không điền 0.
+
+Thiết kế v2 dùng SQLite làm nguồn kết quả chuẩn: claim RUNNING commit trước
+solve; kết quả, witness SAT, bằng chứng checker và primary terminal attempt
+commit cùng transaction sau solve. Checkpoint telemetry ghi sau commit;
+thiếu telemetry không cho phép chạy lại job đã commit.
+Khóa OS độc quyền ngăn hai writer; resume kiểm fingerprint code/data/config/
+matrix/schedule/checker/env/runtime. Crash sau solve trước commit có thể làm
+mất observation; vì thế không tuyên bố solve đúng-một-lần. Resume tường minh
+với lý do chỉ phục hồi PENDING hoặc orphan INTERRUPTED sau chứng minh không
+còn owner/worker; giữ mọi attempt, không retry terminal SAT/TIMEOUT/ERROR.
+Sai nghiệm, UNSAT trên witnessed SAT, cleanup lỗi hoặc status lỗi bất ngờ
+phải giữ observation rồi halt, không chạy vòng qua cấu hình lỗi.
+
+Mốc dừng khởi tạo job mới dự kiến là 22:30 ngày 19/10/2026 Asia/Saigon,
+để dành QA và báo cáo trước hạn 23:59. Job đang chạy vẫn kết thúc theo guard.
+Resume sau mốc cần lý do và mốc vận hành mới được audit; không đổi cutoff
+khoa học hoặc tự cấp quyền đưa số liệu sau hạn vào báo cáo trước hạn.
+
+\subsection{Chọn batch và định nghĩa thống kê dự kiến}
+Chỉ export main \texttt{qa\_complete} qua snapshot SQLite nhất quán:
+đủ toàn ma trận hợp lệ và ba repetitions, chỉ SAT/TIMEOUT, mọi nghiệm SAT
+được checker kiểm lại, identity/hash/timing/count/balance/root intact và không
+còn interrupted job chưa xử lý hoặc fatal flag. TIMEOUT không làm batch thiếu.
+ERROR và các status loại khác không được bỏ hàng để thu nhỏ mẫu số.
+Giữ mọi partial để phục hồi sau; pilot/artificial/partial không là bằng chứng
+main final. Báo số batch planned/started/execution-complete/QA-complete và lý do
+loại, không nhận đủ 16.000 đề từ phần hoàn tất trước hạn.
+
+Runtime một đề/cấu hình là median của đủ ba primary SAT cho từng cột
+build/solve/total. Mixed SAT/TIMEOUT giữ vector status, không có successful-only
+median. Median, p90 và p95 của nhóm lấy trên median theo đề; quantile dùng
+type 7: $h=(m-1)q$, nội suy tuyến tính giữa hai thứ tự floor/ceil, với
+$q=0.90,0.95$. Khi $m=0$ để null; $m=1$ dùng giá trị duy nhất; luôn báo $m$
+và số thiếu/mixed. Ba cột thời gian aggregate độc lập, không cộng hai median
+nhóm để tái tạo median total.
+
+PAR-2 một primary attempt: SAT dùng observed total, TIMEOUT nhận 20 giây.
+ERROR/UNAVAILABLE/LICENSE\_LIMIT/INVALID\_INPUT/UNSAT/INTERRUPTED không có
+penalty, không đổi thành timeout hoặc 0. PAR-2 theo đề là mean ba penalty
+chỉ khi đủ ba attempt hợp lệ; stratum mean theo đề bằng mean theo attempt
+trong complete three-repetition blocks. Công bố cả mẫu số attempt và đề.
+Coverage tách target, matrix-planned, selected complete blocks/jobs,
+observed primary, solved primary, any-SAT, all-three-SAT, timeout và từng
+status loại; attempt ngắt lịch sử không là mẫu độc lập thêm.
+
+So cặp chỉ dùng cùng ID, cùng eligible batch/stratum, đủ ba SAT ở cả hai bên;
+báo ID/count và median của ratio runtime A/B theo từng đề. Mẫu số 0 cho null,
+không vô cực; không thay bằng tỷ số hai median nhóm. Phân tầng N, nguồn/nhóm
+rating, mức clue và family; giữ rating gốc và actual clues.
+Không gộp timing trung bình của bộ gốc 906 và bộ mở rộng.
+
+\subsection{Giới hạn và đầu vào cần nhận trước kết quả}
+Ba repetitions không phải ba đề độc lập. Năm masks cùng root là cluster;
+nếu tính khoảng bất định, resample root cùng cả năm masks trong N/family,
+giữ strata mật độ; public resample theo instance. Phải ghi phương pháp, seed,
+count hoặc bỏ khoảng bất định khi chưa đủ cơ sở. Hai họ biến đổi vẫn có bias,
+không chứng minh uniformity, non-isomorphism hoặc uniqueness. Không coi ít
+clue là khó hơn hoặc so nguồn public N9 với synthetic N16/N25 là phép đo
+độ phức tạp thuần theo kích thước. Phạm vi engine, máy đơn, cutoff và lựa chọn
+chỉ batch đủ QA giới hạn khả năng khái quát; coverage/partial luôn phải hiện rõ.
+
+Trước tích hợp kết quả, SAT08 cần bàn giao export/summary đã qua QA, tập batch
+và ID được chọn/loại, mẫu số, bảng coverage/mixed status/runtime/PAR-2/paired,
+định nghĩa quantile/cluster, figures/captions và hash truy vết
+SQLite--CSV--summary--bảng/hình. Dataset/matrix/execution/env metadata đã freeze
+và pilot estimate phải đi kèm từ các chủ tương ứng. Chỉ sau các cổng này mới
+viết kết quả/Abstract/Conclusion mở rộng và cập nhật hai PDF ở gói được giao sau.

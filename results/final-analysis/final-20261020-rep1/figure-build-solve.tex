@@ -1,0 +1,5 @@
+% Same 86 common SAT IDs, N25/permutation/40%, session a23e8969-0b78-41e1-925a-b8d23fc2de9b, 32 workers, resource-contended. Single measured repetition; no missing/censored runtime imputed. Build includes setup. Independent component medians must not be summed to claim median total.
+\begin{tikzpicture}\begin{axis}[width=.94\linewidth,height=6cm,ybar,xlabel={Method},ylabel={Component median (s)},xtick={1,...,3},xticklabels={PW,SC,BW},legend pos=north west]
+\addplot table[x=method,y=build] {common-build-solve.dat};\addlegendentry{build}
+\addplot table[x=method,y=solve] {common-build-solve.dat};\addlegendentry{solve}
+\end{axis}\end{tikzpicture}

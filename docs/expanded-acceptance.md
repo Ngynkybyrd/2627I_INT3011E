@@ -1,0 +1,29 @@
+# Root acceptance — expanded contract v2, 19/10/2026
+
+EXP-01/02/03/04/07A được nghiệm thu cho đúng phạm vi bàn giao, không phải nghiệm thu implementation/pilot/main. Bằng chứng kiểm độc lập: diagnostics/expansion/root-review.json (PASS,18 witness,19.721 mapping,15 source hashes,7 package versions;0 solver call). Contract được chấp nhận: docs/expanded-contract.md SHA256 591ca2dad5ce918cc6345a48d9cafe0d083ccdc8aa1675273159f2fa394fb5b3. Không sửa tài liệu đó âm thầm; bổ sung này chốt giao diện còn thiếu trước khi code.
+
+## 1. Ranh giới hợp đồng
+
+- Các hàm public trong sudoku.expanded_runner trả JSON-compatible dict (không dataclass/Path/enum object). Tên DatasetIndex/ExitSummary/ProgressSnapshot trong contract là tên cấu trúc dict. Số thời gian hữu hạn hoặc null; trạng thái uppercase. Argument đường dẫn chấp nhận str hoặc pathlib.Path.
+- DatasetIndex tối thiểu: schema_version,dataset_id,phase,artificial,dataset_dir(str tuyệt đối),freeze_sha256,records(mapping instance_id→manifest record),batches(list theo ordinal),counts. Metadata/root records có thể thêm để không đọc lại dataset.
+- prepare_expanded trả experiment_id,state,phase,planned_jobs,planned_blocks; ExitSummary giữ các key contract: experiment_id,state,completed_jobs,completed_blocks,remaining_jobs,reason. export_expanded trả output_dir,selected_blocks,selected_jobs,hashes_sha256. Status là các trường contract; CLI xuất --json nguyên dict, không chế biến status thành thao tác solve.
+- Lỗi public dùng ExpandedError(message, exit_code=2) có thuộc tính exit_code; writer busy=3, runtime/integrity halt=5. Pause/deadline là ExitSummary state=PAUSED, exit4; hoàn tất/prepare/export/status hợp lệ exit0. CLI syntax lỗi exit2. Không hiện traceback trừ diagnostic developer tùy chọn, không nuốt lỗi thành thành công.
+- CLI06 chỉ sở hữu scripts/run_expanded.py, runner07 chỉ src/sudoku/expanded_runner.py và các helper mới có tiền tố expanded_;05 sở hữu src/sudoku/expanded_data.py và scripts/prepare_expanded_data.py. Không hai chủ sửa cùng module;05 không triển khai API validate_expanded_dataset của07.
+
+## 2. Config, matrix và fixture
+
+-07 tạo configs/expanded/main.json và pilot.json: schema_version=2,phase,cutoff_seconds=10.0,repetitions(main3/pilot1),schedule_seed=20261019,startup_seconds=60.0,postprocessing_seconds=30.0,disk_reserve_bytes=1073741824. Mốc operational stop-starting-at mặc định theo contract, override session có audit, không đổi scientific hash.
+-07 normalize diagnostics/expansion/solvers/matrix.json (schema exp04-preflight-v1, keys matrix/exclusions, included) thành configs/expanded/matrix.json schema_version=2; rows gồm N,configuration,method,encoding(null baseline),eligible,scope_reason và evidence references+hashes. Tài liệu nguyên bản04 giữ nguyên. Phải giữ18included/6excluded và330000/3300/164 dự kiến; hash nguồn env01/solvers04 lưu trong matrix/provenance, không giả evidence mới.
+- Gates không phải cờ CLI cho phép bypass: prepare/status/export không solve; pilot cần dữ liệu thật đã khóa+QA/preflight evidence được root nghiệm thu; main thêm pilot và execution freeze root nghiệm thu. Trước các cổng này không gọi run_job; không tự đặt accepted=true để chạy.07 phải lưu gate refs/hashes trong experiment manifest; đường thiếu/mismatch từ chối trước claim/worker.
+- Artificial fixtures được phép chuẩn bị/validate/storage/export/test nhưng luôn artificial=true, path riêng diagnostics/expansion hoặc pytest tmp; không được pilot/run thực, không xuất report-ready chính thức. Fixture QA có thể kiểm tính đủ bằng hàm nội bộ có injection trong tests, không được có CLI bypass artificial→main.
+- Dữ liệu có đúng100main batches khi hoàn chỉnh; fixture nhỏ được07 validator nhận diện artificial với quotas khai báo tường minh, không nới quotas của dataset thật. Pilot thật28đề/164lượt disjoint main/old.
+
+## 3. Nghiệm thu và gói được mở
+
+-01/02/04 kết thúc, không giao rerun khi không có lỗi/thay đổi.03 nhận triển khai tests theo contract;05 generator/import/witness;07 runner/storage/config;06 CLI;08 analysis bằng fixtures.09 chỉ viết khung phương pháp dự kiến bằng nguồn LaTeX riêng, chưa nối vào hai bản final/chưa sinh kết quả.10 vẫn chờ CLI/export/QA.
+- Có thể code/test bằng fixture khi đầu vào API đã chốt; không cần chờ dataset thật để viết runner/CLI/analysis. Kiểm tích hợp và chạy thật phải chờ implementation/data bàn giao đầy đủ.03 không sửa module của07/05/06/08 để tests pass.
+-05 được sinh dữ liệu và giải witness ngoài benchmark bằng code deterministic; không cần AI mỗi đề. Nguồn URL cố định, không chọn bỏ puzzle theo hiệu năng. Dữ liệu/solve witness phải kết thúc trước pilot/main. Chạy thật16.000 chỉ sau công cụ/provenance/sanity tốt; không bật pilot/main ở đợt này.
+-03 test mới tests/test_expanded_*.py hoặc tests/expanded/; fixtures riêng, không sửa suite/frozen cũ. Chạy test nhỏ khi module tương ứng đã tồn tại/ổn định; không báo skip/xfail là đạt. Full regression đúng một lượt khi tích hợp các thay đổi đủ đầu vào, không chạy đồng thời solver diagnostic nặng.
+-08 triển khai scripts/analyze_expanded.py và diagnostics/expansion/analysis/fixture*, không sửa analyzer v1/bảng/hình report final. API analyze_expanded(export_dir,output_dir) đọc export schema2, ghi output mới, trả summary dict; incomplete/pilot/artificial phải gắn nhãn, không nhận như main final. Median3SAT/type7percentiles/PAR2/paired/root clusters như contract; không tự solver.
+-09 chỉ tạo report/shared/expanded-methods-vi.tex và expanded-methods-en.tex (tự khai báo thiết kế dự kiến, chưa có kết quả) và report/EXPANSION-METHODS-HANDOFF.md. Giữ CAS/STIX/TikZ/footnote/footer hiện có; không build/sửa final PDF đợt này.
+- Root giữ SAT-EXPANSION/STATUS/TODO/THREADS và acceptance. Chat chỉ báo issue/bàn giao, không tự mở gói kế tiếp/nhắn chat khác. Không automation/push/LMS. Khi gói hoàn tất: kiểm delta thực rồi mới mở cổng tiếp.

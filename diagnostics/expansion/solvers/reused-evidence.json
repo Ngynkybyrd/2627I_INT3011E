@@ -1,0 +1,122 @@
+[
+  {
+    "N": 16,
+    "method": "sat",
+    "encoding": "pairwise",
+    "source_job": "synthetic-N16-p30-s3__sat__pairwise__r3",
+    "source_csv_sha256": "aac4cde1fed90857ea81a1575e326049be71a528f27a6a744435b94c42dfdda7",
+    "witness": "results\\raw\\main-20261016-01\\solutions\\synthetic-N16-p30-s3__sat__pairwise__r3.json",
+    "witness_sha256": "45a86be90d5edd60d70a873bea122e46432f8e7548087724e2276e644e235818",
+    "status": "SAT",
+    "checker_recheck": "PASS",
+    "cleanup_basis": "original run_job complete; frozen runner verifies active JobObject count=0 before returning"
+  },
+  {
+    "N": 16,
+    "method": "sat",
+    "encoding": "seqcounter",
+    "source_job": "synthetic-N16-p70-s4__sat__seqcounter__r2",
+    "source_csv_sha256": "aac4cde1fed90857ea81a1575e326049be71a528f27a6a744435b94c42dfdda7",
+    "witness": "results\\raw\\main-20261016-01\\solutions\\synthetic-N16-p70-s4__sat__seqcounter__r2.json",
+    "witness_sha256": "e69d04319a4b2d39f2614f0bfec91615c38e602e05a8c9123c39d376eaf270e2",
+    "status": "SAT",
+    "checker_recheck": "PASS",
+    "cleanup_basis": "original run_job complete; frozen runner verifies active JobObject count=0 before returning"
+  },
+  {
+    "N": 16,
+    "method": "sat",
+    "encoding": "bitwise",
+    "source_job": "synthetic-N16-p70-s3__sat__bitwise__r2",
+    "source_csv_sha256": "aac4cde1fed90857ea81a1575e326049be71a528f27a6a744435b94c42dfdda7",
+    "witness": "results\\raw\\main-20261016-01\\solutions\\synthetic-N16-p70-s3__sat__bitwise__r2.json",
+    "witness_sha256": "1f896d0b0d32fe9135cf40fddaef5507062841a1753a654f7f71fb0a30a00a48",
+    "status": "SAT",
+    "checker_recheck": "PASS",
+    "cleanup_basis": "original run_job complete; frozen runner verifies active JobObject count=0 before returning"
+  },
+  {
+    "N": 16,
+    "method": "cpsat",
+    "encoding": null,
+    "source_job": "synthetic-N16-p50-s0__cpsat__none__r3",
+    "source_csv_sha256": "aac4cde1fed90857ea81a1575e326049be71a528f27a6a744435b94c42dfdda7",
+    "witness": "results\\raw\\main-20261016-01\\solutions\\synthetic-N16-p50-s0__cpsat__none__r3.json",
+    "witness_sha256": "13b7dd25b033cd516e27221d29643d6905bb657574fed1fb00193e0e564aa15f",
+    "status": "SAT",
+    "checker_recheck": "PASS",
+    "cleanup_basis": "original run_job complete; frozen runner verifies active JobObject count=0 before returning"
+  },
+  {
+    "N": 16,
+    "method": "highs",
+    "encoding": null,
+    "source_job": "synthetic-N16-p30-s0__highs__none__r1",
+    "source_csv_sha256": "aac4cde1fed90857ea81a1575e326049be71a528f27a6a744435b94c42dfdda7",
+    "witness": "results\\raw\\main-20261016-01\\solutions\\synthetic-N16-p30-s0__highs__none__r1.json",
+    "witness_sha256": "d2530fa7e1331442de88d992ce90d5a2f214e55b3dc0c39fe76c808849fe9100",
+    "status": "SAT",
+    "checker_recheck": "PASS",
+    "cleanup_basis": "original run_job complete; frozen runner verifies active JobObject count=0 before returning"
+  },
+  {
+    "N": 25,
+    "method": "sat",
+    "encoding": "pairwise",
+    "source_job": "synthetic-N25-p50-s0__sat__pairwise__r1",
+    "source_csv_sha256": "aac4cde1fed90857ea81a1575e326049be71a528f27a6a744435b94c42dfdda7",
+    "witness": "results\\raw\\main-20261016-01\\solutions\\synthetic-N25-p50-s0__sat__pairwise__r1.json",
+    "witness_sha256": "077d0d8190851a176b8ce348e40aaa95c9eccdfa88fa46256763eb7bd8441107",
+    "status": "SAT",
+    "checker_recheck": "PASS",
+    "cleanup_basis": "original run_job complete; frozen runner verifies active JobObject count=0 before returning"
+  },
+  {
+    "N": 25,
+    "method": "sat",
+    "encoding": "seqcounter",
+    "source_job": "synthetic-N25-p70-s3__sat__seqcounter__r2",
+    "source_csv_sha256": "aac4cde1fed90857ea81a1575e326049be71a528f27a6a744435b94c42dfdda7",
+    "witness": "results\\raw\\main-20261016-01\\solutions\\synthetic-N25-p70-s3__sat__seqcounter__r2.json",
+    "witness_sha256": "fb16286a3ddfc2d51caee578bb91ba72633bd4647e02acc9820658e27a4e0672",
+    "status": "SAT",
+    "checker_recheck": "PASS",
+    "cleanup_basis": "original run_job complete; frozen runner verifies active JobObject count=0 before returning"
+  },
+  {
+    "N": 25,
+    "method": "sat",
+    "encoding": "bitwise",
+    "source_job": "synthetic-N25-p70-s0__sat__bitwise__r3",
+    "source_csv_sha256": "aac4cde1fed90857ea81a1575e326049be71a528f27a6a744435b94c42dfdda7",
+    "witness": "results\\raw\\main-20261016-01\\solutions\\synthetic-N25-p70-s0__sat__bitwise__r3.json",
+    "witness_sha256": "9b08e8047663b234c36829eb8918782436c89cc11351b11d16fd823b33ce9129",
+    "status": "SAT",
+    "checker_recheck": "PASS",
+    "cleanup_basis": "original run_job complete; frozen runner verifies active JobObject count=0 before returning"
+  },
+  {
+    "N": 25,
+    "method": "cpsat",
+    "encoding": null,
+    "source_job": "synthetic-N25-p70-s0__cpsat__none__r2",
+    "source_csv_sha256": "aac4cde1fed90857ea81a1575e326049be71a528f27a6a744435b94c42dfdda7",
+    "witness": "results\\raw\\main-20261016-01\\solutions\\synthetic-N25-p70-s0__cpsat__none__r2.json",
+    "witness_sha256": "ca1c858614a31a0d93ba20965270a5cb6e31f0366a6b252fdb0e929a6e8d6f53",
+    "status": "SAT",
+    "checker_recheck": "PASS",
+    "cleanup_basis": "original run_job complete; frozen runner verifies active JobObject count=0 before returning"
+  },
+  {
+    "N": 25,
+    "method": "highs",
+    "encoding": null,
+    "source_job": "synthetic-N25-p70-s0__highs__none__r2",
+    "source_csv_sha256": "aac4cde1fed90857ea81a1575e326049be71a528f27a6a744435b94c42dfdda7",
+    "witness": "results\\raw\\main-20261016-01\\solutions\\synthetic-N25-p70-s0__highs__none__r2.json",
+    "witness_sha256": "3fe53efa6d235b9eefe3118bdad9d82d565579df331c67011fd4f0f250a22e66",
+    "status": "SAT",
+    "checker_recheck": "PASS",
+    "cleanup_basis": "original run_job complete; frozen runner verifies active JobObject count=0 before returning"
+  }
+]

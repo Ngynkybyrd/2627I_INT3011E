@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "quality": "READY_FOR_REPORT_WITH_DECLARED_ERROR",
+  "observations": 110000,
+  "instances": 16000,
+  "counts": {
+    "SAT": 109664,
+    "TIMEOUT": 335,
+    "ERROR": 1
+  },
+  "non_completed": 336,
+  "puzzles_any_primary_SAT": 16000,
+  "paired_strata_independently_checked": 1264,
+  "paired_quantiles_checked": true,
+  "common_encoding_figure_sample": 86,
+  "profile_pooling": false,
+  "raw_error_none_preserved": true,
+  "diagnostic_retry_included": false,
+  "output_files_checked": 60,
+  "receipt_sha256": "c109097df642a7a3709e13093dbf98cb489806ebcceeabd73c13862d2f43d069",
+  "snapshot_sha256": "70eaaf0acb6c74ba02f4ca65d8ca3db5d42d83cdbafe6620865d42d5b8af4781",
+  "solver_calls": 0,
+  "rendering_and_report_layout": "SAT09 downstream; not claimed here"
+}

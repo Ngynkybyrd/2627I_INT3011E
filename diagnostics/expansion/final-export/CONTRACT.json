@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "kind": "FINAL_EXPANDED_REP1_CONTRACT",
+  "producer": "scripts/export_expanded_final.py",
+  "receipt": "snapshot.json",
+  "receipt_kind": "VERIFIED_FINAL_REP1_SNAPSHOT",
+  "quality": "VERIFIED_WITH_DECLARED_INFRASTRUCTURE_ERROR",
+  "error_free": false,
+  "selected_scope_observed_complete": true,
+  "original_three_repetition_experiment_complete": false,
+  "selection": {"repetitions": [1], "all_batches": true, "expected_jobs": 110000, "expected_instances": 16000, "expected_statuses": {"SAT": 109664, "TIMEOUT": 335, "ERROR": 1}, "excluded_historical_repetitions": {"2": 324, "3": 343}, "diagnostic_retry_is_primary": false},
+  "files": {
+    "snapshot.sqlite3": "One consistent, unmodified SQLite backup of the complete raw experiment; includes excluded reps2/3 and history. Filter CSV job/attempt IDs when querying.",
+    "inputs.sqlite3": "Self-contained frozen inputs and acquisition witnesses; table inputs columns instance_id TEXT PRIMARY KEY, block_side INTEGER, board_side INTEGER, input_payload BLOB, input_sha256 TEXT, input_canonical_sha256 TEXT, witness_payload BLOB, witness_sha256 TEXT, witness_canonical_sha256 TEXT. Hashes cover exact BLOB bytes; canonical hashes cover compact sorted UTF8 n/grid JSON with LF.",
+    "results.csv": "Exact expanded CSV_FIELDS followed by session_id,profile,workers,timing_policy; 110000 primary rep1 rows including the declared ERROR. Empty cells are null, baseline encoding is empty. No diagnosticretry rows.",
+    "instances.jsonl": "16000 exact frozen dataset manifest records; locate input/witness bytes in inputs.sqlite3 by instance_id, not by the original input_file path.",
+    "profiles.json": "DIRECT mapping session_id to profile metadata including profile,workers,timing_policy and source_session_manifest/path/hash. Workers belong to each actual session; sequential and concurrent sessions remain separate.",
+    "source-manifest.json": "Original experiment.json bytes, unchanged; original repetitions=3 and planned330000 remain historical scientific metadata.",
+    "source-index.json": "Original dataset-index.json bytes, unchanged.",
+    "source-freeze.json": "Original dataset freeze.json bytes, unchanged.",
+    "evidence/": "Pinned root completion, declared-error acknowledgement, diagnosticretry and recovery audit receipts; diagnosticretry is evidence only, not an observation replacement.",
+    "session-manifests/": "Original selected-session manifest and authorization evidence bytes.",
+    "CONTRACT.json": "A byte copy of this contract, pinned in snapshot receipt."
+  },
+  "solution_ref": {"format": "sqlite:snapshot.sqlite3#solutions/<attempt_id>", "only_status": "SAT", "lookup": "SELECT payload,sha256,checker_json FROM solutions WHERE attempt_id=?", "parameter": "UUID4 attempt_id from CSV; never evaluate SQL from a reference", "validation": "Require exact ref/attempt identity, BLOB SHA256 equal solution_sha256 and stored sha256, canonical n/grid bytes, matching n and an independent Sudoku/original-clue check. TIMEOUT and ERROR have empty solution_ref/solution_sha256."},
+  "input_lookup": {"database": "inputs.sqlite3", "table": "inputs", "key": "instance_id", "validation": "Verify input/witness BLOB hashes, canonical hashes and dimensions against instances.jsonl; check the witness and every SAT solution independently."},
+  "snapshot_receipt": {"schema_version": 1, "status": "PASS only after complete verification", "files_sha256": "Relative path -> SHA256 of EVERY other snapshot file; snapshot.json excludes itself. External receipt hash is in the producer return/HANDOFF.json.", "required_fields": ["quality", "error_free", "selected_scope_observed_complete", "original_three_repetition_experiment_complete", "source_experiment_id", "source_scientific_sha256", "selected_repetitions", "effective_repetitions", "original_repetitions", "expected_jobs", "observed_jobs", "selected_instances", "primary_counts", "excluded_primary_counts", "declared_error", "files_sha256"]},
+  "timing_policy": "Separate by actual session/profile/workers. One repetition; no median3 or repeatability claim. TIMEOUT is censored with nullable observed runtime, never imputed 10. ERROR is preserved as guard/infrastructure failure, not TIMEOUT/UNSAT/cleanup failure. No automatic pooling across worker counts or trial workloads.",
+  "consumer_gate": "Require PASS receipt and all hashes/identities/checkers; require declared quality/error flags and exact selector. Do not use rolling first3 selector or silently omit b099/ERROR. Do not read the live DB during analysis."
+}

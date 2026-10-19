@@ -1,0 +1,27 @@
+{
+  "accepted": true,
+  "workers": 4,
+  "original_manifest_repetitions": 3,
+  "accepted_by": "root",
+  "prior_rep1_results": 357,
+  "profile": "parallel-throughput-v1",
+  "timing_policy": "resource-contended",
+  "scientific_sha256": "e357163bf7a687ceaf6f6849b3e0e813c122a2e54057d3121272111cddb69b2c",
+  "accepted_local": "2026-10-19T22:56:59.9833691+07:00",
+  "experiment_id": "wave3-20261019-212023-main",
+  "selected_repetitions": [
+    1
+  ],
+  "user_authorization": "User explicitly requested parallel execution and reduction from3repetitions to1 on19Oct2026",
+  "terminal_script_sha256": "31785b568ed0f6b74b6a0bfe283007e2b55d5434cbaff0fe84817a48668897a3",
+  "reporting_policy": "separate-by-session",
+  "script_sha256": "269a34e1600a0e05778697a7b6ba920bc65a04b25d1097e615781fdb0054f079",
+  "target_jobs": 110000,
+  "effective_repetitions": 1,
+  "supplementary_regression": {
+    "sha256": "c6801b548e2e2e4ab74276066506b234a864874f465ed8bd008008434ffe76f5",
+    "passed": 866,
+    "path": "diagnostics/expansion/root-wave3/parallel-rep1-regression.xml"
+  },
+  "schema_version": 1
+}

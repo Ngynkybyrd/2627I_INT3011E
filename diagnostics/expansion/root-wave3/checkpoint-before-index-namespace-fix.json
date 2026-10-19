@@ -1,0 +1,15 @@
+{
+  "draft_root": "D:\\KHMT\\Project solo\\data\\expanded-inputs\\wave3-20261019-212023",
+  "run_id": "20261019-212023",
+  "main_dataset": "D:\\KHMT\\Project solo\\data\\expanded\\wave3-20261019-212023\\main",
+  "state": "PILOT_AUTHORIZED",
+  "release_sha256": "d956ab9dc4f46e114a60ec91108fe5e52af0089a522ff9b501575aff3d0eec56",
+  "schema_version": 1,
+  "pilot_dataset": "D:\\KHMT\\Project solo\\data\\expanded\\wave3-20261019-212023\\pilot",
+  "dataset_root": "D:\\KHMT\\Project solo\\data\\expanded\\wave3-20261019-212023",
+  "main_experiment": "D:\\KHMT\\Project solo\\results\\expanded\\wave3-20261019-212023",
+  "updated_utc": "2026-10-19T15:25:51.4636495+00:00",
+  "pilot_experiment": "D:\\KHMT\\Project solo\\diagnostics\\expansion\\pilot\\wave3-20261019-212023",
+  "pilot_draft": "D:\\KHMT\\Project solo\\data\\expanded-inputs\\wave3-20261019-212023\\expanded-pilot-20261019-v2",
+  "main_draft": "D:\\KHMT\\Project solo\\data\\expanded-inputs\\wave3-20261019-212023\\expanded-20261019-v2"
+}

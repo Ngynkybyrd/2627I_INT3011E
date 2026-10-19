@@ -1,0 +1,42 @@
+{
+  "time": "2026-10-20T02:23:05.472529+07:00",
+  "experiment": {
+    "experiment_id": "wave3-20261019-212023-main",
+    "state": "HALTED",
+    "halt_reason": "Selected scope observed completely; preserved acknowledged infrastructure ERROR requires explicit reporting"
+  },
+  "rep1_done": 110000,
+  "rep1_pending": 0,
+  "running_attempts": 0,
+  "open_sessions": 0,
+  "counts": {
+    "ERROR": 1,
+    "SAT": 109664,
+    "TIMEOUT": 335
+  },
+  "last_session": {
+    "session_id": "4e0782e3-532f-46e0-b68b-52267b827d00",
+    "host": "NGYN",
+    "pid": 11108,
+    "creation_time": "134369109673752001",
+    "started_utc": "2026-10-19T19:19:28.388457+00:00",
+    "ended_utc": "2026-10-19T19:22:51.310394+00:00",
+    "stop_starting_at": "9999-12-31T23:59:59+00:00",
+    "heartbeat_utc": "2026-10-19T19:22:51.310401+00:00",
+    "reason": "parallel-throughput-capacity-recovery-v2; resource-contended; separate timings by session"
+  },
+  "rep_counts": [
+    [
+      1,
+      110000
+    ],
+    [
+      2,
+      324
+    ],
+    [
+      3,
+      343
+    ]
+  ]
+}

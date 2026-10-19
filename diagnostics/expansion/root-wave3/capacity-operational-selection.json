@@ -1,0 +1,53 @@
+{
+  "kind": "CAPACITY_OPERATIONAL_SELECTION_REVIEW",
+  "stages": [
+    {
+      "session_id": "b4437fae-7c82-4e6e-9110-f74c7fb58e5b",
+      "workers": 40,
+      "peak": 40,
+      "overall_rate": 12.453649268710732,
+      "backlog_active_rate": 14.897434885174297,
+      "completed_during_admission": 120,
+      "admission_seconds": 8.055078,
+      "statuses": {
+        "SAT": 159,
+        "TIMEOUT": 1
+      },
+      "metrics_path": "results\\expanded\\wave3-20261019-212023-main\\session-manifests\\b4437fae-7c82-4e6e-9110-f74c7fb58e5b.metrics.json",
+      "metrics_sha256": "8d13c41bb0a8459bae06ae46a75895810c4eebc54d65665ec174340720af6aec"
+    },
+    {
+      "session_id": "c6569a16-3266-4e6e-8824-1da743f7b926",
+      "workers": 24,
+      "peak": 24,
+      "overall_rate": 12.236849421203429,
+      "backlog_active_rate": 16.337275784305508,
+      "completed_during_admission": 137,
+      "admission_seconds": 8.385731,
+      "statuses": {
+        "SAT": 159,
+        "TIMEOUT": 1
+      },
+      "metrics_path": "results\\expanded\\wave3-20261019-212023-main\\session-manifests\\c6569a16-3266-4e6e-8824-1da743f7b926.metrics.json",
+      "metrics_sha256": "25d068f9c2bfc4b4e67c8471c99abebd3ab3d1c7b2dbb3ca2f7bb43289d1f255"
+    },
+    {
+      "session_id": "d5efc155-d5a0-4e1d-81f6-cb5b460f8827",
+      "workers": 8,
+      "peak": 8,
+      "overall_rate": 12.769481653950729,
+      "backlog_active_rate": 12.713108712218125,
+      "completed_during_admission": 152,
+      "admission_seconds": 11.956163,
+      "statuses": {
+        "SAT": 160
+      },
+      "metrics_path": "results\\expanded\\wave3-20261019-212023-main\\session-manifests\\d5efc155-d5a0-4e1d-81f6-cb5b460f8827.metrics.json",
+      "metrics_sha256": "39ff77fe0fc1030070492cb0ed754d63cc35567e94970c30d75edcff2c7f68ce"
+    }
+  ],
+  "selected_workers": 24,
+  "reason": "Finite stage includes final TIMEOUT drain;24 had best backlog-active throughput;40 used moreCPU without higher throughput. Different next scheduled jobs, operational estimate only, no isolated scientific speedup claim.",
+  "original_overall_rate_policy_kept_as_evidence": true,
+  "at": "2026-10-19T23:45:00.797777"
+}

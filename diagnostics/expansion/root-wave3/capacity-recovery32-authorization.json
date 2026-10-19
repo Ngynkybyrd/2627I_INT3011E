@@ -1,0 +1,37 @@
+{
+  "timing_policy": "resource-contended",
+  "accepted_by": "root",
+  "script_sha256": "236ae732569b1b4dc05d1853f60d91a5bbfde82868ae517bcc84a273bb1c02c4",
+  "scientific_sha256": "e357163bf7a687ceaf6f6849b3e0e813c122a2e54057d3121272111cddb69b2c",
+  "reporting_policy": "separate-by-session",
+  "worker_memory_reserve_mb": 256,
+  "accepted_local": "2026-10-20T02:15:11.529169+07:00",
+  "workers": 32,
+  "authorized_workers_max": 100,
+  "target_jobs": 110000,
+  "schema_version": 1,
+  "accepted": true,
+  "profile": "parallel-throughput-capacity-recovery-v2",
+  "effective_repetitions": 1,
+  "operational_selection": {
+    "sha256": "ca765e0b6c959c65a426f332acfeed519bb702a1b8fcd30fe77da7d87b366c24",
+    "path": "diagnostics/expansion/root-wave3/capacity-operational-selection.json"
+  },
+  "min_available_ram_mb": 6144,
+  "terminal_sha256": "eba469727a2195da8dee4f64a02125a38e20b6068f2b8788bc1773a55ddfa2f2",
+  "experiment_id": "wave3-20261019-212023-main",
+  "original_manifest_repetitions": 3,
+  "selected_repetitions": [
+    1
+  ],
+  "idle_low_ram_seconds": 30,
+  "selection_reason": "Latest explicit user instruction: use32 workers; retain RAM guards and session-separated resource-contended timings.",
+  "recovery_receipt_sha256": "2c26ad94b4f9f164b5a2dc1bd65e6f6c8921a44a8957c82b947e1f238e7a71cf",
+  "lifecycle_sha256": "68e0b57826d08781711321ecf948efe66ae80c0bdcc253581a29254e88441575",
+  "tests": {
+    "path": "diagnostics/expansion/root-wave3/handle-recovery-regression.xml",
+    "sha256": "4476c9523a5350e3916f9a45f24fcbe2aeab35186df3585a3dc7bb83105a6dbe",
+    "passed": 108
+  },
+  "purpose": "Pending-only recovery with exact historical infrastructure error preserved; no new fatal ignored."
+}

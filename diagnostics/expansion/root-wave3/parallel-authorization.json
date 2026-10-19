@@ -1,0 +1,21 @@
+{
+  "accepted_by": "root",
+  "script_sha256": "7402bc13a1827e7122cd90ae299db936c85f484c543feb2d23746f6a7c39b65a",
+  "accepted": true,
+  "workers": 4,
+  "schema_version": 1,
+  "experiment_id": "wave3-20261019-212023-main",
+  "reporting_policy": "separate-by-session",
+  "prior_sequential_results": 1012,
+  "terminal_script_sha256": "78b4bbaa3150a817fe1c19774dcd55ca212101de0d5dd288846a049e84b43480",
+  "scientific_sha256": "e357163bf7a687ceaf6f6849b3e0e813c122a2e54057d3121272111cddb69b2c",
+  "accepted_local": "2026-10-19T22:51:10.4080553+07:00",
+  "user_authorization": "User explicitly requested parallel execution on19Oct2026",
+  "supplementary_regression": {
+    "sha256": "dbe6ed4ba367828a6849d99e99b0618c2c221129f704b7cbac15fd84d93fa2a4",
+    "path": "diagnostics/expansion/root-wave3/parallel-regression.xml",
+    "passed": 859
+  },
+  "profile": "parallel-throughput-v1",
+  "timing_policy": "resource-contended"
+}

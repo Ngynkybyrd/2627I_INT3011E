@@ -1,0 +1,29 @@
+{
+  "at": "2026-10-19T22:52:54.055536",
+  "session_id": "781a1ce5-19dc-4c9e-bb8f-97b660cdab9e",
+  "smoke_jobs": 12,
+  "peak_overlapping_attempts": 4,
+  "session_closed": true,
+  "state": "PAUSED",
+  "statuses": [
+    {
+      "status": "SAT",
+      "count": 12
+    }
+  ],
+  "completed_by_repetition": [
+    {
+      "repetition": 1,
+      "count": 357
+    },
+    {
+      "repetition": 2,
+      "count": 324
+    },
+    {
+      "repetition": 3,
+      "count": 343
+    }
+  ],
+  "running": 0
+}

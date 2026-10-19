@@ -1,0 +1,203 @@
+{
+  "status": "READY_FOR_REPORT_WITH_DECLARED_ERROR",
+  "schema_version": 1,
+  "error_free": false,
+  "quality": "VERIFIED_WITH_DECLARED_INFRASTRUCTURE_ERROR",
+  "selected_scope_observed_complete": true,
+  "original_three_repetition_experiment_complete": false,
+  "effective_repetitions": 1,
+  "observed_primary": 110000,
+  "instances": 16000,
+  "status_counts": {
+    "SAT": 109664,
+    "TIMEOUT": 335,
+    "ERROR": 1
+  },
+  "by_size": {
+    "9": {
+      "SAT": 80000
+    },
+    "16": {
+      "SAT": 24998,
+      "TIMEOUT": 1,
+      "ERROR": 1
+    },
+    "25": {
+      "SAT": 4666,
+      "TIMEOUT": 334
+    }
+  },
+  "excluded_historical_repetitions": {
+    "2": 324,
+    "3": 343
+  },
+  "declared_error": {
+    "ack_evidence": {
+      "path": "evidence/handle-error-recovery-ack.json",
+      "sha256": "2c26ad94b4f9f164b5a2dc1bd65e6f6c8921a44a8957c82b947e1f238e7a71cf"
+    },
+    "attempt_id": "0df2dfe7-3f64-49eb-afd3-68802d1b96f4",
+    "batch_id": "b099",
+    "classification": "premeasurement guard infrastructure error; not cleanup failure",
+    "diagnostic_retry_evidence": {
+      "path": "evidence/handle-error-diagnostic-retry.json",
+      "sha256": "3fb2c2861f5e5fa74c9849b944f856d6a098c1c6b4add79fb07ca2ec9feeb9b5"
+    },
+    "diagnostic_retry_included_in_primary": false,
+    "job_id": "j2-6054d701e2cbc4ec139d5734fe37b447896ee918133a1dd0d7a4b5c9b21e9a84",
+    "result_json": "{\"build_seconds\":null,\"encoding\":\"seqcounter\",\"error\":\"OSError: [WinError 6] The handle is invalid\",\"guard_phase\":\"guard\",\"method\":\"sat\",\"raw_status\":null,\"solve_seconds\":null,\"stats\":null,\"status\":\"ERROR\",\"total_seconds\":null,\"validation\":null}",
+    "status": "ERROR"
+  },
+  "provenance_receipt_sha256": "7c11accf78f831d33542b621b06d80d00420cae5fc9a7ec89e291322d9871efc",
+  "snapshot_sha256": "70eaaf0acb6c74ba02f4ca65d8ca3db5d42d83cdbafe6620865d42d5b8af4781",
+  "contract_sha256": "c15d3072b6b5e8f0e2baaf168ce8f92514dc4b1a6692a8ec71f6b24a8dfbaeef",
+  "profiles": [
+    {
+      "session_id": "80292632-8657-4840-a826-fd83d7748ae8",
+      "profile": "original-sequential",
+      "workers": 1,
+      "timing_policy": "sequential",
+      "started_utc": "2026-10-19T15:38:44.425814+00:00",
+      "ended_utc": "2026-10-19T15:47:13.940141+00:00",
+      "observed_primary": 353,
+      "SAT": 353,
+      "TIMEOUT": 0,
+      "ERROR": 0,
+      "performance_interpretation_allowed": true
+    },
+    {
+      "session_id": "781a1ce5-19dc-4c9e-bb8f-97b660cdab9e",
+      "profile": "parallel-throughput-v1",
+      "workers": 4,
+      "timing_policy": "resource-contended",
+      "started_utc": "2026-10-19T15:51:39.846711+00:00",
+      "ended_utc": "2026-10-19T15:51:41.622337+00:00",
+      "observed_primary": 4,
+      "SAT": 4,
+      "TIMEOUT": 0,
+      "ERROR": 0,
+      "performance_interpretation_allowed": true
+    },
+    {
+      "session_id": "ed7d42b0-e602-4c76-bbb1-d22ba116259a",
+      "profile": "parallel-throughput-v1",
+      "workers": 4,
+      "timing_policy": "resource-contended",
+      "started_utc": "2026-10-19T15:57:36.879237+00:00",
+      "ended_utc": "2026-10-19T15:57:43.851209+00:00",
+      "observed_primary": 12,
+      "SAT": 12,
+      "TIMEOUT": 0,
+      "ERROR": 0,
+      "performance_interpretation_allowed": true
+    },
+    {
+      "session_id": "f17d0075-270d-4e73-9145-c4a920cd802e",
+      "profile": "parallel-throughput-v1",
+      "workers": 4,
+      "timing_policy": "resource-contended",
+      "started_utc": "2026-10-19T15:58:52.659512+00:00",
+      "ended_utc": "2026-10-19T16:27:27.711157+00:00",
+      "observed_primary": 11171,
+      "SAT": 11136,
+      "TIMEOUT": 35,
+      "ERROR": 0,
+      "performance_interpretation_allowed": true
+    },
+    {
+      "session_id": "4bd685e0-8d3c-495c-bf58-1af0c0880735",
+      "profile": "parallel-throughput-capacity-v1",
+      "workers": 8,
+      "timing_policy": "resource-contended",
+      "started_utc": "2026-10-19T16:33:01.964415+00:00",
+      "ended_utc": "2026-10-19T16:33:31.223179+00:00",
+      "observed_primary": 320,
+      "SAT": 318,
+      "TIMEOUT": 2,
+      "ERROR": 0,
+      "performance_interpretation_allowed": true
+    },
+    {
+      "session_id": "d5efc155-d5a0-4e1d-81f6-cb5b460f8827",
+      "profile": "parallel-throughput-capacity-fast-v1",
+      "workers": 8,
+      "timing_policy": "resource-contended",
+      "started_utc": "2026-10-19T16:40:34.858083+00:00",
+      "ended_utc": "2026-10-19T16:40:47.534857+00:00",
+      "observed_primary": 160,
+      "SAT": 160,
+      "TIMEOUT": 0,
+      "ERROR": 0,
+      "performance_interpretation_allowed": true
+    },
+    {
+      "session_id": "c6569a16-3266-4e6e-8824-1da743f7b926",
+      "profile": "parallel-throughput-capacity-fast-v1",
+      "workers": 24,
+      "timing_policy": "resource-contended",
+      "started_utc": "2026-10-19T16:42:02.101003+00:00",
+      "ended_utc": "2026-10-19T16:42:15.352632+00:00",
+      "observed_primary": 160,
+      "SAT": 159,
+      "TIMEOUT": 1,
+      "ERROR": 0,
+      "performance_interpretation_allowed": false
+    },
+    {
+      "session_id": "b4437fae-7c82-4e6e-9110-f74c7fb58e5b",
+      "profile": "parallel-throughput-capacity-fast-v1",
+      "workers": 40,
+      "timing_policy": "resource-contended",
+      "started_utc": "2026-10-19T16:43:51.018631+00:00",
+      "ended_utc": "2026-10-19T16:44:04.033941+00:00",
+      "observed_primary": 160,
+      "SAT": 159,
+      "TIMEOUT": 1,
+      "ERROR": 0,
+      "performance_interpretation_allowed": false
+    },
+    {
+      "session_id": "a23e8969-0b78-41e1-925a-b8d23fc2de9b",
+      "profile": "parallel-throughput-capacity-fast-v1",
+      "workers": 32,
+      "timing_policy": "resource-contended",
+      "started_utc": "2026-10-19T16:49:03.625126+00:00",
+      "ended_utc": "2026-10-19T19:07:44.671996+00:00",
+      "observed_primary": 95724,
+      "SAT": 95433,
+      "TIMEOUT": 290,
+      "ERROR": 1,
+      "performance_interpretation_allowed": true
+    },
+    {
+      "session_id": "4e0782e3-532f-46e0-b68b-52267b827d00",
+      "profile": "parallel-throughput-capacity-recovery-v2",
+      "workers": 32,
+      "timing_policy": "resource-contended",
+      "started_utc": "2026-10-19T19:19:28.388457+00:00",
+      "ended_utc": "2026-10-19T19:22:51.310394+00:00",
+      "observed_primary": 1936,
+      "SAT": 1930,
+      "TIMEOUT": 6,
+      "ERROR": 0,
+      "performance_interpretation_allowed": true
+    }
+  ],
+  "matched_strata": 1264,
+  "independent_pair_sample_audit_passed": true,
+  "dominant_session_selected_by": "coverage not speed",
+  "main_pair_panel_session": "a23e8969-0b78-41e1-925a-b8d23fc2de9b",
+  "no_CI": true,
+  "solver_calls": 0,
+  "derived_display_grouping": {
+    "definition": "non-completed = TIMEOUT + ERROR, post-hoc only; raw statuses/timing unchanged",
+    "non_completed": 336,
+    "by_N": {
+      "9": 0,
+      "16": 2,
+      "25": 334
+    },
+    "puzzles_any_primary_SAT": 16000,
+    "does_not_mean_every_engine_solved_every_puzzle": true
+  }
+}

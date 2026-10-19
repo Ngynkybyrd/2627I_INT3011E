@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "environment_sha256": "c325ecf008027c531d2900dd288813c35386ca0c21ea4e0ac6387b3484ed094e",
+  "package_count": 32,
+  "pinned_requirements_verified": 30,
+  "runtime_binary_hashes_rechecked": 3,
+  "missing_installed_record_files": 0,
+  "capacity_arithmetic": "PASS",
+  "scope": "EXP-01 artifact consistency only; no solver/pilot/fullsuite"
+}

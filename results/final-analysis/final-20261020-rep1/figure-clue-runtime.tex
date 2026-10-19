@@ -1,0 +1,5 @@
+% Same session a23e8969-0b78-41e1-925a-b8d23fc2de9b, N25 seqcounter, families separate; sample counts in dat. Correlated masks, no monotone hardness or independent CI claim.
+\begin{tikzpicture}\begin{axis}[width=.94\linewidth,height=6cm,xlabel={Requested clues (\%)},ylabel={SC SAT single-run median (s)},legend pos=north east]
+\addplot+[mark=*] table[x=clue,y=seconds] {clue-permutation.dat};\addlegendentry{permutation}
+\addplot+[mark=*] table[x=clue,y=seconds] {clue-row_cycle.dat};\addlegendentry{row-cycle}
+\end{axis}\end{tikzpicture}

@@ -1,0 +1,4 @@
+\begin{tikzpicture}\begin{axis}[ybar,xlabel={Board side $N$},ylabel={TIMEOUT (\% of primary jobs)},xtick=data]
+\addplot table[x=N,y=timeout_percent] {timeout-by-N.dat};
+\end{axis}\end{tikzpicture}
+% Descriptive counts only; different source/method matrices by N, not a size-only complexity claim.

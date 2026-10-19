@@ -1,0 +1,29 @@
+{
+  "timing_policy": "resource-contended",
+  "accepted_by": "root",
+  "script_sha256": "19a098e6cf55d863298103910d070274e5cf10516f3365c3b831dfc0a9b92b51",
+  "scientific_sha256": "e357163bf7a687ceaf6f6849b3e0e813c122a2e54057d3121272111cddb69b2c",
+  "reporting_policy": "separate-by-session",
+  "worker_memory_reserve_mb": 256,
+  "accepted_local": "2026-10-19T23:48:25.712864+07:00",
+  "workers": 32,
+  "authorized_workers_max": 100,
+  "target_jobs": 110000,
+  "schema_version": 1,
+  "accepted": true,
+  "profile": "parallel-throughput-capacity-fast-v1",
+  "effective_repetitions": 1,
+  "operational_selection": {
+    "sha256": "ca765e0b6c959c65a426f332acfeed519bb702a1b8fcd30fe77da7d87b366c24",
+    "path": "diagnostics/expansion/root-wave3/capacity-operational-selection.json"
+  },
+  "min_available_ram_mb": 6144,
+  "terminal_sha256": "52fd10193f729ff9cb9ef0910cbe65e58fbff22cc74e0d347a53efcd28037f15",
+  "experiment_id": "wave3-20261019-212023-main",
+  "original_manifest_repetitions": 3,
+  "selected_repetitions": [
+    1
+  ],
+  "idle_low_ram_seconds": 30,
+  "selection_reason": "Latest explicit user instruction: use32 workers; retain RAM guards and session-separated resource-contended timings."
+}

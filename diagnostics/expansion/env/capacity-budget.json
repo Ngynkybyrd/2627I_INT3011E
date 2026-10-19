@@ -1,0 +1,61 @@
+{
+  "kind": "assumption-based capacity budget, not measured schema or performance",
+  "jobs_by_N": {
+    "9": 240000,
+    "16": 75000,
+    "25": 15000
+  },
+  "jobs_total": 330000,
+  "blocks": 100,
+  "jobs_per_block": 3300,
+  "scenarios": {
+    "compact": {
+      "attempt_multiplier": 1.0,
+      "assumed_metadata_and_indexes_bytes_per_attempt": 4096,
+      "assumed_log_bytes_per_attempt": 2048,
+      "assumed_csv_bytes_per_job": 2048,
+      "db_metadata_bytes": 1351680000,
+      "db_witness_bytes": 1351680000,
+      "sqlite_main_bytes": 2703360000,
+      "logs_bytes": 675840000,
+      "csv_export_bytes": 675840000,
+      "dataset_input_and_witness_bytes": 87256000,
+      "wal_reservation_bytes": 1073741824,
+      "one_backup_and_export_regeneration_bytes": 3379200000,
+      "subtotal_bytes": 8595237824,
+      "with_25_percent_headroom_bytes": 10744047280
+    },
+    "planning": {
+      "attempt_multiplier": 1.1,
+      "assumed_metadata_and_indexes_bytes_per_attempt": 8192,
+      "assumed_log_bytes_per_attempt": 16384,
+      "assumed_csv_bytes_per_job": 4096,
+      "db_metadata_bytes": 2973696000,
+      "db_witness_bytes": 1486848000,
+      "sqlite_main_bytes": 4460544000,
+      "logs_bytes": 5947392000,
+      "csv_export_bytes": 1351680000,
+      "dataset_input_and_witness_bytes": 87256000,
+      "wal_reservation_bytes": 1115136000,
+      "one_backup_and_export_regeneration_bytes": 5812224000,
+      "subtotal_bytes": 18774232000,
+      "with_25_percent_headroom_bytes": 23467790000
+    },
+    "stress": {
+      "attempt_multiplier": 2.0,
+      "assumed_metadata_and_indexes_bytes_per_attempt": 16384,
+      "assumed_log_bytes_per_attempt": 65536,
+      "assumed_csv_bytes_per_job": 8192,
+      "db_metadata_bytes": 10813440000,
+      "db_witness_bytes": 2703360000,
+      "sqlite_main_bytes": 13516800000,
+      "logs_bytes": 43253760000,
+      "csv_export_bytes": 2703360000,
+      "dataset_input_and_witness_bytes": 87256000,
+      "wal_reservation_bytes": 3379200000,
+      "one_backup_and_export_regeneration_bytes": 16220160000,
+      "subtotal_bytes": 79160536000,
+      "with_25_percent_headroom_bytes": 98950670000
+    }
+  }
+}

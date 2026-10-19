@@ -1,0 +1,25 @@
+{
+  "state": "HALTED",
+  "halt_reason": "ERROR: j2-6054d701e2cbc4ec139d5734fe37b447896ee918133a1dd0d7a4b5c9b21e9a84",
+  "time": "2026-10-20T02:10:22.716880+07:00",
+  "target": 110000,
+  "done": 108064,
+  "active": 0,
+  "open_sessions": 0,
+  "counts": {
+    "ERROR": 1,
+    "SAT": 107734,
+    "TIMEOUT": 329
+  },
+  "errors": [
+    {
+      "attempt_id": "0df2dfe7-3f64-49eb-afd3-68802d1b96f4",
+      "job_id": "j2-6054d701e2cbc4ec139d5734fe37b447896ee918133a1dd0d7a4b5c9b21e9a84",
+      "session_id": "a23e8969-0b78-41e1-925a-b8d23fc2de9b",
+      "started_utc": "2026-10-19T19:07:42.123236+00:00",
+      "ended_utc": "2026-10-19T19:07:42.247336+00:00",
+      "result_json": "{\"build_seconds\":null,\"encoding\":\"seqcounter\",\"error\":\"OSError: [WinError 6] The handle is invalid\",\"guard_phase\":\"guard\",\"method\":\"sat\",\"raw_status\":null,\"solve_seconds\":null,\"stats\":null,\"status\":\"ERROR\",\"total_seconds\":null,\"validation\":null}"
+    }
+  ],
+  "remaining": 1936
+}

@@ -1,0 +1,35 @@
+{
+  "worker_memory_reserve_mb_initial": 256,
+  "schema_version": 1,
+  "driver_sha256": "5ae0f7e4bbc348693395f63ebdbd815b6266a3e9d017efaeb77c3cd4ee8c225b",
+  "stage_jobs": 320,
+  "scientific_sha256": "e357163bf7a687ceaf6f6849b3e0e813c122a2e54057d3121272111cddb69b2c",
+  "accepted_local": "2026-10-19T23:28:52.9098229+07:00",
+  "accepted": true,
+  "min_available_ram_mb": 6144,
+  "allow_final_run": true,
+  "target_jobs": 110000,
+  "selected_repetitions": [
+    1
+  ],
+  "profile": "capacity-ramp-v1",
+  "focused_tests": {
+    "sha256": "9cb425de33b0162e8a2c9621aab71660149478048db79062a71696a97e0518a8",
+    "passed": 65,
+    "xml": "diagnostics/expansion/root-wave3/capacity-focused.xml"
+  },
+  "coordinator_sha256": "f6288b321e3493f5be99dedd0918498955e6454e1df87f5ef5f43aee7c1a7e37",
+  "allowed_ladder": [
+    8,
+    16,
+    24,
+    32,
+    40,
+    56,
+    72,
+    100
+  ],
+  "experiment_id": "wave3-20261019-212023-main",
+  "accepted_by": "root",
+  "user_authorization": "Increase in stages beyond40 if spare capacity; decrease on overload; preserve all valid results"
+}

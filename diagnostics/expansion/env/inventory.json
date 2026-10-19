@@ -1,0 +1,28 @@
+{
+  "timestamp_utc": "2026-10-19T10:59:50.474867+00:00",
+  "cpu": "AMD Ryzen 7 H 260 w/ Radeon 780M Graphics",
+  "logical_cpus": 16,
+  "ram_total_bytes": 33618251776,
+  "ram_available_bytes": 10123149312,
+  "disks": [
+    {
+      "path": "D:\\KHMT\\Project solo",
+      "drive": "D:\\",
+      "total_bytes": 484949618688,
+      "used_bytes": 396962615296,
+      "free_bytes": 87987003392
+    },
+    {
+      "path": "C:\\Users\\admin\\AppData\\Local\\Programs\\Python\\Python313",
+      "drive": "C:\\",
+      "total_bytes": 536871956480,
+      "used_bytes": 509596774400,
+      "free_bytes": 27275182080
+    }
+  ],
+  "environment_sha256": "c325ecf008027c531d2900dd288813c35386ca0c21ea4e0ac6387b3484ed094e",
+  "package_count": 32,
+  "installed_files_hashed": 7827,
+  "native_files_hashed": 277,
+  "project_disk_planning_budget_fits": true
+}

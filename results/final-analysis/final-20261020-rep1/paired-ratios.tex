@@ -1,0 +1,4 @@
+\begin{tikzpicture}\begin{axis}[ybar,xlabel={Pair index (see runtime-common-main.csv)},ylabel={Median single-run ratio A/B}]
+\addplot table[x=index,y=ratio] {paired-ratios.dat};
+\end{axis}\end{tikzpicture}
+% Same session/worker and exact paired SAT IDs per bar; different pairs may have different n. No cross-profile speedup.

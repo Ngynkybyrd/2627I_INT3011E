@@ -1,0 +1,16 @@
+\begin{tabular}{llllllll}
+\hline
+configuration\_a & configuration\_b & matched\_instances & median\_a\_single\_run\_seconds & p95\_a\_single\_run\_seconds & median\_b\_single\_run\_seconds & p95\_b\_single\_run\_seconds & median\_single\_run\_ratio \\
+\hline
+cpsat & highs & 3 & 0.484158 & 0.626680 & 0.696471 & 0.869163 & 0.723268 \\
+cpsat & sat:bitwise & 86 & 0.351694 & 0.613857 & 0.432963 & 0.897043 & 0.819465 \\
+cpsat & sat:pairwise & 86 & 0.351694 & 0.613857 & 0.741841 & 1.353671 & 0.469338 \\
+cpsat & sat:seqcounter & 86 & 0.351694 & 0.613857 & 0.411756 & 1.072038 & 0.878054 \\
+highs & sat:bitwise & 3 & 0.696471 & 0.869163 & 0.713842 & 0.941439 & 0.975666 \\
+highs & sat:pairwise & 3 & 0.696471 & 0.869163 & 1.047126 & 1.327393 & 0.665126 \\
+highs & sat:seqcounter & 3 & 0.696471 & 0.869163 & 0.592793 & 0.903388 & 1.174898 \\
+sat:bitwise & sat:pairwise & 87 & 0.437045 & 0.894758 & 0.742140 & 1.357103 & 0.587341 \\
+sat:bitwise & sat:seqcounter & 86 & 0.432963 & 0.897043 & 0.411756 & 1.072038 & 1.127139 \\
+sat:pairwise & sat:seqcounter & 86 & 0.741841 & 1.353671 & 0.411756 & 1.072038 & 1.866629 \\
+\hline
+\end{tabular}

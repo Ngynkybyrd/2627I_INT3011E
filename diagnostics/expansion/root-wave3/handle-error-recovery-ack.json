@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "accepted_by": "root",
+  "accepted": true,
+  "kind": "EXACT_INFRASTRUCTURE_ERROR_ACKNOWLEDGMENT",
+  "created_local": "2026-10-20T02:12:24.248416+07:00",
+  "experiment_id": "wave3-20261019-212023-main",
+  "scientific_sha256": "e357163bf7a687ceaf6f6849b3e0e813c122a2e54057d3121272111cddb69b2c",
+  "acknowledged_fatal_results": [
+    {
+      "attempt_id": "0df2dfe7-3f64-49eb-afd3-68802d1b96f4",
+      "job_id": "j2-6054d701e2cbc4ec139d5734fe37b447896ee918133a1dd0d7a4b5c9b21e9a84",
+      "status": "ERROR",
+      "result_json": "{\"build_seconds\":null,\"encoding\":\"seqcounter\",\"error\":\"OSError: [WinError 6] The handle is invalid\",\"guard_phase\":\"guard\",\"method\":\"sat\",\"raw_status\":null,\"solve_seconds\":null,\"stats\":null,\"status\":\"ERROR\",\"total_seconds\":null,\"validation\":null}"
+    }
+  ],
+  "prior_primary_count": 108731,
+  "prior_primary_sha256": "582621f0cc235f6339ca499da2e0d700d3b4fdddecbeab8a9e6393f1e9550997",
+  "policy": "Preserve original ERROR and every primary result. Resume only pending repetition1 jobs after lifecycle fix tests pass. Any NEW fatal result still halts. Do not claim error-free QA or replace/retry TIMEOUT results. A supplemental diagnostic retry of the one ERROR is separate from immutable primary observations."
+}

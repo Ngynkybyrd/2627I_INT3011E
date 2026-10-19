@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "time": "2026-10-20T02:52:00.209213+07:00",
+  "analysis_receipt_sha256": "c109097df642a7a3709e13093dbf98cb489806ebcceeabd73c13862d2f43d069",
+  "artifact_hashes_verified": 60,
+  "observed_primary": 110000,
+  "SAT": 109664,
+  "TIMEOUT": 335,
+  "ERROR": 1,
+  "derived_noncompletion": 336,
+  "puzzle_anySAT": 16000,
+  "opened_gate": "SAT09 final data integration and SAT10 analysis manifest"
+}

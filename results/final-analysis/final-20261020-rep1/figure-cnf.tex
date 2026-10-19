@@ -1,0 +1,11 @@
+% Measured pre-preprocessing variables incl auxiliaries; clauses excluding clue units; not generic shortcut theory.
+\begin{minipage}{.48\linewidth}\begin{tikzpicture}\begin{axis}[width=\linewidth,height=5cm,xlabel={$N$},ymode=log,ylabel={variables},xtick={9,16,25}]
+\addplot+[mark=*] table[x=N,y=variables] {cnf-PW.dat};\addlegendentry{PW}
+\addplot+[mark=*] table[x=N,y=variables] {cnf-SC.dat};\addlegendentry{SC}
+\addplot+[mark=*] table[x=N,y=variables] {cnf-BW.dat};\addlegendentry{BW}
+\end{axis}\end{tikzpicture}\end{minipage}
+\begin{minipage}{.48\linewidth}\begin{tikzpicture}\begin{axis}[width=\linewidth,height=5cm,xlabel={$N$},ymode=log,ylabel={clauses},xtick={9,16,25}]
+\addplot+[mark=*] table[x=N,y=clauses] {cnf-PW.dat};\addlegendentry{PW}
+\addplot+[mark=*] table[x=N,y=clauses] {cnf-SC.dat};\addlegendentry{SC}
+\addplot+[mark=*] table[x=N,y=clauses] {cnf-BW.dat};\addlegendentry{BW}
+\end{axis}\end{tikzpicture}\end{minipage}

@@ -1,0 +1,13 @@
+{
+  "at": "2026-10-19T23:39:28.934303",
+  "reason": "Reduce repeated SQLite VFS reads during unchanged validation/status SQL",
+  "old_default_cache_pages": -2000,
+  "new_default_cache_pages": 65536,
+  "page_size": 4096,
+  "cache_MiB": 256,
+  "primary_results_preserved": 12527,
+  "integrity_check": "ok",
+  "foreign_key_check": "pass",
+  "scientific_config_changed": false,
+  "checks_removed": false
+}

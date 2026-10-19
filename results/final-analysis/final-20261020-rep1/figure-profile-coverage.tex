@@ -1,0 +1,4 @@
+% Chronological operational coverage, not execution rate. Includes noisy24/40-worker trials without speed interpretation; exact mapping in profile-timeline.csv.
+\begin{tikzpicture}\begin{axis}[width=.94\linewidth,height=6cm,xlabel={Session start (minutes from first)},ylabel={Primary jobs contributed},ymode=log]
+\addplot[only marks] table[x=minutes,y=jobs] {profile-coverage.dat};
+\end{axis}\end{tikzpicture}

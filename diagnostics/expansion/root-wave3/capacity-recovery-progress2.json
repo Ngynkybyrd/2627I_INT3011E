@@ -1,0 +1,13 @@
+{
+  "time": "2026-10-20T02:20:40.202039+07:00",
+  "state": "RUNNING",
+  "done": 108954,
+  "active": 31,
+  "open_sessions": 1,
+  "counts": {
+    "ERROR": 1,
+    "SAT": 108621,
+    "TIMEOUT": 332
+  },
+  "immutable_triggers": 6
+}

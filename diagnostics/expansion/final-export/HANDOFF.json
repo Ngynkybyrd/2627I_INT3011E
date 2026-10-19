@@ -1,0 +1,96 @@
+{
+  "status": "PASS",
+  "quality": "VERIFIED_WITH_DECLARED_INFRASTRUCTURE_ERROR",
+  "error_free": false,
+  "selected_scope_observed_complete": true,
+  "original_three_repetition_experiment_complete": false,
+  "snapshot_dir": "D:\\KHMT\\Project solo\\results\\final-snapshots\\final-20261020-rep1",
+  "snapshot_receipt_path": "D:\\KHMT\\Project solo\\results\\final-snapshots\\final-20261020-rep1\\snapshot.json",
+  "snapshot_sha256": "70eaaf0acb6c74ba02f4ca65d8ca3db5d42d83cdbafe6620865d42d5b8af4781",
+  "contract_path": "D:\\KHMT\\Project solo\\diagnostics\\expansion\\final-export\\CONTRACT.json",
+  "contract_sha256": "c15d3072b6b5e8f0e2baaf168ce8f92514dc4b1a6692a8ec71f6b24a8dfbaeef",
+  "expected_jobs": 110000,
+  "observed_jobs": 110000,
+  "selected_instances": 16000,
+  "selected_repetitions": [
+    1
+  ],
+  "primary_counts": {
+    "ERROR": 1,
+    "SAT": 109664,
+    "TIMEOUT": 335
+  },
+  "excluded_primary_counts": {
+    "2": 324,
+    "3": 343
+  },
+  "by_size": {
+    "16": {
+      "ERROR": 1,
+      "SAT": 24998,
+      "TIMEOUT": 1
+    },
+    "25": {
+      "SAT": 4666,
+      "TIMEOUT": 334
+    },
+    "9": {
+      "SAT": 80000
+    }
+  },
+  "worker_row_counts": {
+    "8": 480,
+    "32": 97660,
+    "4": 11187,
+    "1": 353,
+    "40": 160,
+    "24": 160
+  },
+  "session_counts": {
+    "4bd685e0-8d3c-495c-bf58-1af0c0880735": 320,
+    "4e0782e3-532f-46e0-b68b-52267b827d00": 1936,
+    "781a1ce5-19dc-4c9e-bb8f-97b660cdab9e": 4,
+    "80292632-8657-4840-a826-fd83d7748ae8": 353,
+    "a23e8969-0b78-41e1-925a-b8d23fc2de9b": 95724,
+    "b4437fae-7c82-4e6e-9110-f74c7fb58e5b": 160,
+    "c6569a16-3266-4e6e-8824-1da743f7b926": 160,
+    "d5efc155-d5a0-4e1d-81f6-cb5b460f8827": 160,
+    "ed7d42b0-e602-4c76-bbb1-d22ba116259a": 12,
+    "f17d0075-270d-4e73-9145-c4a920cd802e": 11171
+  },
+  "declared_error": {
+    "ack_evidence": {
+      "path": "evidence/handle-error-recovery-ack.json",
+      "sha256": "2c26ad94b4f9f164b5a2dc1bd65e6f6c8921a44a8957c82b947e1f238e7a71cf"
+    },
+    "attempt_id": "0df2dfe7-3f64-49eb-afd3-68802d1b96f4",
+    "batch_id": "b099",
+    "classification": "premeasurement guard infrastructure error; not cleanup failure",
+    "diagnostic_retry_evidence": {
+      "path": "evidence/handle-error-diagnostic-retry.json",
+      "sha256": "3fb2c2861f5e5fa74c9849b944f856d6a098c1c6b4add79fb07ca2ec9feeb9b5"
+    },
+    "diagnostic_retry_included_in_primary": false,
+    "job_id": "j2-6054d701e2cbc4ec139d5734fe37b447896ee918133a1dd0d7a4b5c9b21e9a84",
+    "result_json": "{\"build_seconds\":null,\"encoding\":\"seqcounter\",\"error\":\"OSError: [WinError 6] The handle is invalid\",\"guard_phase\":\"guard\",\"method\":\"sat\",\"raw_status\":null,\"solve_seconds\":null,\"stats\":null,\"status\":\"ERROR\",\"total_seconds\":null,\"validation\":null}",
+    "status": "ERROR"
+  },
+  "snapshot_artifact_count": 48,
+  "root_check": {
+    "path": "D:\\KHMT\\Project solo\\diagnostics\\expansion\\root-wave3\\final-snapshot-root-check.json",
+    "sha256": "0b7b0db486ff23b27b7f0ea383d396acd903dc27afb6b62b1162713b8832e5cc",
+    "status": "PASS"
+  },
+  "tests": {
+    "passed": 18,
+    "failed": 0,
+    "skipped": 0,
+    "fullsuite": false,
+    "path": "D:\\KHMT\\Project solo\\diagnostics\\expansion\\final-export\\focused-final.xml",
+    "sha256": "8b2c2fac5c87c3ba9f602e4cc7d6b021aed1692fa6d3f7a2ce9791f46595e84c"
+  },
+  "exporter_sha256": "55255ba8c7a97cb48dc12ebf9d3b6f6f08647443559bacf1691d1889eaab7d5f",
+  "test_source_sha256": "1fbb2d57f6fadb0a5773eda6c49e0145dd17873ab8f2a93b4a29b3b7408f24e4",
+  "solver_calls": 0,
+  "pending_scientific_acceptance": "SAT08 analysis and later report/provenance QA; this receipt approves export data only"
+}

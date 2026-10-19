@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="5" failures="0" skipped="0" tests="20" time="5.843" timestamp="2026-10-16T19:06:39.600129+07:00" hostname="NGYN"><testcase classname="tests.test_runner" name="test_frozen_schedule" time="0.247" /><testcase classname="tests.test_runner" name="test_bad_config[kwargs0]" time="0.001" /><testcase classname="tests.test_runner" name="test_bad_config[kwargs1]" time="0.000" /><testcase classname="tests.test_runner" name="test_bad_config[kwargs2]" time="0.000" /><testcase classname="tests.test_runner" name="test_bad_config[kwargs3]" time="0.000" /><testcase classname="tests.test_runner" name="test_prepare_without_execution" time="0.001"><error message="failed on setup with &quot;FileNotFoundError: [WinError 3] The system cannot find the path specified: 'D:\\KHMT\\Project solo\\diagnostics\\runner\\test-temp'&quot;">self = WindowsPath('D:/KHMT/Project solo/diagnostics/runner/test-temp')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+&gt;           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'D:\\KHMT\\Project solo\\diagnostics\\runner\\test-temp'
+
+C:\Users\admin\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py:722: FileNotFoundError</error></testcase><testcase classname="tests.test_runner" name="test_guard_modes[ok-UNSAT-complete]" time="0.497" /><testcase classname="tests.test_runner" name="test_guard_modes[build_hang-TIMEOUT-measurement]" time="0.628" /><testcase classname="tests.test_runner" name="test_guard_modes[late_end-TIMEOUT-measurement]" time="0.349" /><testcase classname="tests.test_runner" name="test_guard_modes[slow_validation-UNSAT-complete]" time="0.770" /><testcase classname="tests.test_runner" name="test_guard_modes[startup_error-ERROR-startup]" time="0.354" /><testcase classname="tests.test_runner" name="test_guard_modes[crash-ERROR-startup]" time="0.378" /><testcase classname="tests.test_runner" name="test_guard_modes[validation_error-ERROR-complete]" time="0.384" /><testcase classname="tests.test_runner" name="test_guard_modes[unchecked_sat-ERROR-validation]" time="0.374" /><testcase classname="tests.test_runner" name="test_separate_watchdogs[startup_hang-startup]" time="1.007" /><testcase classname="tests.test_runner" name="test_separate_watchdogs[validation_hang-postprocessing]" time="0.574" /><testcase classname="tests.test_runner" name="test_descendant_terminated[child_hang]" time="0.001"><error message="failed on setup with &quot;FileNotFoundError: [WinError 3] The system cannot find the path specified: 'D:\\KHMT\\Project solo\\diagnostics\\runner\\test-temp'&quot;">self = WindowsPath('D:/KHMT/Project solo/diagnostics/runner/test-temp')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+&gt;           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'D:\\KHMT\\Project solo\\diagnostics\\runner\\test-temp'
+
+C:\Users\admin\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py:722: FileNotFoundError</error></testcase><testcase classname="tests.test_runner" name="test_descendant_terminated[orphan_success]" time="0.001"><error message="failed on setup with &quot;FileNotFoundError: [WinError 3] The system cannot find the path specified: 'D:\\KHMT\\Project solo\\diagnostics\\runner\\test-temp'&quot;">self = WindowsPath('D:/KHMT/Project solo/diagnostics/runner/test-temp')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+&gt;           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'D:\\KHMT\\Project solo\\diagnostics\\runner\\test-temp'
+
+C:\Users\admin\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py:722: FileNotFoundError</error></testcase><testcase classname="tests.test_runner" name="test_csv_nulls_and_duplicate" time="0.001"><error message="failed on setup with &quot;FileNotFoundError: [WinError 3] The system cannot find the path specified: 'D:\\KHMT\\Project solo\\diagnostics\\runner\\test-temp'&quot;">self = WindowsPath('D:/KHMT/Project solo/diagnostics/runner/test-temp')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+&gt;           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'D:\\KHMT\\Project solo\\diagnostics\\runner\\test-temp'
+
+C:\Users\admin\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py:722: FileNotFoundError</error></testcase><testcase classname="tests.test_runner" name="test_checked_solution_artifact" time="0.001"><error message="failed on setup with &quot;FileNotFoundError: [WinError 3] The system cannot find the path specified: 'D:\\KHMT\\Project solo\\diagnostics\\runner\\test-temp'&quot;">self = WindowsPath('D:/KHMT/Project solo/diagnostics/runner/test-temp')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+&gt;           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'D:\\KHMT\\Project solo\\diagnostics\\runner\\test-temp'
+
+C:\Users\admin\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py:722: FileNotFoundError</error></testcase></testsuite></testsuites>

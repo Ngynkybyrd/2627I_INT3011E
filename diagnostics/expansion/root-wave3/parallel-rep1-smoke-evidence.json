@@ -1,0 +1,14 @@
+{
+  "at": "2026-10-19T22:58:14.569729",
+  "session_id": "ed7d42b0-e602-4c76-bbb1-d22ba116259a",
+  "new_attempts": 12,
+  "repetitions": [
+    1
+  ],
+  "peak_overlapping_attempts": 4,
+  "session_closed": true,
+  "statuses": {
+    "SAT": 12
+  },
+  "running": 0
+}

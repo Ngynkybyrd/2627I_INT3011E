@@ -1,0 +1,1119 @@
+[
+  {
+    "N": 9,
+    "job": {
+      "job_id": "exp04-sat-pairwise",
+      "instance_id": "synthetic-N09-p70-s0",
+      "file": "data/synthetic/synthetic-N09-p70-s0.json",
+      "method": "sat",
+      "encoding": "pairwise",
+      "repetition": 1,
+      "cutoff_seconds": 10.0
+    },
+    "input_sha256": "2690cb806918783769d0a6ba83a088c9bcbc48e1697620d036f1d31bff007670",
+    "wall_seconds": 0.6968666000029771,
+    "result": {
+      "status": "SAT",
+      "method": "sat",
+      "encoding": "pairwise",
+      "raw_status": "True",
+      "solution": [
+        [
+          5,
+          8,
+          3,
+          7,
+          1,
+          6,
+          2,
+          4,
+          9
+        ],
+        [
+          6,
+          7,
+          1,
+          4,
+          9,
+          2,
+          5,
+          8,
+          3
+        ],
+        [
+          2,
+          4,
+          9,
+          8,
+          3,
+          5,
+          6,
+          7,
+          1
+        ],
+        [
+          7,
+          1,
+          5,
+          9,
+          6,
+          4,
+          8,
+          3,
+          2
+        ],
+        [
+          8,
+          3,
+          2,
+          1,
+          5,
+          7,
+          4,
+          9,
+          6
+        ],
+        [
+          4,
+          9,
+          6,
+          3,
+          2,
+          8,
+          7,
+          1,
+          5
+        ],
+        [
+          3,
+          2,
+          4,
+          5,
+          8,
+          1,
+          9,
+          6,
+          7
+        ],
+        [
+          9,
+          6,
+          7,
+          2,
+          4,
+          3,
+          1,
+          5,
+          8
+        ],
+        [
+          1,
+          5,
+          8,
+          6,
+          7,
+          9,
+          3,
+          2,
+          4
+        ]
+      ],
+      "build_seconds": 0.012978700004168786,
+      "solve_seconds": 0.00044920000073034316,
+      "total_seconds": 0.01342790000489913,
+      "stats": {
+        "primary_variables": 729,
+        "auxiliary_variables": 0,
+        "total_variables": 729,
+        "clauses": 12045,
+        "exo_groups": 324,
+        "clues": 57
+      },
+      "validation": {
+        "valid": true,
+        "message": null
+      },
+      "error": null,
+      "guard_phase": "complete"
+    },
+    "cleanup": {
+      "assigned": true,
+      "zero_active_after_terminate": true,
+      "closed": true,
+      "pid": 4244
+    }
+  },
+  {
+    "N": 9,
+    "job": {
+      "job_id": "exp04-sat-seqcounter",
+      "instance_id": "synthetic-N09-p70-s0",
+      "file": "data/synthetic/synthetic-N09-p70-s0.json",
+      "method": "sat",
+      "encoding": "seqcounter",
+      "repetition": 1,
+      "cutoff_seconds": 10.0
+    },
+    "input_sha256": "2690cb806918783769d0a6ba83a088c9bcbc48e1697620d036f1d31bff007670",
+    "wall_seconds": 0.3680443000048399,
+    "result": {
+      "status": "SAT",
+      "method": "sat",
+      "encoding": "seqcounter",
+      "raw_status": "True",
+      "solution": [
+        [
+          5,
+          8,
+          3,
+          7,
+          1,
+          6,
+          2,
+          4,
+          9
+        ],
+        [
+          6,
+          7,
+          1,
+          4,
+          9,
+          2,
+          5,
+          8,
+          3
+        ],
+        [
+          2,
+          4,
+          9,
+          8,
+          3,
+          5,
+          6,
+          7,
+          1
+        ],
+        [
+          7,
+          1,
+          5,
+          9,
+          6,
+          4,
+          8,
+          3,
+          2
+        ],
+        [
+          8,
+          3,
+          2,
+          1,
+          5,
+          7,
+          4,
+          9,
+          6
+        ],
+        [
+          4,
+          9,
+          6,
+          3,
+          2,
+          8,
+          7,
+          1,
+          5
+        ],
+        [
+          3,
+          2,
+          4,
+          5,
+          8,
+          1,
+          9,
+          6,
+          7
+        ],
+        [
+          9,
+          6,
+          7,
+          2,
+          4,
+          3,
+          1,
+          5,
+          8
+        ],
+        [
+          1,
+          5,
+          8,
+          6,
+          7,
+          9,
+          3,
+          2,
+          4
+        ]
+      ],
+      "build_seconds": 0.008510400002705865,
+      "solve_seconds": 0.00021610000112559646,
+      "total_seconds": 0.008726500003831461,
+      "stats": {
+        "primary_variables": 729,
+        "auxiliary_variables": 2592,
+        "total_variables": 3321,
+        "clauses": 7833,
+        "exo_groups": 324,
+        "clues": 57
+      },
+      "validation": {
+        "valid": true,
+        "message": null
+      },
+      "error": null,
+      "guard_phase": "complete"
+    },
+    "cleanup": {
+      "assigned": true,
+      "zero_active_after_terminate": true,
+      "closed": true,
+      "pid": 16756
+    }
+  },
+  {
+    "N": 9,
+    "job": {
+      "job_id": "exp04-sat-bitwise",
+      "instance_id": "synthetic-N09-p70-s0",
+      "file": "data/synthetic/synthetic-N09-p70-s0.json",
+      "method": "sat",
+      "encoding": "bitwise",
+      "repetition": 1,
+      "cutoff_seconds": 10.0
+    },
+    "input_sha256": "2690cb806918783769d0a6ba83a088c9bcbc48e1697620d036f1d31bff007670",
+    "wall_seconds": 0.2950406999880215,
+    "result": {
+      "status": "SAT",
+      "method": "sat",
+      "encoding": "bitwise",
+      "raw_status": "True",
+      "solution": [
+        [
+          5,
+          8,
+          3,
+          7,
+          1,
+          6,
+          2,
+          4,
+          9
+        ],
+        [
+          6,
+          7,
+          1,
+          4,
+          9,
+          2,
+          5,
+          8,
+          3
+        ],
+        [
+          2,
+          4,
+          9,
+          8,
+          3,
+          5,
+          6,
+          7,
+          1
+        ],
+        [
+          7,
+          1,
+          5,
+          9,
+          6,
+          4,
+          8,
+          3,
+          2
+        ],
+        [
+          8,
+          3,
+          2,
+          1,
+          5,
+          7,
+          4,
+          9,
+          6
+        ],
+        [
+          4,
+          9,
+          6,
+          3,
+          2,
+          8,
+          7,
+          1,
+          5
+        ],
+        [
+          3,
+          2,
+          4,
+          5,
+          8,
+          1,
+          9,
+          6,
+          7
+        ],
+        [
+          9,
+          6,
+          7,
+          2,
+          4,
+          3,
+          1,
+          5,
+          8
+        ],
+        [
+          1,
+          5,
+          8,
+          6,
+          7,
+          9,
+          3,
+          2,
+          4
+        ]
+      ],
+      "build_seconds": 0.009164899995084852,
+      "solve_seconds": 0.0002972999936901033,
+      "total_seconds": 0.009462199988774955,
+      "stats": {
+        "primary_variables": 729,
+        "auxiliary_variables": 1296,
+        "total_variables": 2025,
+        "clauses": 12045,
+        "exo_groups": 324,
+        "clues": 57
+      },
+      "validation": {
+        "valid": true,
+        "message": null
+      },
+      "error": null,
+      "guard_phase": "complete"
+    },
+    "cleanup": {
+      "assigned": true,
+      "zero_active_after_terminate": true,
+      "closed": true,
+      "pid": 22784
+    }
+  },
+  {
+    "N": 9,
+    "job": {
+      "job_id": "exp04-cpsat-none",
+      "instance_id": "synthetic-N09-p70-s0",
+      "file": "data/synthetic/synthetic-N09-p70-s0.json",
+      "method": "cpsat",
+      "encoding": null,
+      "repetition": 1,
+      "cutoff_seconds": 10.0
+    },
+    "input_sha256": "2690cb806918783769d0a6ba83a088c9bcbc48e1697620d036f1d31bff007670",
+    "wall_seconds": 1.2994478000036906,
+    "result": {
+      "status": "SAT",
+      "method": "cpsat",
+      "encoding": null,
+      "raw_status": "OPTIMAL",
+      "solution": [
+        [
+          5,
+          8,
+          3,
+          7,
+          1,
+          6,
+          2,
+          4,
+          9
+        ],
+        [
+          6,
+          7,
+          1,
+          4,
+          9,
+          2,
+          5,
+          8,
+          3
+        ],
+        [
+          2,
+          4,
+          9,
+          8,
+          3,
+          5,
+          6,
+          7,
+          1
+        ],
+        [
+          7,
+          1,
+          5,
+          9,
+          6,
+          4,
+          8,
+          3,
+          2
+        ],
+        [
+          8,
+          3,
+          2,
+          1,
+          5,
+          7,
+          4,
+          9,
+          6
+        ],
+        [
+          4,
+          9,
+          6,
+          3,
+          2,
+          8,
+          7,
+          1,
+          5
+        ],
+        [
+          3,
+          2,
+          4,
+          5,
+          8,
+          1,
+          9,
+          6,
+          7
+        ],
+        [
+          9,
+          6,
+          7,
+          2,
+          4,
+          3,
+          1,
+          5,
+          8
+        ],
+        [
+          1,
+          5,
+          8,
+          6,
+          7,
+          9,
+          3,
+          2,
+          4
+        ]
+      ],
+      "build_seconds": 0.0012780999968526885,
+      "solve_seconds": 0.004644600005121902,
+      "total_seconds": 0.00592270000197459,
+      "stats": null,
+      "validation": {
+        "valid": true,
+        "message": null
+      },
+      "error": null,
+      "guard_phase": "complete"
+    },
+    "cleanup": {
+      "assigned": true,
+      "zero_active_after_terminate": true,
+      "closed": true,
+      "pid": 7780
+    }
+  },
+  {
+    "N": 9,
+    "job": {
+      "job_id": "exp04-highs-none",
+      "instance_id": "synthetic-N09-p70-s0",
+      "file": "data/synthetic/synthetic-N09-p70-s0.json",
+      "method": "highs",
+      "encoding": null,
+      "repetition": 1,
+      "cutoff_seconds": 10.0
+    },
+    "input_sha256": "2690cb806918783769d0a6ba83a088c9bcbc48e1697620d036f1d31bff007670",
+    "wall_seconds": 1.109168499999214,
+    "result": {
+      "status": "SAT",
+      "method": "highs",
+      "encoding": null,
+      "raw_status": "Optimal",
+      "solution": [
+        [
+          5,
+          8,
+          3,
+          7,
+          1,
+          6,
+          2,
+          4,
+          9
+        ],
+        [
+          6,
+          7,
+          1,
+          4,
+          9,
+          2,
+          5,
+          8,
+          3
+        ],
+        [
+          2,
+          4,
+          9,
+          8,
+          3,
+          5,
+          6,
+          7,
+          1
+        ],
+        [
+          7,
+          1,
+          5,
+          9,
+          6,
+          4,
+          8,
+          3,
+          2
+        ],
+        [
+          8,
+          3,
+          2,
+          1,
+          5,
+          7,
+          4,
+          9,
+          6
+        ],
+        [
+          4,
+          9,
+          6,
+          3,
+          2,
+          8,
+          7,
+          1,
+          5
+        ],
+        [
+          3,
+          2,
+          4,
+          5,
+          8,
+          1,
+          9,
+          6,
+          7
+        ],
+        [
+          9,
+          6,
+          7,
+          2,
+          4,
+          3,
+          1,
+          5,
+          8
+        ],
+        [
+          1,
+          5,
+          8,
+          6,
+          7,
+          9,
+          3,
+          2,
+          4
+        ]
+      ],
+      "build_seconds": 0.0017668999935267493,
+      "solve_seconds": 0.0027649000112432986,
+      "total_seconds": 0.004531800004770048,
+      "stats": null,
+      "validation": {
+        "valid": true,
+        "message": null
+      },
+      "error": null,
+      "guard_phase": "complete"
+    },
+    "cleanup": {
+      "assigned": true,
+      "zero_active_after_terminate": true,
+      "closed": true,
+      "pid": 41000
+    }
+  },
+  {
+    "N": 9,
+    "job": {
+      "job_id": "exp04-gurobi-none",
+      "instance_id": "synthetic-N09-p70-s0",
+      "file": "data/synthetic/synthetic-N09-p70-s0.json",
+      "method": "gurobi",
+      "encoding": null,
+      "repetition": 1,
+      "cutoff_seconds": 10.0
+    },
+    "input_sha256": "2690cb806918783769d0a6ba83a088c9bcbc48e1697620d036f1d31bff007670",
+    "wall_seconds": 0.7889580999908503,
+    "result": {
+      "status": "SAT",
+      "method": "gurobi",
+      "encoding": null,
+      "raw_status": "2",
+      "solution": [
+        [
+          5,
+          8,
+          3,
+          7,
+          1,
+          6,
+          2,
+          4,
+          9
+        ],
+        [
+          6,
+          7,
+          1,
+          4,
+          9,
+          2,
+          5,
+          8,
+          3
+        ],
+        [
+          2,
+          4,
+          9,
+          8,
+          3,
+          5,
+          6,
+          7,
+          1
+        ],
+        [
+          7,
+          1,
+          5,
+          9,
+          6,
+          4,
+          8,
+          3,
+          2
+        ],
+        [
+          8,
+          3,
+          2,
+          1,
+          5,
+          7,
+          4,
+          9,
+          6
+        ],
+        [
+          4,
+          9,
+          6,
+          3,
+          2,
+          8,
+          7,
+          1,
+          5
+        ],
+        [
+          3,
+          2,
+          4,
+          5,
+          8,
+          1,
+          9,
+          6,
+          7
+        ],
+        [
+          9,
+          6,
+          7,
+          2,
+          4,
+          3,
+          1,
+          5,
+          8
+        ],
+        [
+          1,
+          5,
+          8,
+          6,
+          7,
+          9,
+          3,
+          2,
+          4
+        ]
+      ],
+      "build_seconds": 0.00468630000250414,
+      "solve_seconds": 0.002002100009121932,
+      "total_seconds": 0.006688400011626072,
+      "stats": null,
+      "validation": {
+        "valid": true,
+        "message": null
+      },
+      "error": null,
+      "guard_phase": "complete"
+    },
+    "cleanup": {
+      "assigned": true,
+      "zero_active_after_terminate": true,
+      "closed": true,
+      "pid": 25020
+    }
+  },
+  {
+    "N": 9,
+    "job": {
+      "job_id": "exp04-cplex_mip-none",
+      "instance_id": "synthetic-N09-p70-s0",
+      "file": "data/synthetic/synthetic-N09-p70-s0.json",
+      "method": "cplex_mip",
+      "encoding": null,
+      "repetition": 1,
+      "cutoff_seconds": 10.0
+    },
+    "input_sha256": "2690cb806918783769d0a6ba83a088c9bcbc48e1697620d036f1d31bff007670",
+    "wall_seconds": 1.4110512000042945,
+    "result": {
+      "status": "SAT",
+      "method": "cplex_mip",
+      "encoding": null,
+      "raw_status": "101: integer optimal solution",
+      "solution": [
+        [
+          5,
+          8,
+          3,
+          7,
+          1,
+          6,
+          2,
+          4,
+          9
+        ],
+        [
+          6,
+          7,
+          1,
+          4,
+          9,
+          2,
+          5,
+          8,
+          3
+        ],
+        [
+          2,
+          4,
+          9,
+          8,
+          3,
+          5,
+          6,
+          7,
+          1
+        ],
+        [
+          7,
+          1,
+          5,
+          9,
+          6,
+          4,
+          8,
+          3,
+          2
+        ],
+        [
+          8,
+          3,
+          2,
+          1,
+          5,
+          7,
+          4,
+          9,
+          6
+        ],
+        [
+          4,
+          9,
+          6,
+          3,
+          2,
+          8,
+          7,
+          1,
+          5
+        ],
+        [
+          3,
+          2,
+          4,
+          5,
+          8,
+          1,
+          9,
+          6,
+          7
+        ],
+        [
+          9,
+          6,
+          7,
+          2,
+          4,
+          3,
+          1,
+          5,
+          8
+        ],
+        [
+          1,
+          5,
+          8,
+          6,
+          7,
+          9,
+          3,
+          2,
+          4
+        ]
+      ],
+      "build_seconds": 0.0036798000073758885,
+      "solve_seconds": 0.0015367000014521182,
+      "total_seconds": 0.005216500008828007,
+      "stats": null,
+      "validation": {
+        "valid": true,
+        "message": null
+      },
+      "error": null,
+      "guard_phase": "complete"
+    },
+    "cleanup": {
+      "assigned": true,
+      "zero_active_after_terminate": true,
+      "closed": true,
+      "pid": 15160
+    }
+  },
+  {
+    "N": 9,
+    "job": {
+      "job_id": "exp04-cpoptimizer-none",
+      "instance_id": "synthetic-N09-p70-s0",
+      "file": "data/synthetic/synthetic-N09-p70-s0.json",
+      "method": "cpoptimizer",
+      "encoding": null,
+      "repetition": 1,
+      "cutoff_seconds": 10.0
+    },
+    "input_sha256": "2690cb806918783769d0a6ba83a088c9bcbc48e1697620d036f1d31bff007670",
+    "wall_seconds": 1.7260073999932501,
+    "result": {
+      "status": "SAT",
+      "method": "cpoptimizer",
+      "encoding": null,
+      "raw_status": "Feasible; stop=SearchHasNotBeenStopped",
+      "solution": [
+        [
+          5,
+          8,
+          3,
+          7,
+          1,
+          6,
+          2,
+          4,
+          9
+        ],
+        [
+          6,
+          7,
+          1,
+          4,
+          9,
+          2,
+          5,
+          8,
+          3
+        ],
+        [
+          2,
+          4,
+          9,
+          8,
+          3,
+          5,
+          6,
+          7,
+          1
+        ],
+        [
+          7,
+          1,
+          5,
+          9,
+          6,
+          4,
+          8,
+          3,
+          2
+        ],
+        [
+          8,
+          3,
+          2,
+          1,
+          5,
+          7,
+          4,
+          9,
+          6
+        ],
+        [
+          4,
+          9,
+          6,
+          3,
+          2,
+          8,
+          7,
+          1,
+          5
+        ],
+        [
+          3,
+          2,
+          4,
+          5,
+          8,
+          1,
+          9,
+          6,
+          7
+        ],
+        [
+          9,
+          6,
+          7,
+          2,
+          4,
+          3,
+          1,
+          5,
+          8
+        ],
+        [
+          1,
+          5,
+          8,
+          6,
+          7,
+          9,
+          3,
+          2,
+          4
+        ]
+      ],
+      "build_seconds": 0.1364826999924844,
+      "solve_seconds": 0.004830600009881891,
+      "total_seconds": 0.1413133000023663,
+      "stats": null,
+      "validation": {
+        "valid": true,
+        "message": null
+      },
+      "error": null,
+      "guard_phase": "complete"
+    },
+    "cleanup": {
+      "assigned": true,
+      "zero_active_after_terminate": true,
+      "closed": true,
+      "pid": 31720
+    }
+  }
+]

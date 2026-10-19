@@ -1,0 +1,37 @@
+{
+  "timestamp_utc": "2026-10-19T10:59:03.764968+00:00",
+  "python": "3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]",
+  "executable": "D:\\KHMT\\Project solo\\.venv\\Scripts\\python.exe",
+  "packages": {
+    "python-sat": "1.9.dev16",
+    "ortools": "9.15.6755",
+    "scipy": "1.18.1",
+    "highspy": "1.15.1",
+    "gurobipy": "13.0.3",
+    "cplex": "22.2.0.1",
+    "docplex": "2.32.264"
+  },
+  "cpoptimizer_executable": "D:\\KHMT\\Project solo\\.venv\\Scripts\\cpoptimizer.exe",
+  "cpoptimizer_sha256": "930ebe70e0c91f5c6e226371b01246caeb18f032c92f22eaed0714540ab2749e",
+  "source_sha256": {
+    "src\\sudoku\\__init__.py": "a55dce0049cb527760f8972b937cf9a2b56ef3423b419cc3777e2e7b6809ebfb",
+    "src\\sudoku\\__main__.py": "8726b4feb64c28cc71314bf1fd54a92bf3ec74b52dcaa88c93ed3d828d0f6a01",
+    "src\\sudoku\\baselines\\__init__.py": "5ceda9f61e47ef4de4c55900c6361dfc3a4541abb02f951e1aa65342331a2af2",
+    "src\\sudoku\\baselines\\adapters.py": "3f8aba7f2d77d8f9bbea799e0ee271176b4b6a3d7c95cbbb6ce0df7dacc63045",
+    "src\\sudoku\\baselines\\cp.py": "ee1e1d3b34b77630733185b4e4e259a3652b31d33f1b718cb95919a0b7e3ab9b",
+    "src\\sudoku\\baselines\\ilp.py": "dd0933c802d8c223616f11cf9ff285c308665b47dfadf3eac526b0e74abc68ec",
+    "src\\sudoku\\cli.py": "7d51e2c4a802209aa71214bf47cb8d0d06f71413d83d68ee60dac115a5441c9e",
+    "src\\sudoku\\contracts.py": "c739e640946ad53268e0a34496efc63cb6e34b491fb5c9109623fc99f559fd7a",
+    "src\\sudoku\\decoding.py": "d929c0d5cbeecfebfbbf4e55e5c6fcba69468cd42175ffce8debb6b8a2521713",
+    "src\\sudoku\\model.py": "7c266f3b3168c089d6e13a2b6ded4255038eda58d88fc2776d7b9878a049d9bf",
+    "src\\sudoku\\runner.py": "3d068f73ac117ed63c9743b696130716628d67d0ed156dcc82462807d551a2e4",
+    "src\\sudoku\\runner_process.py": "defa8d5e4e0c126b27ea6ed34cd71120987e81e0df3f7aa9858d10e072efb3b3",
+    "src\\sudoku\\runner_worker.py": "414968bbcdc7b6ce693747b2c137b2da74527d4da4cf2df593c9758516bb05b3",
+    "src\\sudoku\\sat.py": "656a013eb5289731ea7aaae308207c9fb3dca0d8cbe4b03c3ffafef5b914bc08",
+    "src\\sudoku\\validation.py": "46f546a1c37fec661663c282ff9056603addd79a89ea7fcd750aca0ca743e45d"
+  },
+  "old_code_hashes_match": true,
+  "old_package_versions_match": true,
+  "old_run_json_sha256": "7dab6c8e7bb47524a50da825365cbe419c73b3417c1556b191675beb5633eb1b",
+  "fresh_env_fingerprint": "Root to cross-check EXP-01; this is local EXP-04 inventory"
+}

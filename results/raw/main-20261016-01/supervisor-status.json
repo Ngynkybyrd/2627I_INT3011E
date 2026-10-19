@@ -1,0 +1,21 @@
+{
+  "state": "COMPLETED",
+  "pid": 19484,
+  "started_utc": "2026-10-16T12:35:37.979654+00:00",
+  "command": [
+    "D:\\KHMT\\Project solo\\.venv\\Scripts\\python.exe",
+    "D:\\KHMT\\Project solo\\diagnostics\\runner\\main_supervisor.py",
+    "--run",
+    "D:\\KHMT\\Project solo\\results\\raw\\main-20261016-01"
+  ],
+  "planned_jobs": 906,
+  "progress_csv": "D:\\KHMT\\Project solo\\results\\raw\\main-20261016-01\\results.csv",
+  "run_sha256": "7dab6c8e7bb47524a50da825365cbe419c73b3417c1556b191675beb5633eb1b",
+  "schedule_sha256": "c481de719859d84001960fe1c628b96005a24723be6d2ea056f7c6101cd28e0b",
+  "freeze_sha256": "e57b52e50b91ee258dba788fbc196a2f773bbaa9356e3ac4bd06782e6f83c840",
+  "completed_jobs": 906,
+  "exit_code": 0,
+  "results_sha256": "aac4cde1fed90857ea81a1575e326049be71a528f27a6a744435b94c42dfdda7",
+  "note": "Batch finished; RUN-012 acceptance and analysis still required",
+  "finished_utc": "2026-10-16T12:43:13.404486+00:00"
+}

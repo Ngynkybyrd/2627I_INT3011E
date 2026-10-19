@@ -1,0 +1,6 @@
+% Categorical methods, no connecting line. Post-hoc non-completed=TIMEOUT+ERROR; counts only, not timing/hardness. Denominators in noncompletion.csv; absent commercial sizes remain absent.
+\begin{tikzpicture}\begin{axis}[width=.94\linewidth,height=6cm,xlabel={Method},ylabel={Non-completed (\%)},xtick={1,...,8},xticklabels={PW,SC,BW,CP,HG,GR,CX,CO},legend pos=north west]
+\addplot+[only marks,mark=*] table[x=method,y=NCpercent] {completion-N9.dat};\addlegendentry{$N=9$}
+\addplot+[only marks,mark=*] table[x=method,y=NCpercent] {completion-N16.dat};\addlegendentry{$N=16$}
+\addplot+[only marks,mark=*] table[x=method,y=NCpercent] {completion-N25.dat};\addlegendentry{$N=25$}
+\end{axis}\end{tikzpicture}

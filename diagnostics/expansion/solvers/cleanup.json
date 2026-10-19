@@ -1,0 +1,50 @@
+[
+  {
+    "assigned": true,
+    "zero_active_after_terminate": true,
+    "closed": true,
+    "pid": 4244
+  },
+  {
+    "assigned": true,
+    "zero_active_after_terminate": true,
+    "closed": true,
+    "pid": 16756
+  },
+  {
+    "assigned": true,
+    "zero_active_after_terminate": true,
+    "closed": true,
+    "pid": 22784
+  },
+  {
+    "assigned": true,
+    "zero_active_after_terminate": true,
+    "closed": true,
+    "pid": 7780
+  },
+  {
+    "assigned": true,
+    "zero_active_after_terminate": true,
+    "closed": true,
+    "pid": 41000
+  },
+  {
+    "assigned": true,
+    "zero_active_after_terminate": true,
+    "closed": true,
+    "pid": 25020
+  },
+  {
+    "assigned": true,
+    "zero_active_after_terminate": true,
+    "closed": true,
+    "pid": 15160
+  },
+  {
+    "assigned": true,
+    "zero_active_after_terminate": true,
+    "closed": true,
+    "pid": 31720
+  }
+]

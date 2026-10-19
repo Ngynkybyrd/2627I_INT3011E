@@ -1,0 +1,6 @@
+% Same 86 common SAT IDs, N25/permutation/40%, session a23e8969-0b78-41e1-925a-b8d23fc2de9b, 32 workers, resource-contended. Single measured repetition; no missing/censored runtime imputed. Across matched single-run instances, not repeat medians.
+\begin{tikzpicture}\begin{axis}[width=.94\linewidth,height=6cm,ybar,xlabel={Method},ylabel={Total (s)},xtick={1,...,3},xticklabels={PW,SC,BW},legend pos=north west]
+\addplot table[x=method,y=median] {common-quantiles.dat};\addlegendentry{median}
+\addplot table[x=method,y=p90] {common-quantiles.dat};\addlegendentry{p90}
+\addplot table[x=method,y=p95] {common-quantiles.dat};\addlegendentry{p95}
+\end{axis}\end{tikzpicture}

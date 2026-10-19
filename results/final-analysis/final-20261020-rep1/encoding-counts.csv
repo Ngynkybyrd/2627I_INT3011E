@@ -1,0 +1,10 @@
+N,configuration,observations_with_counts,theoretical_primary,measured_primary,auxiliary_min,auxiliary_max,clauses_without_clues,pairwise_theoretical_without_clues
+9,sat:bitwise,10000,729,729,1296,1296,11988,
+9,sat:pairwise,10000,729,729,0,0,11988,11988
+9,sat:seqcounter,10000,729,729,2592,2592,7776,
+16,sat:bitwise,5000,4096,4096,4096,4096,66560,
+16,sat:pairwise,5000,4096,4096,0,0,123904,123904
+16,sat:seqcounter,4999,4096,4096,15360,15360,46080,
+25,sat:bitwise,1000,15625,15625,12500,12500,315000,
+25,sat:pairwise,1000,15625,15625,0,0,752500,752500
+25,sat:seqcounter,1000,15625,15625,60000,60000,180000,

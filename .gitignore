@@ -18,3 +18,9 @@ dist/
 *.run.xml
 *.synctex.gz
 *.toc
+
+results/final-snapshots/final-20261020-rep1/snapshot.sqlite3
+results/final-snapshots/final-20261020-rep1/inputs.sqlite3
+*.restoring
+report/output/pdf/sudoku-en.pdf
+report/output/pdf/sudoku-vi.pdf

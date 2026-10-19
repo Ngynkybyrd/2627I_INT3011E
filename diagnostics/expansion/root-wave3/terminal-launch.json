@@ -1,0 +1,16 @@
+{
+  "effective_repetitions": 1,
+  "policy_path": "D:\\KHMT\\Project solo\\diagnostics\\expansion\\root-wave3\\capacity-ramp-fast-policy.json",
+  "target_jobs": 110000,
+  "stage_jobs": 160,
+  "policy_sha256": "c4083eaf74d88ffd267ef5382488b42422702f60f6489e12b68e99fff0f35cc6",
+  "started_local": "2026-10-19T23:40:04.9885024+07:00",
+  "ladder": [
+    8,
+    24,
+    40
+  ],
+  "automation": "PAUSED",
+  "pid": 15848,
+  "status": "FAST_CAPACITY_RAMP_STARTED"
+}

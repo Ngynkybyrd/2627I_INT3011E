@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "source_commit": "d8c8ebaee0c08c412cfba96af1923dfa61c83317",
+  "files": [
+    {
+      "file": "easy.txt",
+      "url": "https://raw.githubusercontent.com/grantm/sudoku-exchange-puzzle-bank/d8c8ebaee0c08c412cfba96af1923dfa61c83317/easy.txt",
+      "sha256": "789aab6f52cc4588e0c3aa4269ad3282cfda7e1cc79ea693d16507decde3fc50"
+    },
+    {
+      "file": "medium.txt",
+      "url": "https://raw.githubusercontent.com/grantm/sudoku-exchange-puzzle-bank/d8c8ebaee0c08c412cfba96af1923dfa61c83317/medium.txt",
+      "sha256": "c2a5f8fac99dcf215b25d46ece47f346375e51730b182de70a6f8f2107b2b38d"
+    },
+    {
+      "file": "hard.txt",
+      "url": "https://raw.githubusercontent.com/grantm/sudoku-exchange-puzzle-bank/d8c8ebaee0c08c412cfba96af1923dfa61c83317/hard.txt",
+      "sha256": "abcff1512411e601abd5e861c60add5be5d877739b6faa249ee86960f5ad85e9"
+    },
+    {
+      "file": "diabolical.txt",
+      "url": "https://raw.githubusercontent.com/grantm/sudoku-exchange-puzzle-bank/d8c8ebaee0c08c412cfba96af1923dfa61c83317/diabolical.txt",
+      "sha256": "08553d0c1145ea4d7c13008040f47ea8205d21fe1eaf8f4ab17a1a6981928b35"
+    },
+    {
+      "file": "LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/grantm/sudoku-exchange-puzzle-bank/d8c8ebaee0c08c412cfba96af1923dfa61c83317/LICENSE.txt",
+      "sha256": "0f3ab60214dbfacca972a724efd3b0b3248b65b02d9874e95ed3f412f232c385"
+    },
+    {
+      "file": "README.md",
+      "url": "https://raw.githubusercontent.com/grantm/sudoku-exchange-puzzle-bank/d8c8ebaee0c08c412cfba96af1923dfa61c83317/README.md",
+      "sha256": "494477eae319136793973e81d74ace35dcea91e3dbb40de1f53bc4a9ef03117e"
+    }
+  ],
+  "solver_calls": 0,
+  "total_bytes": 89394334
+}

@@ -1,0 +1,20 @@
+{
+  "scientific_sources_unchanged": true,
+  "frozen_datasets_unchanged": true,
+  "from_release": "d956ab9dc4f46e114a60ec91108fe5e52af0089a522ff9b501575aff3d0eec56",
+  "to_release": "8ef8dbfc1e075b6b8dc9ce61aec39505697005d4fb4f335b6f2955f5b091169d",
+  "new_pilot_required_for_release_consistency": true,
+  "prior_pilot_results": {
+    "SAT": 161,
+    "TIMEOUT": 3
+  },
+  "full_regression_passed": 837,
+  "accepted_by": "root",
+  "reason": "Launcher-only N/n JSON parsing and distinct experiment/gate names",
+  "preserved_prior_pilot": "D:\\KHMT\\Project solo\\diagnostics\\expansion\\pilot\\wave3-20261019-212023",
+  "changed_source_paths": [
+    "scripts/start_full_expanded_run.ps1",
+    "tests/expanded/test_terminal_launcher.py"
+  ],
+  "updated_local": "2026-10-19T22:33:30.1474128+07:00"
+}

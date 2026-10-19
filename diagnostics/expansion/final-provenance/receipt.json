@@ -1,0 +1,15 @@
+{
+  "fullsuite_rerun": false,
+  "hashes_sha256": {
+    "HANDOFF.md": "14e0e6658d9c47f807d1193f11625e2e80a16464cd2186306c9e8d6a321a449c",
+    "audit.py": "bb9e4ae44963787c4b1c36c24e62c95323865527de6c7c3f181db03edfe6c26a",
+    "counts.json": "77e1089282ed9a3377c5d7976a8004b264f96d58755a5ea73d6ce1712189221d",
+    "provenance-en.md": "52f8097c95355b19f6f46c75b536d8bc85ead2686c9146df25ad7ffa17d4a62e",
+    "provenance-vi.md": "ac39d086e50b65383e89b51cba6ec708f1b3a22b4d094f5bb410c963607cad57"
+  },
+  "new_solver_calls": 0,
+  "raw_mutations": 0,
+  "scope": "SAT05 dataset provenance only",
+  "status": "PASS",
+  "web_calls": 0
+}

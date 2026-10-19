@@ -1,0 +1,5 @@
+% Same 86 paired SAT IDs in a23e8969-0b78-41e1-925a-b8d23fc2de9b, N25/permutation/40%; diagonal is equal observed total, not isolated speedup.
+\begin{tikzpicture}\begin{axis}[width=.94\linewidth,height=6cm,xlabel={PW total (s)},ylabel={SC total (s)}]
+\addplot[only marks,mark size=1.2pt] table[x=PW,y=SC] {paired-scatter.dat};
+\addplot[domain=0:2.467751899996074,mark=none,dashed] {x};
+\end{axis}\end{tikzpicture}

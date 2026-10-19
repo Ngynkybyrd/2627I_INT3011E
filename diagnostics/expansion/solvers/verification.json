@@ -1,0 +1,16 @@
+{
+  "fresh_jobs": 8,
+  "fresh_sat": 8,
+  "fresh_cleanup_pass": 8,
+  "reused_cells": 10,
+  "all_reused_witnesses_rechecked": true,
+  "preserved_sha256": {
+    "results\\raw\\main-20261016-01\\run.json": "7dab6c8e7bb47524a50da825365cbe419c73b3417c1556b191675beb5633eb1b",
+    "results\\raw\\main-20261016-01\\results.csv": "aac4cde1fed90857ea81a1575e326049be71a528f27a6a744435b94c42dfdda7",
+    "data\\freeze.json": "fd84c10458d41fde0e2de0ebb204b68ea0b95f587cf6a19e00d4e1cb58de2e25",
+    "data\\manifest.json": "fd77c28e3934bdaa9b4989e3579a330d6999abe7b976bc9b13bf5f20213e2c9b"
+  },
+  "protected_unchanged": true,
+  "source_unchanged": true,
+  "result": "PASS"
+}

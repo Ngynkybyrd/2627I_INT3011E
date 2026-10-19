@@ -1,0 +1,42 @@
+{
+  "status": "TECHNICAL_AND_LOCAL_REPORT_HANDOFF_COMPLETE_WITH_DECLARED_HISTORICAL_ERROR",
+  "accepted_local": "2026-10-20T03:09:56.351988+07:00",
+  "scope": {
+    "puzzles": 16000,
+    "primary_jobs": 110000,
+    "effective_repetitions": 1,
+    "SAT": 109664,
+    "TIMEOUT": 335,
+    "ERROR": 1,
+    "noncompletion_display": 336,
+    "puzzles_with_any_primary_SAT": 16000
+  },
+  "original_330000_three_repetition_experiment_complete": false,
+  "error_free": false,
+  "pdf_pages": {
+    "vi": 21,
+    "en": 21
+  },
+  "gates": {
+    "SAT05_provenance": "PASS",
+    "SAT07_full_snapshot": "PASS",
+    "SAT08_full_analysis": "PASS",
+    "SAT09_PDF_source_font_visual_numeric": "PASS",
+    "SAT10_local_manifest_reproduction": "PASS",
+    "root_independent_checks": "PASS"
+  },
+  "evidence": {
+    "diagnostics/expansion/final-package/manifest.json": "5686f5878eff5fb2f872959966838928ca8e7343c597c112b852f6f10335b263",
+    "diagnostics/expansion/final-package/status.json": "b439d1793f11c7fff75bfa01132683ceee8e2fc7757a997a6896cb3b8872361d",
+    "diagnostics/expansion/root-wave3/final-report-root-check.json": "970b7c853712de2a7a1eb93e445ba5b31ae02da6976978fe2ec5e808ef01b822",
+    "diagnostics/expansion/root-wave3/final-figure-numeric-root-check.json": "457cb5b3fb959d28358e7ad500894eaadb870c87a47c436f15b500c6aa98a7b6",
+    "report/final-20261020/SAT09-QA.json": "e14220d09988d43d27d8aee422319db1710261195abead3d73a41491a701709d"
+  },
+  "automation_status": "PAUSED verified from automation.toml",
+  "not_in_scope_or_deferred": [
+    "Publish new revision to GitHub",
+    "Course submission",
+    "Overleaf discussion/conversion to follow after this acceptance"
+  ],
+  "known_closed_limitation": "Historical premeasurement guard ERROR remains immutable; diagnostic retry passed separately and is excluded from primary data. TIMEOUT observations are censored; no claim every method solved every puzzle."
+}

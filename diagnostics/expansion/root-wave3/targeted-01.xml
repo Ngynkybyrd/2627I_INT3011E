@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="11" skipped="0" tests="85" time="5.987" timestamp="2026-10-19T19:47:43.981563+07:00" hostname="NGYN"><testcase classname="tests.expanded.test_data_helpers" name="test_real_canonical_hash_rank_and_seed[3]" time="0.148" /><testcase classname="tests.expanded.test_data_helpers" name="test_real_canonical_hash_rank_and_seed[4]" time="0.001" /><testcase classname="tests.expanded.test_data_helpers" name="test_real_canonical_hash_rank_and_seed[5]" time="0.001" /><testcase classname="tests.expanded.test_data_helpers" name="test_real_proper_trade_against_independent_audit[4]" time="0.003" /><testcase classname="tests.expanded.test_data_helpers" name="test_real_proper_trade_against_independent_audit[5]" time="0.004" /><testcase classname="tests.expanded.test_data_helpers" name="test_real_mask_matches_independent_rank_witness_and_metadata[20-4]" time="0.002" /><testcase classname="tests.expanded.test_data_helpers" name="test_real_mask_matches_independent_rank_witness_and_metadata[20-5]" time="0.003" /><testcase classname="tests.expanded.test_data_helpers" name="test_real_mask_matches_independent_rank_witness_and_metadata[30-4]" time="0.001" /><testcase classname="tests.expanded.test_data_helpers" name="test_real_mask_matches_independent_rank_witness_and_metadata[30-5]" time="0.002" /><testcase classname="tests.expanded.test_data_helpers" name="test_real_mask_matches_independent_rank_witness_and_metadata[40-4]" time="0.001" /><testcase classname="tests.expanded.test_data_helpers" name="test_real_mask_matches_independent_rank_witness_and_metadata[40-5]" time="0.002" /><testcase classname="tests.expanded.test_data_helpers" name="test_real_mask_matches_independent_rank_witness_and_metadata[50-4]" time="0.001" /><testcase classname="tests.expanded.test_data_helpers" name="test_real_mask_matches_independent_rank_witness_and_metadata[50-5]" time="0.002" /><testcase classname="tests.expanded.test_data_helpers" name="test_real_mask_matches_independent_rank_witness_and_metadata[60-4]" time="0.001" /><testcase classname="tests.expanded.test_data_helpers" name="test_real_mask_matches_independent_rank_witness_and_metadata[60-5]" time="0.002" /><testcase classname="tests.expanded.test_data_helpers" name="test_real_mask_collision_resamples_or_fails_explicitly[4]" time="0.002" /><testcase classname="tests.expanded.test_data_helpers" name="test_real_mask_collision_resamples_or_fails_explicitly[5]" time="0.003" /><testcase classname="tests.expanded.test_data_helpers" name="test_real_root_slot_identity_witness_and_trade_provenance[permutation-4]" time="0.002" /><testcase classname="tests.expanded.test_data_helpers" name="test_real_root_slot_identity_witness_and_trade_provenance[permutation-5]" time="0.003" /><testcase classname="tests.expanded.test_data_helpers" name="test_real_root_slot_identity_witness_and_trade_provenance[row_cycle-4]" time="0.015" /><testcase classname="tests.expanded.test_data_helpers" name="test_real_root_slot_identity_witness_and_trade_provenance[row_cycle-5]" time="0.040" /><testcase classname="tests.expanded.test_data_helpers" name="test_real_invalid_density[True]" time="0.001" /><testcase classname="tests.expanded.test_data_helpers" name="test_real_invalid_density[30.0]" time="0.001" /><testcase classname="tests.expanded.test_data_helpers" name="test_real_invalid_density[30]" time="0.000" /><testcase classname="tests.expanded.test_data_helpers" name="test_real_invalid_density[0]" time="0.000" /><testcase classname="tests.expanded.test_data_helpers" name="test_real_invalid_density[100]" time="0.000" /><testcase classname="tests.expanded.test_data_helpers" name="test_real_contained_path_rejects_escape[../escape]" time="0.005" /><testcase classname="tests.expanded.test_data_helpers" name="test_real_contained_path_rejects_escape[/absolute]" time="0.002" /><testcase classname="tests.expanded.test_data_helpers" name="test_real_contained_path_rejects_escape[inputs\\escape]" time="0.002" /><testcase classname="tests.expanded.test_data_helpers" name="test_real_contained_path_rejects_escape[C:/escape]" time="0.002" /><testcase classname="tests.expanded.test_data_helpers" name="test_real_contained_path_rejects_escape[]" time="0.002" /><testcase classname="tests.expanded.test_data_helpers" name="test_real_contained_path_rejects_escape[.]" time="0.002" /><testcase classname="tests.expanded.test_data_helpers" name="test_real_public_dedup_first_owner_old_exclusion_and_pilot_disjoint" time="0.041" /><testcase classname="tests.expanded.test_reference_fixtures" name="test_fixture_witness_is_valid[3]" time="0.001" /><testcase classname="tests.expanded.test_reference_fixtures" name="test_fixture_witness_is_valid[4]" time="0.001" /><testcase classname="tests.expanded.test_reference_fixtures" name="test_fixture_witness_is_valid[5]" time="0.001" /><testcase classname="tests.expanded.test_reference_fixtures" name="test_complete_proper_cycle_and_involution[4]" time="0.001" /><testcase classname="tests.expanded.test_reference_fixtures" name="test_complete_proper_cycle_and_involution[5]" time="0.001" /><testcase classname="tests.expanded.test_reference_fixtures" name="test_partial_cycle_and_full_row_swap_are_rejected[4]" time="0.001" /><testcase classname="tests.expanded.test_reference_fixtures" name="test_partial_cycle_and_full_row_swap_are_rejected[5]" time="0.001" /><testcase classname="tests.expanded.test_reference_fixtures" name="test_mask_witness_clue_rounding_and_replay[20-4]" time="0.001" /><testcase classname="tests.expanded.test_reference_fixtures" name="test_mask_witness_clue_rounding_and_replay[20-5]" time="0.002" /><testcase classname="tests.expanded.test_reference_fixtures" name="test_mask_witness_clue_rounding_and_replay[30-4]" time="0.001" /><testcase classname="tests.expanded.test_reference_fixtures" name="test_mask_witness_clue_rounding_and_replay[30-5]" time="0.002" /><testcase classname="tests.expanded.test_reference_fixtures" name="test_mask_witness_clue_rounding_and_replay[40-4]" time="0.001" /><testcase classname="tests.expanded.test_reference_fixtures" name="test_mask_witness_clue_rounding_and_replay[40-5]" time="0.002" /><testcase classname="tests.expanded.test_reference_fixtures" name="test_mask_witness_clue_rounding_and_replay[50-4]" time="0.002" /><testcase classname="tests.expanded.test_reference_fixtures" name="test_mask_witness_clue_rounding_and_replay[50-5]" time="0.002" /><testcase classname="tests.expanded.test_reference_fixtures" name="test_mask_witness_clue_rounding_and_replay[60-4]" time="0.001" /><testcase classname="tests.expanded.test_reference_fixtures" name="test_mask_witness_clue_rounding_and_replay[60-5]" time="0.002" /><testcase classname="tests.expanded.test_reference_fixtures" name="test_canonical_bytes_ids_and_dedup_ignore_serialization_metadata" time="0.001" /><testcase classname="tests.expanded.test_reference_fixtures" name="test_job_namespace_baseline_sentinel_and_repetitions" time="0.000" /><testcase classname="tests.expanded.test_reference_fixtures" name="test_utf8_fixture_path_and_lossless_seed_string" time="0.005" /><testcase classname="tests.expanded.test_reference_fixtures" name="test_fault_corpus_is_explicit_about_commits_and_retry" time="0.000" /><testcase classname="tests.expanded.test_runner_public_contract" name="test_public_api_and_error_contract[validate_expanded_dataset]" time="0.031" /><testcase classname="tests.expanded.test_runner_public_contract" name="test_public_api_and_error_contract[prepare_expanded]" time="0.000" /><testcase classname="tests.expanded.test_runner_public_contract" name="test_public_api_and_error_contract[pilot_expanded]" time="0.000" /><testcase classname="tests.expanded.test_runner_public_contract" name="test_public_api_and_error_contract[run_expanded]" time="0.000" /><testcase classname="tests.expanded.test_runner_public_contract" name="test_public_api_and_error_contract[resume_expanded]" time="0.000" /><testcase classname="tests.expanded.test_runner_public_contract" name="test_public_api_and_error_contract[expanded_status]" time="0.000" /><testcase classname="tests.expanded.test_runner_public_contract" name="test_public_api_and_error_contract[export_expanded]" time="0.000" /><testcase classname="tests.expanded.test_runner_public_contract" name="test_incompatible_dataset_version_refused[1]" time="0.005" /><testcase classname="tests.expanded.test_runner_public_contract" name="test_incompatible_dataset_version_refused[3]" time="0.004" /><testcase classname="tests.expanded.test_runner_public_contract" name="test_incompatible_dataset_version_refused[2]" time="0.005" /><testcase classname="tests.expanded.test_runner_public_contract" name="test_incompatible_dataset_version_refused[True]" time="0.012" /><testcase classname="tests.expanded.test_runner_public_contract" name="test_incompatible_dataset_version_refused[None]" time="0.005" /><testcase classname="tests.expanded.test_runner_public_contract" name="test_missing_dataset_file_is_public_error[missing]" time="0.003" /><testcase classname="tests.expanded.test_runner_public_contract" name="test_missing_dataset_file_is_public_error[\u0111\u01b0\u1eddng d\u1eabn c\xf3 d\u1ea5u]" time="0.003" /><testcase classname="tests.expanded.test_runner_public_contract" name="test_malformed_utf8_is_public_error" time="0.003" /><testcase classname="tests.expanded.test_runner_public_contract" name="test_status_does_not_create_missing_experiment" time="0.005" /><testcase classname="tests.expanded.test_runner_public_contract" name="test_export_does_not_create_success_for_missing_experiment" time="0.010" /><testcase classname="tests.expanded.test_runner_public_contract" name="test_reusing_v1_as_dataset_or_experiment_does_not_mutate_it" time="0.013" /><testcase classname="tests.expanded.test_storage_transactions" name="test_real_schema_settings_claim_and_attempt_history" time="0.037" /><testcase classname="tests.expanded.test_storage_transactions" name="test_completion_is_atomic_immutable_and_not_retried" time="0.027"><failure message="sudoku.expanded_common.ExpandedError: Adapter result configuration mismatch">store = (&lt;module 'sudoku.expanded_storage' from 'D:\\KHMT\\Project solo\\src\\sudoku\\expanded_storage.py'&gt;, &lt;sqlite3.Connecti...'content_sha256': '2aa49a6fa15fa63991506f85b841225a322c3fc93fcff49c1c2a2c420647f84f', 'batch_id': 'b001', 'n': 3, ...})
+
+    def test_completion_is_atomic_immutable_and_not_retried(store):
+        s, db, sid, _, dataset, record = store
+        claim = s.claim(db, sid)
+&gt;       assert not s.finish(db, claim["attempt_id"], sat_result(), record, dataset, 0.5)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\expanded\test_storage_transactions.py:61: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+src\sudoku\expanded_storage.py:217: in finish
+    require(result.get("method")==job["method"] and (result.get("encoding") or "")==job["encoding"],"Adapter result configuration mismatch",5)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+condition = False, message = 'Adapter result configuration mismatch', code = 5
+
+    def require(condition, message, code=2):
+        if not condition:
+&gt;           raise ExpandedError(message, code)
+E           sudoku.expanded_common.ExpandedError: Adapter result configuration mismatch
+
+src\sudoku\expanded_common.py:37: ExpandedError</failure></testcase><testcase classname="tests.expanded.test_storage_transactions" name="test_exception_before_commit_rolls_back_result_witness_primary" time="0.026"><failure message="sudoku.expanded_common.ExpandedError: Adapter result configuration mismatch">store = (&lt;module 'sudoku.expanded_storage' from 'D:\\KHMT\\Project solo\\src\\sudoku\\expanded_storage.py'&gt;, &lt;sqlite3.Connecti...'content_sha256': '2aa49a6fa15fa63991506f85b841225a322c3fc93fcff49c1c2a2c420647f84f', 'batch_id': 'b001', 'n': 3, ...})
+
+    def test_exception_before_commit_rolls_back_result_witness_primary(store):
+        s, db, sid, _, dataset, record = store
+        claim = s.claim(db, sid)
+        def fail():
+            raise RuntimeError("injected before completion COMMIT")
+        with pytest.raises(RuntimeError, match="injected"):
+&gt;           s.finish(db, claim["attempt_id"], sat_result(), record, dataset, 0.5, _before_commit=fail)
+
+tests\expanded\test_storage_transactions.py:79: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+src\sudoku\expanded_storage.py:217: in finish
+    require(result.get("method")==job["method"] and (result.get("encoding") or "")==job["encoding"],"Adapter result configuration mismatch",5)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+condition = False, message = 'Adapter result configuration mismatch', code = 5
+
+    def require(condition, message, code=2):
+        if not condition:
+&gt;           raise ExpandedError(message, code)
+E           sudoku.expanded_common.ExpandedError: Adapter result configuration mismatch
+
+src\sudoku\expanded_common.py:37: ExpandedError</failure></testcase><testcase classname="tests.expanded.test_storage_transactions" name="test_process_exit_before_commit_rolls_back_real_sqlite" time="1.287"><failure message="AssertionError: Traceback (most recent call last):&#13;&#10;    File &quot;&lt;string&gt;&quot;, line 6, in &lt;module&gt;&#13;&#10;      s.finish(db,sys.argv[3],json.loads(sys.argv[6]),json.loads(sys.argv[5]),sys.argv[4],0.5,_before_commit=lambda:os._exit(77))&#13;&#10;      ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^&#13;&#10;    File &quot;D:\KHMT\Project solo\src\sudoku\expanded_storage.py&quot;, line 217, in finish&#13;&#10;      require(result.get(&quot;method&quot;)==job[&quot;method&quot;] and (result.get(&quot;encoding&quot;) or &quot;&quot;)==job[&quot;encoding&quot;],&quot;Adapter result configuration mismatch&quot;,5)&#13;&#10;      ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^&#13;&#10;    File &quot;D:\KHMT\Project solo\src\sudoku\expanded_common.py&quot;, line 37, in require&#13;&#10;      raise ExpandedError(message, code)&#13;&#10;  sudoku.expanded_common.ExpandedError: Adapter result configuration mismatch&#13;&#10;  &#10;assert 1 == 77&#10; +  where 1 = CompletedProcess(args=['D:\\KHMT\\Project solo\\.venv\\Scripts\\python.exe', '-B', '-c', '\nimport json, os, sys\nsys....raise ExpandedError(message, code)\r\nsudoku.expanded_common.ExpandedError: Adapter result configuration mismatch\r\n').returncode">store = (&lt;module 'sudoku.expanded_storage' from 'D:\\KHMT\\Project solo\\src\\sudoku\\expanded_storage.py'&gt;, &lt;sqlite3.Connecti...'content_sha256': '2aa49a6fa15fa63991506f85b841225a322c3fc93fcff49c1c2a2c420647f84f', 'batch_id': 'b001', 'n': 3, ...})
+
+    def test_process_exit_before_commit_rolls_back_real_sqlite(store):
+        s, db, sid, directory, dataset, record = store
+        claim = s.claim(db, sid)
+        code = """
+    import json, os, sys
+    sys.path.insert(0, sys.argv[1])
+    from sudoku import expanded_storage as s
+    db=s.connect(sys.argv[2])
+    s.finish(db,sys.argv[3],json.loads(sys.argv[6]),json.loads(sys.argv[5]),sys.argv[4],0.5,_before_commit=lambda:os._exit(77))
+    """
+        completed = subprocess.run([sys.executable, "-B", "-c", code,
+            str(Path(__file__).resolve().parents[2] / "src"), str(directory), claim["attempt_id"],
+            str(dataset), json.dumps(record), json.dumps(sat_result())], capture_output=True, timeout=10)
+&gt;       assert completed.returncode == 77, completed.stderr.decode(errors="replace")
+E       AssertionError: Traceback (most recent call last):
+E           File "&lt;string&gt;", line 6, in &lt;module&gt;
+E             s.finish(db,sys.argv[3],json.loads(sys.argv[6]),json.loads(sys.argv[5]),sys.argv[4],0.5,_before_commit=lambda:os._exit(77))
+E             ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E           File "D:\KHMT\Project solo\src\sudoku\expanded_storage.py", line 217, in finish
+E             require(result.get("method")==job["method"] and (result.get("encoding") or "")==job["encoding"],"Adapter result configuration mismatch",5)
+E             ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E           File "D:\KHMT\Project solo\src\sudoku\expanded_common.py", line 37, in require
+E             raise ExpandedError(message, code)
+E         sudoku.expanded_common.ExpandedError: Adapter result configuration mismatch
+E         
+E       assert 1 == 77
+E        +  where 1 = CompletedProcess(args=['D:\\KHMT\\Project solo\\.venv\\Scripts\\python.exe', '-B', '-c', '\nimport json, os, sys\nsys....raise ExpandedError(message, code)\r\nsudoku.expanded_common.ExpandedError: Adapter result configuration mismatch\r\n').returncode
+
+tests\expanded\test_storage_transactions.py:101: AssertionError</failure></testcase><testcase classname="tests.expanded.test_storage_transactions" name="test_commit_survives_missing_checkpoint_telemetry" time="0.029"><failure message="sudoku.expanded_common.ExpandedError: Adapter result configuration mismatch">store = (&lt;module 'sudoku.expanded_storage' from 'D:\\KHMT\\Project solo\\src\\sudoku\\expanded_storage.py'&gt;, &lt;sqlite3.Connecti...'content_sha256': '2aa49a6fa15fa63991506f85b841225a322c3fc93fcff49c1c2a2c420647f84f', 'batch_id': 'b001', 'n': 3, ...})
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x0000019150477820&gt;
+
+    def test_commit_survives_missing_checkpoint_telemetry(store, monkeypatch):
+        s, db, sid, _, dataset, record = store
+        claim = s.claim(db, sid)
+        original = s.event
+        def fail_checkpoint(db, kind, *args, **kwargs):
+            if kind == "CHECKPOINT":
+                raise RuntimeError("injected telemetry loss")
+            return original(db, kind, *args, **kwargs)
+        monkeypatch.setattr(s, "event", fail_checkpoint)
+        with pytest.raises(RuntimeError, match="telemetry"):
+&gt;           s.finish(db, claim["attempt_id"], sat_result(), record, dataset, 0.5)
+
+tests\expanded\test_storage_transactions.py:118: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+src\sudoku\expanded_storage.py:217: in finish
+    require(result.get("method")==job["method"] and (result.get("encoding") or "")==job["encoding"],"Adapter result configuration mismatch",5)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+condition = False, message = 'Adapter result configuration mismatch', code = 5
+
+    def require(condition, message, code=2):
+        if not condition:
+&gt;           raise ExpandedError(message, code)
+E           sudoku.expanded_common.ExpandedError: Adapter result configuration mismatch
+
+src\sudoku\expanded_common.py:37: ExpandedError</failure></testcase><testcase classname="tests.expanded.test_storage_transactions" name="test_fatal_observation_is_retained_and_halt_atomic[UNSAT]" time="0.030"><failure message="sudoku.expanded_common.ExpandedError: Adapter result configuration mismatch">store = (&lt;module 'sudoku.expanded_storage' from 'D:\\KHMT\\Project solo\\src\\sudoku\\expanded_storage.py'&gt;, &lt;sqlite3.Connecti...'content_sha256': '2aa49a6fa15fa63991506f85b841225a322c3fc93fcff49c1c2a2c420647f84f', 'batch_id': 'b001', 'n': 3, ...})
+status = 'UNSAT'
+
+    @pytest.mark.parametrize("status", ("UNSAT", "ERROR", "INVALID_INPUT", "UNAVAILABLE", "LICENSE_LIMIT"))
+    def test_fatal_observation_is_retained_and_halt_atomic(store, status):
+        s, db, sid, _, dataset, record = store
+        claim = s.claim(db, sid)
+        result = {"status": status, "guard_phase": "complete", "error": "ARTIFICIAL DIAGNOSTIC"}
+&gt;       assert s.finish(db, claim["attempt_id"], result, record, dataset, 0.5)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\expanded\test_storage_transactions.py:130: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+src\sudoku\expanded_storage.py:217: in finish
+    require(result.get("method")==job["method"] and (result.get("encoding") or "")==job["encoding"],"Adapter result configuration mismatch",5)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+condition = False, message = 'Adapter result configuration mismatch', code = 5
+
+    def require(condition, message, code=2):
+        if not condition:
+&gt;           raise ExpandedError(message, code)
+E           sudoku.expanded_common.ExpandedError: Adapter result configuration mismatch
+
+src\sudoku\expanded_common.py:37: ExpandedError</failure></testcase><testcase classname="tests.expanded.test_storage_transactions" name="test_fatal_observation_is_retained_and_halt_atomic[ERROR]" time="0.031"><failure message="sudoku.expanded_common.ExpandedError: Adapter result configuration mismatch">store = (&lt;module 'sudoku.expanded_storage' from 'D:\\KHMT\\Project solo\\src\\sudoku\\expanded_storage.py'&gt;, &lt;sqlite3.Connecti...'content_sha256': '2aa49a6fa15fa63991506f85b841225a322c3fc93fcff49c1c2a2c420647f84f', 'batch_id': 'b001', 'n': 3, ...})
+status = 'ERROR'
+
+    @pytest.mark.parametrize("status", ("UNSAT", "ERROR", "INVALID_INPUT", "UNAVAILABLE", "LICENSE_LIMIT"))
+    def test_fatal_observation_is_retained_and_halt_atomic(store, status):
+        s, db, sid, _, dataset, record = store
+        claim = s.claim(db, sid)
+        result = {"status": status, "guard_phase": "complete", "error": "ARTIFICIAL DIAGNOSTIC"}
+&gt;       assert s.finish(db, claim["attempt_id"], result, record, dataset, 0.5)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\expanded\test_storage_transactions.py:130: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+src\sudoku\expanded_storage.py:217: in finish
+    require(result.get("method")==job["method"] and (result.get("encoding") or "")==job["encoding"],"Adapter result configuration mismatch",5)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+condition = False, message = 'Adapter result configuration mismatch', code = 5
+
+    def require(condition, message, code=2):
+        if not condition:
+&gt;           raise ExpandedError(message, code)
+E           sudoku.expanded_common.ExpandedError: Adapter result configuration mismatch
+
+src\sudoku\expanded_common.py:37: ExpandedError</failure></testcase><testcase classname="tests.expanded.test_storage_transactions" name="test_fatal_observation_is_retained_and_halt_atomic[INVALID_INPUT]" time="0.028"><failure message="sudoku.expanded_common.ExpandedError: Adapter result configuration mismatch">store = (&lt;module 'sudoku.expanded_storage' from 'D:\\KHMT\\Project solo\\src\\sudoku\\expanded_storage.py'&gt;, &lt;sqlite3.Connecti...'content_sha256': '2aa49a6fa15fa63991506f85b841225a322c3fc93fcff49c1c2a2c420647f84f', 'batch_id': 'b001', 'n': 3, ...})
+status = 'INVALID_INPUT'
+
+    @pytest.mark.parametrize("status", ("UNSAT", "ERROR", "INVALID_INPUT", "UNAVAILABLE", "LICENSE_LIMIT"))
+    def test_fatal_observation_is_retained_and_halt_atomic(store, status):
+        s, db, sid, _, dataset, record = store
+        claim = s.claim(db, sid)
+        result = {"status": status, "guard_phase": "complete", "error": "ARTIFICIAL DIAGNOSTIC"}
+&gt;       assert s.finish(db, claim["attempt_id"], result, record, dataset, 0.5)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\expanded\test_storage_transactions.py:130: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+src\sudoku\expanded_storage.py:217: in finish
+    require(result.get("method")==job["method"] and (result.get("encoding") or "")==job["encoding"],"Adapter result configuration mismatch",5)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+condition = False, message = 'Adapter result configuration mismatch', code = 5
+
+    def require(condition, message, code=2):
+        if not condition:
+&gt;           raise ExpandedError(message, code)
+E           sudoku.expanded_common.ExpandedError: Adapter result configuration mismatch
+
+src\sudoku\expanded_common.py:37: ExpandedError</failure></testcase><testcase classname="tests.expanded.test_storage_transactions" name="test_fatal_observation_is_retained_and_halt_atomic[UNAVAILABLE]" time="0.022"><failure message="sudoku.expanded_common.ExpandedError: Adapter result configuration mismatch">store = (&lt;module 'sudoku.expanded_storage' from 'D:\\KHMT\\Project solo\\src\\sudoku\\expanded_storage.py'&gt;, &lt;sqlite3.Connecti...'content_sha256': '2aa49a6fa15fa63991506f85b841225a322c3fc93fcff49c1c2a2c420647f84f', 'batch_id': 'b001', 'n': 3, ...})
+status = 'UNAVAILABLE'
+
+    @pytest.mark.parametrize("status", ("UNSAT", "ERROR", "INVALID_INPUT", "UNAVAILABLE", "LICENSE_LIMIT"))
+    def test_fatal_observation_is_retained_and_halt_atomic(store, status):
+        s, db, sid, _, dataset, record = store
+        claim = s.claim(db, sid)
+        result = {"status": status, "guard_phase": "complete", "error": "ARTIFICIAL DIAGNOSTIC"}
+&gt;       assert s.finish(db, claim["attempt_id"], result, record, dataset, 0.5)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\expanded\test_storage_transactions.py:130: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+src\sudoku\expanded_storage.py:217: in finish
+    require(result.get("method")==job["method"] and (result.get("encoding") or "")==job["encoding"],"Adapter result configuration mismatch",5)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+condition = False, message = 'Adapter result configuration mismatch', code = 5
+
+    def require(condition, message, code=2):
+        if not condition:
+&gt;           raise ExpandedError(message, code)
+E           sudoku.expanded_common.ExpandedError: Adapter result configuration mismatch
+
+src\sudoku\expanded_common.py:37: ExpandedError</failure></testcase><testcase classname="tests.expanded.test_storage_transactions" name="test_fatal_observation_is_retained_and_halt_atomic[LICENSE_LIMIT]" time="0.026"><failure message="sudoku.expanded_common.ExpandedError: Adapter result configuration mismatch">store = (&lt;module 'sudoku.expanded_storage' from 'D:\\KHMT\\Project solo\\src\\sudoku\\expanded_storage.py'&gt;, &lt;sqlite3.Connecti...'content_sha256': '2aa49a6fa15fa63991506f85b841225a322c3fc93fcff49c1c2a2c420647f84f', 'batch_id': 'b001', 'n': 3, ...})
+status = 'LICENSE_LIMIT'
+
+    @pytest.mark.parametrize("status", ("UNSAT", "ERROR", "INVALID_INPUT", "UNAVAILABLE", "LICENSE_LIMIT"))
+    def test_fatal_observation_is_retained_and_halt_atomic(store, status):
+        s, db, sid, _, dataset, record = store
+        claim = s.claim(db, sid)
+        result = {"status": status, "guard_phase": "complete", "error": "ARTIFICIAL DIAGNOSTIC"}
+&gt;       assert s.finish(db, claim["attempt_id"], result, record, dataset, 0.5)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\expanded\test_storage_transactions.py:130: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+src\sudoku\expanded_storage.py:217: in finish
+    require(result.get("method")==job["method"] and (result.get("encoding") or "")==job["encoding"],"Adapter result configuration mismatch",5)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+condition = False, message = 'Adapter result configuration mismatch', code = 5
+
+    def require(condition, message, code=2):
+        if not condition:
+&gt;           raise ExpandedError(message, code)
+E           sudoku.expanded_common.ExpandedError: Adapter result configuration mismatch
+
+src\sudoku\expanded_common.py:37: ExpandedError</failure></testcase><testcase classname="tests.expanded.test_storage_transactions" name="test_terminal_timeout_not_interrupted_or_reclaimed" time="0.021"><failure message="sudoku.expanded_common.ExpandedError: Adapter result configuration mismatch">store = (&lt;module 'sudoku.expanded_storage' from 'D:\\KHMT\\Project solo\\src\\sudoku\\expanded_storage.py'&gt;, &lt;sqlite3.Connecti...'content_sha256': '2aa49a6fa15fa63991506f85b841225a322c3fc93fcff49c1c2a2c420647f84f', 'batch_id': 'b001', 'n': 3, ...})
+
+    def test_terminal_timeout_not_interrupted_or_reclaimed(store):
+        s, db, sid, _, dataset, record = store
+        claim = s.claim(db, sid)
+&gt;       assert not s.finish(db, claim["attempt_id"], {"status": "TIMEOUT", "guard_phase": "measurement"}, record, dataset, 1)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\expanded\test_storage_transactions.py:140: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+src\sudoku\expanded_storage.py:217: in finish
+    require(result.get("method")==job["method"] and (result.get("encoding") or "")==job["encoding"],"Adapter result configuration mismatch",5)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+condition = False, message = 'Adapter result configuration mismatch', code = 5
+
+    def require(condition, message, code=2):
+        if not condition:
+&gt;           raise ExpandedError(message, code)
+E           sudoku.expanded_common.ExpandedError: Adapter result configuration mismatch
+
+src\sudoku\expanded_common.py:37: ExpandedError</failure></testcase><testcase classname="tests.expanded.test_storage_transactions" name="test_bad_sat_fails_real_checker_and_never_stores_solution" time="0.024"><failure message="sudoku.expanded_common.ExpandedError: Adapter result configuration mismatch">store = (&lt;module 'sudoku.expanded_storage' from 'D:\\KHMT\\Project solo\\src\\sudoku\\expanded_storage.py'&gt;, &lt;sqlite3.Connecti...'content_sha256': '2aa49a6fa15fa63991506f85b841225a322c3fc93fcff49c1c2a2c420647f84f', 'batch_id': 'b001', 'n': 3, ...})
+
+    def test_bad_sat_fails_real_checker_and_never_stores_solution(store):
+        s, db, sid, _, dataset, record = store
+        claim = s.claim(db, sid)
+        result = sat_result()
+        result["solution"] = [[1]*9 for _ in range(9)]
+&gt;       assert s.finish(db, claim["attempt_id"], result, record, dataset, 0.5)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\expanded\test_storage_transactions.py:152: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+src\sudoku\expanded_storage.py:217: in finish
+    require(result.get("method")==job["method"] and (result.get("encoding") or "")==job["encoding"],"Adapter result configuration mismatch",5)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+condition = False, message = 'Adapter result configuration mismatch', code = 5
+
+    def require(condition, message, code=2):
+        if not condition:
+&gt;           raise ExpandedError(message, code)
+E           sudoku.expanded_common.ExpandedError: Adapter result configuration mismatch
+
+src\sudoku\expanded_common.py:37: ExpandedError</failure></testcase><testcase classname="tests.expanded.test_storage_transactions" name="test_os_writer_lock_refuses_second_process_without_unlink" time="3.477" /></testsuite></testsuites>

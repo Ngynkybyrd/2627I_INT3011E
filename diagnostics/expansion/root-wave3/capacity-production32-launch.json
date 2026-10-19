@@ -1,0 +1,8 @@
+{
+  "console_pid": 34168,
+  "workers": 32,
+  "started_local": "2026-10-19T23:48:34.1472685+07:00",
+  "script": "scripts/start_capacity32_run.ps1",
+  "target": 110000,
+  "selected_repetition": 1
+}

@@ -1,0 +1,6 @@
+% Same 86 common SAT IDs, N25/permutation/40%, session a23e8969-0b78-41e1-925a-b8d23fc2de9b, 32 workers, resource-contended. Single measured repetition; no missing/censored runtime imputed.
+\begin{tikzpicture}\begin{axis}[width=.94\linewidth,height=6cm,xlabel={Single-run total (s)},ylabel={ECDF},legend pos=south east]
+\addplot+[const plot,mark=none] table[x=seconds,y=cdf] {ecdf-PW.dat};\addlegendentry{PW}
+\addplot+[const plot,mark=none] table[x=seconds,y=cdf] {ecdf-SC.dat};\addlegendentry{SC}
+\addplot+[const plot,mark=none] table[x=seconds,y=cdf] {ecdf-BW.dat};\addlegendentry{BW}
+\end{axis}\end{tikzpicture}

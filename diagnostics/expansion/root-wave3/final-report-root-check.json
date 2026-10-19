@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "time": "2026-10-20T03:06:01.134186+07:00",
+  "build_id": "20261019-200351-099Z",
+  "source_hashes_match": true,
+  "bitmap_proof_hash_matches": true,
+  "documents": [
+    {
+      "language": "vi",
+      "path": "D:\\KHMT\\Project solo\\report\\final-20261020\\output\\pdf\\sudoku-vi.pdf",
+      "pages": 21,
+      "sha256": "C5CD05F2C4F703D0F8C8F2ADBE8CD769DBD649F6BEF4C27E9DF394BC0C64AA63",
+      "all_fonts_embedded": true,
+      "font_families": [
+        "/BZIVMZ+STIXTwoText-Italic-Identity-H",
+        "/IHAIZV+STIXTwoText-Regular-Identity-H",
+        "/IXFAWU+STIXTwoText-Bold-Identity-H",
+        "/TQTHRL+STIXTwoMath-Regular-Identity-H",
+        "/YEUUOC+LMMono8-Regular-Identity-H"
+      ],
+      "a4": true,
+      "character_bounds_pass": true,
+      "headline_counts_in_text": true
+    },
+    {
+      "language": "en",
+      "path": "D:\\KHMT\\Project solo\\report\\final-20261020\\output\\pdf\\sudoku-en.pdf",
+      "pages": 21,
+      "sha256": "3353037D0794D7E36E7433C87C32A6EE6230DE78B0666EA8C52886E0F3DDF9A4",
+      "all_fonts_embedded": true,
+      "font_families": [
+        "/BZIVMZ+STIXTwoText-Italic-Identity-H",
+        "/IHAIZV+STIXTwoText-Regular-Identity-H",
+        "/IXFAWU+STIXTwoText-Bold-Identity-H",
+        "/TQTHRL+STIXTwoMath-Regular-Identity-H",
+        "/YEUUOC+LMMono8-Regular-Identity-H"
+      ],
+      "a4": true,
+      "character_bounds_pass": true,
+      "headline_counts_in_text": true
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+% Same session a23e8969-0b78-41e1-925a-b8d23fc2de9b, N25 HiGHS; observed denominators in dat; family/root dependence retained. Not proof sparse clues are harder.
+\begin{tikzpicture}\begin{axis}[width=.94\linewidth,height=6cm,xlabel={Requested clues (\%)},ylabel={HiGHS non-completed (\%)},legend pos=north east]
+\addplot+[mark=*] table[x=clue,y=NCpercent] {clue-completion-permutation.dat};\addlegendentry{permutation}
+\addplot+[mark=*] table[x=clue,y=NCpercent] {clue-completion-row_cycle.dat};\addlegendentry{row-cycle}
+\end{axis}\end{tikzpicture}

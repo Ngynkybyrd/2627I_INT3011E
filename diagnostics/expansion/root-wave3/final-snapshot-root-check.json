@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "time": "2026-10-20T02:40:39.492373+07:00",
+  "snapshot_sha256": "70eaaf0acb6c74ba02f4ca65d8ca3db5d42d83cdbafe6620865d42d5b8af4781",
+  "verified_files": 48,
+  "counts": {
+    "ERROR": 1,
+    "SAT": 109664,
+    "TIMEOUT": 335
+  },
+  "quality": "VERIFIED_WITH_DECLARED_INFRASTRUCTURE_ERROR",
+  "provenance_receipt_sha256": "7c11accf78f831d33542b621b06d80d00420cae5fc9a7ec89e291322d9871efc"
+}

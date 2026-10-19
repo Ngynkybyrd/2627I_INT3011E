@@ -1,0 +1,470 @@
+{
+  "schema_version": 2,
+  "rows": [
+    {
+      "N": 9,
+      "configuration": "sat:pairwise",
+      "method": "sat",
+      "encoding": "pairwise",
+      "eligible": true,
+      "scope_reason": "fresh guarded diagnostic",
+      "threads": 1,
+      "evidence_refs": [
+        "diagnostics/expansion/env/environment.json",
+        "diagnostics/expansion/env/native-runtime.json",
+        "diagnostics/expansion/solvers/matrix.json",
+        "diagnostics/expansion/solvers/inventory.json",
+        "diagnostics/expansion/solvers/result.json",
+        "diagnostics/expansion/solvers/reused-evidence.json",
+        "diagnostics/expansion/root-review.json"
+      ]
+    },
+    {
+      "N": 9,
+      "configuration": "sat:seqcounter",
+      "method": "sat",
+      "encoding": "seqcounter",
+      "eligible": true,
+      "scope_reason": "fresh guarded diagnostic",
+      "threads": 1,
+      "evidence_refs": [
+        "diagnostics/expansion/env/environment.json",
+        "diagnostics/expansion/env/native-runtime.json",
+        "diagnostics/expansion/solvers/matrix.json",
+        "diagnostics/expansion/solvers/inventory.json",
+        "diagnostics/expansion/solvers/result.json",
+        "diagnostics/expansion/solvers/reused-evidence.json",
+        "diagnostics/expansion/root-review.json"
+      ]
+    },
+    {
+      "N": 9,
+      "configuration": "sat:bitwise",
+      "method": "sat",
+      "encoding": "bitwise",
+      "eligible": true,
+      "scope_reason": "fresh guarded diagnostic",
+      "threads": 1,
+      "evidence_refs": [
+        "diagnostics/expansion/env/environment.json",
+        "diagnostics/expansion/env/native-runtime.json",
+        "diagnostics/expansion/solvers/matrix.json",
+        "diagnostics/expansion/solvers/inventory.json",
+        "diagnostics/expansion/solvers/result.json",
+        "diagnostics/expansion/solvers/reused-evidence.json",
+        "diagnostics/expansion/root-review.json"
+      ]
+    },
+    {
+      "N": 9,
+      "configuration": "cpsat",
+      "method": "cpsat",
+      "encoding": null,
+      "eligible": true,
+      "scope_reason": "fresh guarded diagnostic",
+      "threads": 1,
+      "evidence_refs": [
+        "diagnostics/expansion/env/environment.json",
+        "diagnostics/expansion/env/native-runtime.json",
+        "diagnostics/expansion/solvers/matrix.json",
+        "diagnostics/expansion/solvers/inventory.json",
+        "diagnostics/expansion/solvers/result.json",
+        "diagnostics/expansion/solvers/reused-evidence.json",
+        "diagnostics/expansion/root-review.json"
+      ]
+    },
+    {
+      "N": 9,
+      "configuration": "highs",
+      "method": "highs",
+      "encoding": null,
+      "eligible": true,
+      "scope_reason": "fresh guarded diagnostic",
+      "threads": 1,
+      "evidence_refs": [
+        "diagnostics/expansion/env/environment.json",
+        "diagnostics/expansion/env/native-runtime.json",
+        "diagnostics/expansion/solvers/matrix.json",
+        "diagnostics/expansion/solvers/inventory.json",
+        "diagnostics/expansion/solvers/result.json",
+        "diagnostics/expansion/solvers/reused-evidence.json",
+        "diagnostics/expansion/root-review.json"
+      ]
+    },
+    {
+      "N": 9,
+      "configuration": "gurobi",
+      "method": "gurobi",
+      "encoding": null,
+      "eligible": true,
+      "scope_reason": "fresh guarded diagnostic",
+      "threads": 1,
+      "evidence_refs": [
+        "diagnostics/expansion/env/environment.json",
+        "diagnostics/expansion/env/native-runtime.json",
+        "diagnostics/expansion/solvers/matrix.json",
+        "diagnostics/expansion/solvers/inventory.json",
+        "diagnostics/expansion/solvers/result.json",
+        "diagnostics/expansion/solvers/reused-evidence.json",
+        "diagnostics/expansion/root-review.json"
+      ]
+    },
+    {
+      "N": 9,
+      "configuration": "cplex_mip",
+      "method": "cplex_mip",
+      "encoding": null,
+      "eligible": true,
+      "scope_reason": "fresh guarded diagnostic",
+      "threads": 1,
+      "evidence_refs": [
+        "diagnostics/expansion/env/environment.json",
+        "diagnostics/expansion/env/native-runtime.json",
+        "diagnostics/expansion/solvers/matrix.json",
+        "diagnostics/expansion/solvers/inventory.json",
+        "diagnostics/expansion/solvers/result.json",
+        "diagnostics/expansion/solvers/reused-evidence.json",
+        "diagnostics/expansion/root-review.json"
+      ]
+    },
+    {
+      "N": 9,
+      "configuration": "cpoptimizer",
+      "method": "cpoptimizer",
+      "encoding": null,
+      "eligible": true,
+      "scope_reason": "fresh guarded diagnostic",
+      "threads": 1,
+      "evidence_refs": [
+        "diagnostics/expansion/env/environment.json",
+        "diagnostics/expansion/env/native-runtime.json",
+        "diagnostics/expansion/solvers/matrix.json",
+        "diagnostics/expansion/solvers/inventory.json",
+        "diagnostics/expansion/solvers/result.json",
+        "diagnostics/expansion/solvers/reused-evidence.json",
+        "diagnostics/expansion/root-review.json"
+      ]
+    },
+    {
+      "N": 16,
+      "configuration": "sat:pairwise",
+      "method": "sat",
+      "encoding": "pairwise",
+      "eligible": true,
+      "scope_reason": "reused frozen run + checker recheck",
+      "threads": 1,
+      "evidence_refs": [
+        "diagnostics/expansion/env/environment.json",
+        "diagnostics/expansion/env/native-runtime.json",
+        "diagnostics/expansion/solvers/matrix.json",
+        "diagnostics/expansion/solvers/inventory.json",
+        "diagnostics/expansion/solvers/result.json",
+        "diagnostics/expansion/solvers/reused-evidence.json",
+        "diagnostics/expansion/root-review.json"
+      ]
+    },
+    {
+      "N": 16,
+      "configuration": "sat:seqcounter",
+      "method": "sat",
+      "encoding": "seqcounter",
+      "eligible": true,
+      "scope_reason": "reused frozen run + checker recheck",
+      "threads": 1,
+      "evidence_refs": [
+        "diagnostics/expansion/env/environment.json",
+        "diagnostics/expansion/env/native-runtime.json",
+        "diagnostics/expansion/solvers/matrix.json",
+        "diagnostics/expansion/solvers/inventory.json",
+        "diagnostics/expansion/solvers/result.json",
+        "diagnostics/expansion/solvers/reused-evidence.json",
+        "diagnostics/expansion/root-review.json"
+      ]
+    },
+    {
+      "N": 16,
+      "configuration": "sat:bitwise",
+      "method": "sat",
+      "encoding": "bitwise",
+      "eligible": true,
+      "scope_reason": "reused frozen run + checker recheck",
+      "threads": 1,
+      "evidence_refs": [
+        "diagnostics/expansion/env/environment.json",
+        "diagnostics/expansion/env/native-runtime.json",
+        "diagnostics/expansion/solvers/matrix.json",
+        "diagnostics/expansion/solvers/inventory.json",
+        "diagnostics/expansion/solvers/result.json",
+        "diagnostics/expansion/solvers/reused-evidence.json",
+        "diagnostics/expansion/root-review.json"
+      ]
+    },
+    {
+      "N": 16,
+      "configuration": "cpsat",
+      "method": "cpsat",
+      "encoding": null,
+      "eligible": true,
+      "scope_reason": "reused frozen run + checker recheck",
+      "threads": 1,
+      "evidence_refs": [
+        "diagnostics/expansion/env/environment.json",
+        "diagnostics/expansion/env/native-runtime.json",
+        "diagnostics/expansion/solvers/matrix.json",
+        "diagnostics/expansion/solvers/inventory.json",
+        "diagnostics/expansion/solvers/result.json",
+        "diagnostics/expansion/solvers/reused-evidence.json",
+        "diagnostics/expansion/root-review.json"
+      ]
+    },
+    {
+      "N": 16,
+      "configuration": "highs",
+      "method": "highs",
+      "encoding": null,
+      "eligible": true,
+      "scope_reason": "reused frozen run + checker recheck",
+      "threads": 1,
+      "evidence_refs": [
+        "diagnostics/expansion/env/environment.json",
+        "diagnostics/expansion/env/native-runtime.json",
+        "diagnostics/expansion/solvers/matrix.json",
+        "diagnostics/expansion/solvers/inventory.json",
+        "diagnostics/expansion/solvers/result.json",
+        "diagnostics/expansion/solvers/reused-evidence.json",
+        "diagnostics/expansion/root-review.json"
+      ]
+    },
+    {
+      "N": 25,
+      "configuration": "sat:pairwise",
+      "method": "sat",
+      "encoding": "pairwise",
+      "eligible": true,
+      "scope_reason": "reused frozen run + checker recheck",
+      "threads": 1,
+      "evidence_refs": [
+        "diagnostics/expansion/env/environment.json",
+        "diagnostics/expansion/env/native-runtime.json",
+        "diagnostics/expansion/solvers/matrix.json",
+        "diagnostics/expansion/solvers/inventory.json",
+        "diagnostics/expansion/solvers/result.json",
+        "diagnostics/expansion/solvers/reused-evidence.json",
+        "diagnostics/expansion/root-review.json"
+      ]
+    },
+    {
+      "N": 25,
+      "configuration": "sat:seqcounter",
+      "method": "sat",
+      "encoding": "seqcounter",
+      "eligible": true,
+      "scope_reason": "reused frozen run + checker recheck",
+      "threads": 1,
+      "evidence_refs": [
+        "diagnostics/expansion/env/environment.json",
+        "diagnostics/expansion/env/native-runtime.json",
+        "diagnostics/expansion/solvers/matrix.json",
+        "diagnostics/expansion/solvers/inventory.json",
+        "diagnostics/expansion/solvers/result.json",
+        "diagnostics/expansion/solvers/reused-evidence.json",
+        "diagnostics/expansion/root-review.json"
+      ]
+    },
+    {
+      "N": 25,
+      "configuration": "sat:bitwise",
+      "method": "sat",
+      "encoding": "bitwise",
+      "eligible": true,
+      "scope_reason": "reused frozen run + checker recheck",
+      "threads": 1,
+      "evidence_refs": [
+        "diagnostics/expansion/env/environment.json",
+        "diagnostics/expansion/env/native-runtime.json",
+        "diagnostics/expansion/solvers/matrix.json",
+        "diagnostics/expansion/solvers/inventory.json",
+        "diagnostics/expansion/solvers/result.json",
+        "diagnostics/expansion/solvers/reused-evidence.json",
+        "diagnostics/expansion/root-review.json"
+      ]
+    },
+    {
+      "N": 25,
+      "configuration": "cpsat",
+      "method": "cpsat",
+      "encoding": null,
+      "eligible": true,
+      "scope_reason": "reused frozen run + checker recheck",
+      "threads": 1,
+      "evidence_refs": [
+        "diagnostics/expansion/env/environment.json",
+        "diagnostics/expansion/env/native-runtime.json",
+        "diagnostics/expansion/solvers/matrix.json",
+        "diagnostics/expansion/solvers/inventory.json",
+        "diagnostics/expansion/solvers/result.json",
+        "diagnostics/expansion/solvers/reused-evidence.json",
+        "diagnostics/expansion/root-review.json"
+      ]
+    },
+    {
+      "N": 25,
+      "configuration": "highs",
+      "method": "highs",
+      "encoding": null,
+      "eligible": true,
+      "scope_reason": "reused frozen run + checker recheck",
+      "threads": 1,
+      "evidence_refs": [
+        "diagnostics/expansion/env/environment.json",
+        "diagnostics/expansion/env/native-runtime.json",
+        "diagnostics/expansion/solvers/matrix.json",
+        "diagnostics/expansion/solvers/inventory.json",
+        "diagnostics/expansion/solvers/result.json",
+        "diagnostics/expansion/solvers/reused-evidence.json",
+        "diagnostics/expansion/root-review.json"
+      ]
+    },
+    {
+      "N": 16,
+      "configuration": "gurobi",
+      "method": "gurobi",
+      "encoding": null,
+      "eligible": false,
+      "scope_reason": "declared scope; full MIP exceeds known variable cap",
+      "threads": null,
+      "evidence_refs": [
+        "diagnostics/expansion/env/environment.json",
+        "diagnostics/expansion/env/native-runtime.json",
+        "diagnostics/expansion/solvers/matrix.json",
+        "diagnostics/expansion/solvers/inventory.json",
+        "diagnostics/expansion/solvers/result.json",
+        "diagnostics/expansion/solvers/reused-evidence.json",
+        "diagnostics/expansion/root-review.json"
+      ]
+    },
+    {
+      "N": 16,
+      "configuration": "cplex_mip",
+      "method": "cplex_mip",
+      "encoding": null,
+      "eligible": false,
+      "scope_reason": "declared scope; full MIP exceeds known variable cap",
+      "threads": null,
+      "evidence_refs": [
+        "diagnostics/expansion/env/environment.json",
+        "diagnostics/expansion/env/native-runtime.json",
+        "diagnostics/expansion/solvers/matrix.json",
+        "diagnostics/expansion/solvers/inventory.json",
+        "diagnostics/expansion/solvers/result.json",
+        "diagnostics/expansion/solvers/reused-evidence.json",
+        "diagnostics/expansion/root-review.json"
+      ]
+    },
+    {
+      "N": 16,
+      "configuration": "cpoptimizer",
+      "method": "cpoptimizer",
+      "encoding": null,
+      "eligible": false,
+      "scope_reason": "declared scope; prior low-clue CP probes exceeded search-space cap; not universal impossibility",
+      "threads": null,
+      "evidence_refs": [
+        "diagnostics/expansion/env/environment.json",
+        "diagnostics/expansion/env/native-runtime.json",
+        "diagnostics/expansion/solvers/matrix.json",
+        "diagnostics/expansion/solvers/inventory.json",
+        "diagnostics/expansion/solvers/result.json",
+        "diagnostics/expansion/solvers/reused-evidence.json",
+        "diagnostics/expansion/root-review.json"
+      ]
+    },
+    {
+      "N": 25,
+      "configuration": "gurobi",
+      "method": "gurobi",
+      "encoding": null,
+      "eligible": false,
+      "scope_reason": "declared scope; full MIP exceeds known variable cap",
+      "threads": null,
+      "evidence_refs": [
+        "diagnostics/expansion/env/environment.json",
+        "diagnostics/expansion/env/native-runtime.json",
+        "diagnostics/expansion/solvers/matrix.json",
+        "diagnostics/expansion/solvers/inventory.json",
+        "diagnostics/expansion/solvers/result.json",
+        "diagnostics/expansion/solvers/reused-evidence.json",
+        "diagnostics/expansion/root-review.json"
+      ]
+    },
+    {
+      "N": 25,
+      "configuration": "cplex_mip",
+      "method": "cplex_mip",
+      "encoding": null,
+      "eligible": false,
+      "scope_reason": "declared scope; full MIP exceeds known variable cap",
+      "threads": null,
+      "evidence_refs": [
+        "diagnostics/expansion/env/environment.json",
+        "diagnostics/expansion/env/native-runtime.json",
+        "diagnostics/expansion/solvers/matrix.json",
+        "diagnostics/expansion/solvers/inventory.json",
+        "diagnostics/expansion/solvers/result.json",
+        "diagnostics/expansion/solvers/reused-evidence.json",
+        "diagnostics/expansion/root-review.json"
+      ]
+    },
+    {
+      "N": 25,
+      "configuration": "cpoptimizer",
+      "method": "cpoptimizer",
+      "encoding": null,
+      "eligible": false,
+      "scope_reason": "declared scope; prior low-clue CP probes exceeded search-space cap; not universal impossibility",
+      "threads": null,
+      "evidence_refs": [
+        "diagnostics/expansion/env/environment.json",
+        "diagnostics/expansion/env/native-runtime.json",
+        "diagnostics/expansion/solvers/matrix.json",
+        "diagnostics/expansion/solvers/inventory.json",
+        "diagnostics/expansion/solvers/result.json",
+        "diagnostics/expansion/solvers/reused-evidence.json",
+        "diagnostics/expansion/root-review.json"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "path": "diagnostics/expansion/env/environment.json",
+      "sha256": "654032f632725ad4e3a1adc0928fd7eef79174322f52995325433a28bd473e5f"
+    },
+    {
+      "path": "diagnostics/expansion/env/native-runtime.json",
+      "sha256": "278ca7b749f68e0a494f8af236496f88a36108a2d924a45a6030f895dd113aba"
+    },
+    {
+      "path": "diagnostics/expansion/solvers/matrix.json",
+      "sha256": "253847e25fb1298c45d3d533849498e539272c50ec3a6b185dc55151bd0ab330"
+    },
+    {
+      "path": "diagnostics/expansion/solvers/inventory.json",
+      "sha256": "dcf7f1aa279d9ea2e65b0ac1ca5372686a66bad9b28b36b8c53db186a14bc356"
+    },
+    {
+      "path": "diagnostics/expansion/solvers/result.json",
+      "sha256": "677408822e083c35efef0109930156226b4a55017cc9ffc3cfc66a467a2769c4"
+    },
+    {
+      "path": "diagnostics/expansion/solvers/reused-evidence.json",
+      "sha256": "3b9842c73aecfddd8cd47a9d0e9b7a4ceda986c10c391a47767e99af975732e4"
+    },
+    {
+      "path": "diagnostics/expansion/root-review.json",
+      "sha256": "b8f52b5ce3d0f7241fce40082c4d42b81e46599f7160cb0221eaa5f5796b551b"
+    }
+  ],
+  "projected_main_jobs": 330000,
+  "projected_block_jobs": 3300,
+  "projected_pilot_jobs": 164
+}
